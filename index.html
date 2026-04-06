@@ -3762,26 +3762,41 @@ document.addEventListener('DOMContentLoaded', async () => {
         html = html.replace(/Thomas/g, coachNom);
         html = html.replace(/>ML</g, '>' + eleveInitiales + '<');
         
-        // Hero images
+        // Appliquer le HTML modifie
+        body.innerHTML = html;
+
+        // --- Apres innerHTML: appliquer images et styles ---
+
+        // Hero images dans les ecrans auth (connexion/inscription)
         if (salle.hero_url) {
-            document.querySelectorAll('img[src=""]').forEach(img => {
-                if (img.closest('.auth-header, [style*="hero"], [style*="260px"]')) {
-                    img.src = salle.hero_url;
-                }
+            body.querySelectorAll('img[src=""]').forEach(img => {
+                const parent = img.closest('[style*="260px"], [style*="180px"]');
+                if (parent) img.src = salle.hero_url;
+            });
+            // Fallback: toute image vide dans un bloc sombre
+            body.querySelectorAll('#screen-connexion img[src=""], #screen-inscription img[src=""]').forEach(img => {
+                if (img.style.objectFit === 'cover') img.src = salle.hero_url;
             });
         }
-        
-        // Logo images in auth screens
+
+        // Logo images dans les ecrans auth
         if (salle.logo_url) {
-            document.querySelectorAll('.auth-header img, [style*="max-width:180px"], [style*="max-width:140px"]').forEach(img => {
-                if (!img.src || img.src === window.location.href) {
-                    img.src = salle.logo_url;
-                }
+            body.querySelectorAll('#screen-connexion img[src=""], #screen-inscription img[src=""]').forEach(img => {
+                if (img.style.maxWidth) img.src = salle.logo_url;
             });
         }
-        
+
+        // Logos dans les headers app
+        body.querySelectorAll('.logo').forEach(el => {
+            if (salle.logo_url) {
+                el.innerHTML = '<img src="' + salle.logo_url + '" style="height:28px;vertical-align:middle;" onerror="this.outerHTML=\'' + salle.nom + '\'">';
+            } else {
+                el.textContent = salle.nom;
+            }
+        });
+
         // Side menu logo
-        const sideMenuLogo = document.querySelector('.side-menu .logo');
+        const sideMenuLogo = body.querySelector('.side-menu .logo');
         if (sideMenuLogo) {
             sideMenuLogo.style.color = 'white';
             sideMenuLogo.style.fontSize = '18px';
@@ -3791,15 +3806,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 sideMenuLogo.textContent = salle.nom;
             }
         }
-        
-        body.innerHTML = html;
 
         // Hero en background des headers app
         if (salle.hero_url) {
-            document.querySelectorAll('.app-header').forEach(header => {
+            body.querySelectorAll('.app-header').forEach(header => {
                 header.style.background = 'linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(' + salle.hero_url + ') center/cover';
                 header.style.borderBottom = 'none';
-                // Logo et menu en blanc
                 header.querySelectorAll('.logo, .logo img').forEach(el => {
                     el.style.filter = 'brightness(10)';
                 });
