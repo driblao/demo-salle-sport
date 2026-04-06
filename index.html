@@ -65,7 +65,7 @@ body {
     height: 844px;
     background: #111;
     border-radius: 52px;
-    padding: 10px;
+    padding: 10px 10px 14px;
     box-shadow: 0 30px 80px rgba(0,0,0,0.35), inset 0 0 0 2px rgba(255,255,255,0.1);
     position: relative;
 }
@@ -121,7 +121,8 @@ body {
     align-items: center;
     justify-content: space-between;
     background: rgba(255,255,255,0.97);
-    backdrop-filter: blur(12px);
+    background-size: cover;
+    background-position: center;
     z-index: 10;
     border-bottom: 1px solid var(--gray-100);
 }
@@ -3792,7 +3793,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         
         body.innerHTML = html;
-        
+
+        // Hero en background des headers app
+        if (salle.hero_url) {
+            document.querySelectorAll('.app-header').forEach(header => {
+                header.style.background = 'linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(' + salle.hero_url + ') center/cover';
+                header.style.borderBottom = 'none';
+                // Logo et menu en blanc
+                header.querySelectorAll('.logo, .logo img').forEach(el => {
+                    el.style.filter = 'brightness(10)';
+                });
+                header.querySelectorAll('.menu-btn').forEach(btn => {
+                    btn.style.color = 'white';
+                });
+            });
+        }
+
         console.log('Config chargee:', salle.nom, salle.ville);
         
     } catch (e) {
