@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "L'APPART FITNESS SAINT-ÉTIENNE MONTHIEU",
+        "ville": "Saint-Étienne",
+        "slogan": "",
+        "site": "https://clubs.lappartfitness.com/82-l-appart-fitness-saint-etienne-monthieu?utm_source=gmb",
+        "email_contact": "exemple@domaine.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://storage.leadformance.com/assets/production-front-offices/v3-fitnesseaGroup/v0.21.14/assets/images/client/brand-logo.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e84e0f",
+        "couleur_primary_dark": "#ae3a0b",
+        "couleur_primary_light": "#fdf4f0",
+        "couleur_primary_glow": "rgba(232, 78, 15, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e84e0f, #ae3a0b)",
+        "shadow_primary": "0 4px 16px rgba(232, 78, 15, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "122",
+        "note_google": "4",
+        "argument_personnalise": "Avec 4 etoiles et 122 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
