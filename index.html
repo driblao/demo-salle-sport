@@ -122,21 +122,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(255,255,255,0.97);
-    backdrop-filter: blur(12px);
+    background: var(--primary);
     z-index: 10;
-    border-bottom: 1px solid var(--gray-100);
+    border-bottom: none;
 }
 .logo {
     font-size: 22px;
     font-weight: 800;
-    color: var(--primary);
+    color: #fff;
     letter-spacing: -0.5px;
+}
+.logo img {
+    filter: brightness(10);
 }
 .logo .logo-sub {
     font-size: 10px;
     font-weight: 500;
-    color: var(--gray-500);
+    color: rgba(255,255,255,0.7);
     display: block;
     margin-top: -4px;
 }
@@ -144,7 +146,7 @@ body {
     background: none;
     border: none;
     font-size: 20px;
-    color: var(--dark);
+    color: #fff;
     cursor: pointer;
 }
 
