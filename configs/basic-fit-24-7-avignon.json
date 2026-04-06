@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "BASIC-FIT 24/7",
+        "ville": "Avignon",
+        "slogan": "",
+        "site": "https://www.basic-fit.com/fr-fr/clubs/basic-fit-avignon-rue-sous-marin-casabianca-24/7-19ea77593fb94051a70fa1cd155c6080.html?utm_medium=yext&utm_source=gmb",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.basic-fit.com/on/demandware.static/Sites-BFE-Site/-/default/dw1427e7d8/img/svg/logo-bf-orange.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#592bb2",
+        "couleur_primary_dark": "#422085",
+        "couleur_primary_light": "#f5f2fa",
+        "couleur_primary_glow": "rgba(89, 43, 178, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #592bb2, #422085)",
+        "shadow_primary": "0 4px 16px rgba(89, 43, 178, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "409",
+        "note_google": "4.4",
+        "argument_personnalise": "Avec 4.4 etoiles et 409 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

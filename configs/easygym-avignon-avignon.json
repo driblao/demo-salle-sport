@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "EASYGYM AVIGNON",
+        "ville": "Avignon",
+        "slogan": "",
+        "site": "https://www.easygym.fr/",
+        "email_contact": "0011_GRIT_@T.shoot",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHJvbGU9ImltZyIgZm9jdXNhYmxlPSJmYWxzZSIgYXJpYS1sYWJlbD0iRWFzeUd5bSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHVzZSB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeGxpbms6aHJlZj0iaHR0cHM6Ly93d3cuZWFzeWd5bS5mci9hcHAvdGhlbWVzL21mLXRoZW1lLXNhZ2UvcHVibGljL2ltYWdlcy9pY29ucy43NWE3MDIuc3ZnI2Vhc3lneW0iLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3ZnPg==",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ff6600",
+        "couleur_primary_dark": "#bf4c00",
+        "couleur_primary_light": "#fff6f0",
+        "couleur_primary_glow": "rgba(255, 102, 0, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ff6600, #bf4c00)",
+        "shadow_primary": "0 4px 16px rgba(255, 102, 0, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "486",
+        "note_google": "4.4",
+        "argument_personnalise": "Avec 4.4 etoiles et 486 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

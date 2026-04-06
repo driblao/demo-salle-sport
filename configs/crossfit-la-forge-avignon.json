@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT LA FORGE",
+        "ville": "Avignon",
+        "slogan": "",
+        "site": "http://www.crossfitlaforge.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfitlaforge.fr/sites/6242cw0324/files/favicon.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e85125",
+        "couleur_primary_dark": "#ae3c1b",
+        "couleur_primary_light": "#fdf4f2",
+        "couleur_primary_glow": "rgba(232, 81, 37, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e85125, #ae3c1b)",
+        "shadow_primary": "0 4px 16px rgba(232, 81, 37, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "29",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 29 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT PAMPIN",
+        "ville": "La Rochelle",
+        "slogan": "",
+        "site": "https://crossfitpampin.fr/",
+        "email_contact": "crossfitpampin@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfitpampin.fr/wp-content/uploads/2025/03/cropped-dumbell-logodumbell-logo-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#113f4e",
+        "couleur_primary_dark": "#0c2f3a",
+        "couleur_primary_light": "#f1f3f4",
+        "couleur_primary_glow": "rgba(17, 63, 78, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #113f4e, #0c2f3a)",
+        "shadow_primary": "0 4px 16px rgba(17, 63, 78, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "28",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 28 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

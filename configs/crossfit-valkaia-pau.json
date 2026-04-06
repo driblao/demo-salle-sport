@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT VALKAIA",
+        "ville": "Pau",
+        "slogan": "",
+        "site": "https://valkaiacrossfit.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/m6Lb5J94xjCggNP1/vert-fonca-c-mePJNvkaw3I1o8ax.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#5a7d6a",
+        "couleur_primary_dark": "#435d4f",
+        "couleur_primary_light": "#f5f7f6",
+        "couleur_primary_glow": "rgba(90, 125, 106, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #5a7d6a, #435d4f)",
+        "shadow_primary": "0 4px 16px rgba(90, 125, 106, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "68",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 68 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,9 +1,9 @@
 {
     "salle": {
-        "nom": "FITNESS PARK",
-        "ville": "Avignon",
+        "nom": "CROSSFIT CAPACITY",
+        "ville": "Chambéry",
         "slogan": "",
-        "site": "https://www.fitnesspark.fr/club/le-pontet/?utm_medium=Local_Inventory&utm_source=GMB&utm_campaign=Le-Pontet&utm_content=Yext",
+        "site": "https://crossfitcapacity.com/",
         "email_contact": "",
         "coach_exemple": "Alex",
         "eleve_exemple": "Lucas",
@@ -25,8 +25,8 @@
     "prospection": {
         "prenom_destinataire": "",
         "role_destinataire": "gerant",
-        "nb_avis_google": "645",
-        "note_google": "4.7",
-        "argument_personnalise": "Avec 4.7 etoiles et 645 avis Google, vos membres sont clairement satisfaits de votre approche"
+        "nb_avis_google": "45",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 45 avis Google, vos membres sont clairement satisfaits de votre approche"
     }
 }

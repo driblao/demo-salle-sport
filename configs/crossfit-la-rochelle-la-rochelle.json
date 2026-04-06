@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT LA ROCHELLE",
+        "ville": "La Rochelle",
+        "slogan": "",
+        "site": "http://www.crossfitlarochelle.com/",
+        "email_contact": "crossfitlarochelle@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://usercontent.one/wp/www.crossfitlarochelle.com/wp-content/uploads/2016/10/logo-cf-larochelle.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#fcc01c",
+        "couleur_primary_dark": "#bd9015",
+        "couleur_primary_light": "#fffbf1",
+        "couleur_primary_glow": "rgba(252, 192, 28, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #fcc01c, #bd9015)",
+        "shadow_primary": "0 4px 16px rgba(252, 192, 28, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "92",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 92 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

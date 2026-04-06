@@ -1,13 +1,13 @@
 {
     "salle": {
-        "nom": "FITNESS PARK",
-        "ville": "Avignon",
+        "nom": "CROSSFIT CANNES",
+        "ville": "Cannes",
         "slogan": "",
-        "site": "https://www.fitnesspark.fr/club/le-pontet/?utm_medium=Local_Inventory&utm_source=GMB&utm_campaign=Le-Pontet&utm_content=Yext",
+        "site": "http://www.crossfitcannes.com/",
         "email_contact": "",
         "coach_exemple": "Alex",
         "eleve_exemple": "Lucas",
-        "logo_url": "",
+        "logo_url": "https://www.crossfitcannes.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.png",
         "hero_url": ""
     },
     "design": {
@@ -25,8 +25,8 @@
     "prospection": {
         "prenom_destinataire": "",
         "role_destinataire": "gerant",
-        "nb_avis_google": "645",
+        "nb_avis_google": "114",
         "note_google": "4.7",
-        "argument_personnalise": "Avec 4.7 etoiles et 645 avis Google, vos membres sont clairement satisfaits de votre approche"
+        "argument_personnalise": "Avec 4.7 etoiles et 114 avis Google, vos membres sont clairement satisfaits de votre approche"
     }
 }

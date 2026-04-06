@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "FROZEN LA ROCHELLE",
+        "ville": "La Rochelle",
+        "slogan": "",
+        "site": "http://frozen-la-rochelle.lovable.app/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://storage.googleapis.com/gpt-engineer-file-uploads/3xdpb025x2ObO3vnX6uj6XAVX163/social-images/social-1773229493372-Copie_de_entre_2_et_4_cm_selon_le_besoin.webp",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#1f6d93",
+        "couleur_primary_dark": "#17516e",
+        "couleur_primary_light": "#f1f6f8",
+        "couleur_primary_glow": "rgba(31, 109, 147, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #1f6d93, #17516e)",
+        "shadow_primary": "0 4px 16px rgba(31, 109, 147, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "67",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 67 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT ATALANTE",
+        "ville": "Pau",
+        "slogan": "",
+        "site": "http://crossfitatalante.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.wix.com/favicon.ico",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#fb7d33",
+        "couleur_primary_dark": "#bc5d26",
+        "couleur_primary_light": "#fff7f3",
+        "couleur_primary_glow": "rgba(251, 125, 51, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #fb7d33, #bc5d26)",
+        "shadow_primary": "0 4px 16px rgba(251, 125, 51, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "54",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 54 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

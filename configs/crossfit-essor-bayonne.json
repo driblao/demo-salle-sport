@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT ESSOR",
+        "ville": "Bayonne",
+        "slogan": "",
+        "site": "https://cfessor.com/",
+        "email_contact": "utilisateur@domaine.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjIzIDIzIDY0IDY0Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhsaW5rOmhyZWY9IiNpbnN0YWdyYW0tdW5hdXRoLWljb24iIHdpZHRoPSIxMTAiIGhlaWdodD0iMTEwIi8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zdmc+",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#fda922",
+        "couleur_primary_dark": "#bd7e19",
+        "couleur_primary_light": "#fffaf2",
+        "couleur_primary_glow": "rgba(253, 169, 34, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #fda922, #bd7e19)",
+        "shadow_primary": "0 4px 16px rgba(253, 169, 34, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "148",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 148 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
