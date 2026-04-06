@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "HEGO BATIGNOLLES ⎮ HYBRIDE PERFORMANCE",
+        "ville": "Paris",
+        "slogan": "",
+        "site": "https://www.hego.paris/",
+        "email_contact": "batignolles@hego.paris",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://hego.paris/wp-content/uploads/2024/11/Logo-Black.png",
+        "hero_url": "https://hego.paris/wp-content/uploads/2024/11/LogoHEGO.webp"
+    },
+    "design": {
+        "couleur_primary": "#e03353",
+        "couleur_primary_dark": "#a8263e",
+        "couleur_primary_light": "#fdf3f4",
+        "couleur_primary_glow": "rgba(224, 51, 83, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e03353, #a8263e)",
+        "shadow_primary": "0 4px 16px rgba(224, 51, 83, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "198",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 198 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

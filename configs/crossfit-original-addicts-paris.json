@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT ORIGINAL ADDICTS",
+        "ville": "Paris",
+        "slogan": "",
+        "site": "http://crossfitoriginaladdicts.com/",
+        "email_contact": "contact@crossfitoriginaladdicts.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "http://crossfitoriginaladdicts.com/wp-content/uploads/2016/01/Doigt-e1451938545622.png",
+        "hero_url": "http://crossfitoriginaladdicts.com/wp-content/uploads/sb-instagram-feed-images/493288718_1308215970665029_5850702986051186483_nfull.webp"
+    },
+    "design": {
+        "couleur_primary": "#4169e1",
+        "couleur_primary_dark": "#304ea8",
+        "couleur_primary_light": "#f3f6fd",
+        "couleur_primary_glow": "rgba(65, 105, 225, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #4169e1, #304ea8)",
+        "shadow_primary": "0 4px 16px rgba(65, 105, 225, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "230",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 230 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
