@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT PERSÉE (TOULON)",
+        "ville": "Toulon",
+        "slogan": "",
+        "site": "https://www.crossfitpersee.com/",
+        "email_contact": "support@webador.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://assets.jwwb.nl/assets/brand/webador/icon/favicon.png?bust=2299e1307cbb69076146",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ffc500",
+        "couleur_primary_dark": "#bf9300",
+        "couleur_primary_light": "#fffbf0",
+        "couleur_primary_glow": "rgba(255, 197, 0, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ffc500, #bf9300)",
+        "shadow_primary": "0 4px 16px rgba(255, 197, 0, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "25",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 25 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

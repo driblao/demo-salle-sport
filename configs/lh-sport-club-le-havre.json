@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "LH SPORT CLUB",
+        "ville": "Le Havre",
+        "slogan": "",
+        "site": "https://www.lhsportclub.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://lhsportclub.fr/wp-content/uploads/2023/11/LHSC_logo_light_long.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e30613",
+        "couleur_primary_dark": "#aa040e",
+        "couleur_primary_light": "#fdf0f1",
+        "couleur_primary_glow": "rgba(227, 6, 19, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e30613, #aa040e)",
+        "shadow_primary": "0 4px 16px rgba(227, 6, 19, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "194",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 194 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

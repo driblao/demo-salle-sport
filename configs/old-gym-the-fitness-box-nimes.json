@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "OLD GYM THE FITNESS BOX",
+        "ville": "Nîmes",
+        "slogan": "",
+        "site": "http://oldgymfitness.fr/",
+        "email_contact": "oldgymnimes@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.oldgymfitness.fr/wp-content/uploads/go-x/u/d2ba245f-d50a-4468-8d87-da8ee2efd0b1/w180,h180,rtfit,bgdde1e5,el1,ex1,fpng/image.png?v=1748516867416",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#001e35",
+        "couleur_primary_dark": "#001627",
+        "couleur_primary_light": "#f0f1f3",
+        "couleur_primary_glow": "rgba(0, 30, 53, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #001e35, #001627)",
+        "shadow_primary": "0 4px 16px rgba(0, 30, 53, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "50",
+        "note_google": "4.6",
+        "argument_personnalise": "Avec 4.6 etoiles et 50 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

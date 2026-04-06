@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SIX FOURS TRAINING CLUB",
+        "ville": "Toulon",
+        "slogan": "",
+        "site": "http://www.sixfourstrainingclub.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "http://www.sixfourstrainingclub.com/assets/img/logo-trainingClubLIGHT.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e5441b",
+        "couleur_primary_dark": "#ab3314",
+        "couleur_primary_light": "#fdf4f1",
+        "couleur_primary_glow": "rgba(229, 68, 27, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e5441b, #ab3314)",
+        "shadow_primary": "0 4px 16px rgba(229, 68, 27, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "36",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 36 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

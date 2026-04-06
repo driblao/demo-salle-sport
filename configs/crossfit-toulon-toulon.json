@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT TOULON",
+        "ville": "Toulon",
+        "slogan": "",
+        "site": "https://crossfit-toulon.fr/",
+        "email_contact": "crossfitmayol@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfitmayol.fr/images/logo-64.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ffd30e",
+        "couleur_primary_dark": "#bf9e0a",
+        "couleur_primary_light": "#fffcf0",
+        "couleur_primary_glow": "rgba(255, 211, 14, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ffd30e, #bf9e0a)",
+        "shadow_primary": "0 4px 16px rgba(255, 211, 14, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "",
+        "note_google": "",
+        "argument_personnalise": "Votre approche du coaching merite un outil digital a la hauteur"
+    }
+}

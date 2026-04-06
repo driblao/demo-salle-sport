@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "IZISPORT",
+        "ville": "Saint-Étienne",
+        "slogan": "",
+        "site": "http://www.izisport.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.izisport.com/wp-content/uploads/2022/02/logo-izisport_.jpeg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#4f4069",
+        "couleur_primary_dark": "#3b304e",
+        "couleur_primary_light": "#f4f3f6",
+        "couleur_primary_glow": "rgba(79, 64, 105, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #4f4069, #3b304e)",
+        "shadow_primary": "0 4px 16px rgba(79, 64, 105, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "151",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 151 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

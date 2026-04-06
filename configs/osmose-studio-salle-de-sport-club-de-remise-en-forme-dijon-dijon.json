@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "OSMOSE STUDIO - SALLE DE SPORT & CLUB DE REMISE EN FORME - DIJON",
+        "ville": "Dijon",
+        "slogan": "",
+        "site": "https://www.osmose-studio-dijon.fr/",
+        "email_contact": "contact@osmose-studio-dijon.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://osmose-studio-dijon.fr/wp-content/uploads/2025/12/favicon.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#1e73be",
+        "couleur_primary_dark": "#16568e",
+        "couleur_primary_light": "#f1f6fb",
+        "couleur_primary_glow": "rgba(30, 115, 190, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #1e73be, #16568e)",
+        "shadow_primary": "0 4px 16px rgba(30, 115, 190, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "375",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 375 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

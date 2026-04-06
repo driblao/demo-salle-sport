@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "MAGICFIT TOULON",
+        "ville": "Toulon",
+        "slogan": "",
+        "site": "https://www.magicfit.fr/salle-de-sport-var-83/toulon/",
+        "email_contact": "mgf.corporate.fitness@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201772%20624'%3E%3C/svg%3E",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#b0c41f",
+        "couleur_primary_dark": "#849317",
+        "couleur_primary_light": "#fafbf1",
+        "couleur_primary_glow": "rgba(176, 196, 31, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #b0c41f, #849317)",
+        "shadow_primary": "0 4px 16px rgba(176, 196, 31, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "62",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 62 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

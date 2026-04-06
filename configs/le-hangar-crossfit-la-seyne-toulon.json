@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "LE HANGAR CROSSFIT LA SEYNE",
+        "ville": "Toulon",
+        "slogan": "",
+        "site": "http://www.lehangar-cflaseyne.fr/",
+        "email_contact": "contact@lehangar-cflaseyne.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://lehangar-cflaseyne.fr/wp-content/uploads/2021/03/LOGO-HANGAR-FINAL-163PX-100PX3.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#358c90",
+        "couleur_primary_dark": "#27696c",
+        "couleur_primary_light": "#f3f8f8",
+        "couleur_primary_glow": "rgba(53, 140, 144, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #358c90, #27696c)",
+        "shadow_primary": "0 4px 16px rgba(53, 140, 144, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "37",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 37 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

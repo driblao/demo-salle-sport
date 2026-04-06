@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CESAR CROSSFIT",
+        "ville": "Dijon",
+        "slogan": "",
+        "site": "https://cesarcrossfit.fr/",
+        "email_contact": "contact@cesarcrossfit.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://cesarcrossfit.fr/wp-content/uploads/2025/01/cropped-LOGO-modifie-crossfit-et-ninja-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#faa53e",
+        "couleur_primary_dark": "#bb7b2e",
+        "couleur_primary_light": "#fff9f3",
+        "couleur_primary_glow": "rgba(250, 165, 62, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #faa53e, #bb7b2e)",
+        "shadow_primary": "0 4px 16px rgba(250, 165, 62, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "109",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 109 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
