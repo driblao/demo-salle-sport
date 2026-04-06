@@ -1,0 +1,3805 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Votre App Sur Mesure</title>
+    <style>
+/* ============ VARIABLES ============ */
+/* DA NaturoSport : Montserrat + Lato, rouge cramoisi + violet fonce */
+:root {
+    --primary: #cf234b;
+    --primary-dark: #ab213e;
+    --primary-light: #fdf2f4;
+    --primary-glow: rgba(207, 35, 75, 0.15);
+    --secondary: #29235c;
+    --secondary-dark: #1e1a45;
+    --accent: #cf234b;
+    --accent-light: #fdf2f4;
+    --red: #fb2c36;
+    --blue: #3B82F6;
+    --blue-light: #EFF6FF;
+    --purple: #29235c;
+    --yellow: #FBBF24;
+    --dark: #29235c;
+    --dark-soft: #1e1a45;
+    --gray-900: #101828;
+    --gray-700: #364153;
+    --gray-500: #6a7282;
+    --gray-400: #99a1af;
+    --gray-300: #d1d5dc;
+    --gray-200: #E5E7EB;
+    --gray-100: #F3F4F6;
+    --gray-50: #F9FAFB;
+    --white: #FFFFFF;
+    --radius: 14px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+    --radius-full: 9999px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow: 0 4px 16px rgba(0,0,0,0.06);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.08);
+    --shadow-xl: 0 16px 48px rgba(0,0,0,0.1);
+    --shadow-primary: 0 4px 16px rgba(207, 35, 75, 0.25);
+    --gradient-primary: linear-gradient(135deg, #cf234b, #ab213e);
+    --gradient-warm: linear-gradient(135deg, #cf234b, #ab213e);
+    --gradient-bg: linear-gradient(180deg, #fdf2f4 0%, #fefafe 40%, #FFFFFF 100%);
+}
+
+/* ============ RESET ============ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Montserrat', 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ============ PHONE FRAME ============ */
+.phone-frame {
+    width: 390px;
+    height: 844px;
+    background: #111;
+    border-radius: 52px;
+    padding: 10px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.35), inset 0 0 0 2px rgba(255,255,255,0.1);
+    position: relative;
+}
+.phone-frame::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 30px;
+    background: #111;
+    border-radius: 0 0 18px 18px;
+    z-index: 100;
+}
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    border-radius: 44px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ============ SCREENS ============ */
+.screen {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: none;
+    flex-direction: column;
+    background: var(--gradient-bg);
+    z-index: 1;
+}
+.screen.active { display: flex; z-index: 2; }
+.screen-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    -webkit-overflow-scrolling: touch;
+}
+.screen-content::-webkit-scrollbar { display: none; }
+.screen-content.has-header { padding-top: 100px; }
+.screen-content.has-tabbar { padding-bottom: 80px; }
+
+/* ============ HEADER ============ */
+.app-header {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 88px;
+    padding: 32px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(12px);
+    z-index: 10;
+    border-bottom: 1px solid var(--gray-100);
+}
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.5px;
+}
+.logo .logo-sub {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--gray-500);
+    display: block;
+    margin-top: -4px;
+}
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+/* ============ TAB BAR ============ */
+.tab-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 68px;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid var(--gray-200);
+    padding-bottom: 8px;
+    z-index: 10;
+}
+.tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    background: none;
+    border: none;
+    color: var(--gray-400);
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.tab-item i { font-size: 20px; }
+.tab-item.active { color: var(--primary); }
+
+/* ============ AUTH ============ */
+.auth-header {
+    height: 120px;
+    padding-top: 32px;
+    background: var(--gradient-primary);
+    border-radius: 0 0 32px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth-header .logo-big {
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+}
+.auth-body {
+    padding: 24px 20px;
+}
+.auth-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 14px;
+}
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray-700);
+    margin-bottom: 4px;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    background: var(--white);
+    transition: border-color 0.2s;
+    outline: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--primary);
+}
+.form-group textarea {
+    resize: none;
+    min-height: 60px;
+}
+.auth-link {
+    text-align: center;
+    font-size: 13px;
+    color: var(--gray-500);
+    margin-top: 16px;
+}
+.auth-link a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ============ BUTTONS ============ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn-primary {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: var(--shadow-primary);
+}
+.btn-primary:hover { transform: translateY(-1px); }
+.btn-outline {
+    background: var(--white);
+    color: var(--primary);
+    border: 1.5px solid var(--primary);
+}
+.btn-danger {
+    background: var(--red);
+    color: white;
+}
+.btn-ghost {
+    background: var(--primary-light);
+    color: var(--primary);
+}
+.btn-block { width: 100%; }
+.btn-small { padding: 8px 14px; font-size: 12px; }
+.btn-sportigo {
+    background: var(--secondary);
+    color: white;
+    width: 100%;
+    margin-top: 8px;
+}
+.btn-sportigo i { color: #FFD700; }
+
+/* ============ COMMON ============ */
+.page-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+.page-subtitle {
+    font-size: 13px;
+    color: var(--gray-500);
+    margin-bottom: 18px;
+}
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+    margin-bottom: 16px;
+    font-family: inherit;
+}
+.card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+}
+
+/* ============ ROLE SELECTOR ============ */
+.role-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.role-btn {
+    flex: 1;
+    padding: 14px;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius);
+    background: var(--white);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+.role-btn i { font-size: 24px; display: block; margin-bottom: 6px; color: var(--gray-400); }
+.role-btn span { font-size: 12px; font-weight: 600; color: var(--gray-500); }
+.role-btn.active {
+    border-color: var(--primary);
+    background: var(--primary-light);
+}
+.role-btn.active i, .role-btn.active span { color: var(--primary); }
+
+/* ============ DASHBOARD - COACH ============ */
+.slot-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+.slot-card:active { transform: scale(0.98); }
+.slot-time {
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 60px;
+}
+.slot-info { flex: 1; }
+.slot-info h4 { font-size: 14px; font-weight: 600; color: var(--dark); }
+.slot-info p { font-size: 12px; color: var(--gray-500); }
+.slot-badge {
+    background: var(--primary);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: var(--radius-full);
+}
+
+/* ============ STUDENT PILLS ============ */
+.student-pills {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    -webkit-overflow-scrolling: touch;
+}
+.student-pills::-webkit-scrollbar { display: none; }
+.student-pill {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: var(--radius-full);
+    border: 1.5px solid var(--gray-200);
+    background: var(--white);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray-700);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+.student-pill.active {
+    border-color: var(--primary);
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: 600;
+}
+.student-pill .avatar-mini {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gray-600);
+}
+.student-pill.active .avatar-mini {
+    background: var(--secondary);
+    color: white;
+}
+
+/* ============ EXERCISE LIST ============ */
+.exercise-item {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 14px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+    border-left: 4px solid transparent;
+}
+.exercise-item:active { transform: scale(0.98); }
+.exercise-item.done {
+    border-left-color: var(--primary);
+    background: var(--primary-light);
+}
+.exercise-item.current {
+    border-left-color: var(--accent);
+    box-shadow: 0 2px 12px rgba(249, 115, 22, 0.15);
+}
+.exercise-number {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gray-500);
+    flex-shrink: 0;
+}
+.exercise-item.done .exercise-number {
+    background: var(--primary);
+    color: white;
+}
+.exercise-item.current .exercise-number {
+    background: var(--accent);
+    color: white;
+}
+.exercise-info { flex: 1; }
+.exercise-info h4 { font-size: 13px; font-weight: 600; color: var(--dark); }
+.exercise-info p { font-size: 11px; color: var(--gray-500); margin-top: 2px; }
+.exercise-meta {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
+.exercise-tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    background: var(--gray-100);
+    color: var(--gray-600);
+}
+.exercise-tag.weight { background: #eee8f5; color: var(--secondary); }
+.exercise-tag.reps { background: var(--primary-light); color: var(--primary); }
+.exercise-tag.time { background: #fff7ed; color: #d97706; }
+.exercise-check {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid var(--gray-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: transparent;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.exercise-item.done .exercise-check {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: white;
+}
+
+/* ============ EXERCISE DETAIL (SETS TABLE) ============ */
+.sets-table {
+    width: 100%;
+    margin: 12px 0;
+}
+.sets-table .set-header {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 1fr 50px;
+    gap: 6px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray-200);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gray-500);
+    text-transform: uppercase;
+}
+.sets-table .set-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 1fr 50px;
+    gap: 6px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray-100);
+    align-items: center;
+    font-size: 13px;
+}
+.set-num {
+    font-weight: 700;
+    color: var(--primary);
+}
+.set-row input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 8px;
+    font-size: 13px;
+    text-align: center;
+    font-family: inherit;
+    outline: none;
+}
+.set-row input:focus { border-color: var(--primary); }
+.set-row .set-check {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 2px solid var(--gray-300);
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: transparent;
+    transition: all 0.2s;
+}
+.set-row .set-check.checked {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: white;
+}
+
+/* ============ HISTORY ============ */
+.history-item {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 14px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+.history-item:active { transform: scale(0.98); }
+.history-date {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+.history-item h4 { font-size: 14px; font-weight: 600; color: var(--dark); }
+.history-item p { font-size: 12px; color: var(--gray-500); margin-top: 2px; }
+.history-stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+.history-stat {
+    font-size: 11px;
+    color: var(--gray-500);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.history-stat i { color: var(--primary); }
+
+/* ============ CATEGORY GRID ============ */
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.category-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 16px 12px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1.5px solid transparent;
+}
+.category-card:active { transform: scale(0.97); }
+.category-card.active { border-color: var(--primary); background: var(--primary-light); }
+.category-card i { font-size: 28px; color: var(--primary); display: block; margin-bottom: 6px; }
+.category-card span { font-size: 12px; font-weight: 600; color: var(--gray-700); }
+
+/* ============ STUDENT CARD (coach view) ============ */
+.student-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+.student-card:active { transform: scale(0.98); }
+.student-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+}
+.student-card-info { flex: 1; }
+.student-card-info h4 { font-size: 14px; font-weight: 600; color: var(--dark); }
+.student-card-info p { font-size: 12px; color: var(--gray-500); }
+.student-card-action {
+    color: var(--gray-400);
+    font-size: 16px;
+}
+
+/* ============ RECAP LIST ============ */
+.recap-item {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 12px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: var(--shadow-sm);
+}
+.recap-item .drag-handle {
+    color: var(--gray-400);
+    font-size: 16px;
+    cursor: grab;
+}
+.recap-item .recap-info { flex: 1; }
+.recap-item .recap-info h4 { font-size: 13px; font-weight: 600; color: var(--dark); }
+.recap-item .recap-info p { font-size: 11px; color: var(--gray-500); }
+.recap-item .recap-actions {
+    display: flex;
+    gap: 8px;
+}
+.recap-item .recap-actions button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+}
+.recap-item .recap-actions .edit-btn { color: var(--blue); }
+.recap-item .recap-actions .delete-btn { color: var(--red); }
+
+/* ============ STATS GRID ============ */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.stat-box {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 14px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+}
+.stat-box .stat-number {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary);
+    display: block;
+}
+.stat-box .stat-label {
+    font-size: 11px;
+    color: var(--gray-500);
+    font-weight: 500;
+}
+
+/* ============ PROFILE ============ */
+.profil-avatar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profil-avatar-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-size: 32px;
+    color: white;
+}
+.profil-avatar h2 { font-size: 18px; font-weight: 700; color: var(--dark); }
+.profil-avatar p { font-size: 13px; color: var(--gray-500); }
+.settings-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--gray-100);
+    cursor: pointer;
+}
+.settings-item i:first-child { color: var(--primary); width: 20px; text-align: center; }
+.settings-item span { flex: 1; font-size: 14px; color: var(--dark); }
+.settings-item i:last-child { color: var(--gray-400); font-size: 12px; }
+
+/* ============ SEARCH ============ */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--white);
+    border: 1.5px solid var(--gray-200);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+}
+.search-bar i { color: var(--gray-400); }
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+    background: transparent;
+}
+
+/* ============ TEMPLATE BADGE ============ */
+.template-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+}
+
+/* ============ EMPTY STATE ============ */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--gray-400);
+}
+.empty-state i { font-size: 48px; margin-bottom: 12px; }
+.empty-state p { font-size: 14px; }
+
+/* ============ FLOATING ACTION BUTTON ============ */
+.fab {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    font-size: 22px;
+    box-shadow: var(--shadow-primary);
+    cursor: pointer;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+.fab:active { transform: scale(0.92); }
+
+/* ============ SIDE MENU ============ */
+.side-menu {
+    position: absolute;
+    top: 0; left: 0;
+    width: 280px;
+    height: 100%;
+    background: var(--secondary-dark);
+    z-index: 50;
+    padding: 60px 24px 24px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border-radius: 44px 0 0 44px;
+}
+.side-menu.open { transform: translateX(0); }
+.close-menu {
+    position: absolute;
+    top: 16px; right: 16px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.side-menu-nav { display: flex; flex-direction: column; gap: 4px; }
+.side-menu-nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: color 0.2s;
+}
+.side-menu-nav a:hover { color: white; }
+.side-menu-footer {
+    margin-top: auto;
+    text-align: center;
+    color: rgba(255,255,255,0.4);
+    font-size: 11px;
+}
+.menu-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 49;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    border-radius: 44px;
+}
+.menu-overlay.open { opacity: 1; pointer-events: auto; }
+
+/* ============ CHECKBOX ============ */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+.checkbox-group label {
+    font-size: 13px;
+    color: var(--gray-500);
+}
+
+/* ============ TAG SELECTOR ============ */
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+.tag-selectable {
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    border: 1.5px solid var(--gray-200);
+    background: var(--white);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gray-600);
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+.tag-selectable.active {
+    border-color: var(--primary);
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+/* ============ INLINE FORM ROW ============ */
+.inline-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.inline-row .form-group { flex: 1; margin-bottom: 0; }
+
+/* ============ ALERT BANNER ============ */
+.alert-banner {
+    background: var(--primary-light);
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 13px;
+    color: var(--primary-dark);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.alert-banner i { font-size: 16px; }
+
+/* ============ STREAK BANNER ============ */
+.streak-banner {
+    background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+    color: white;
+    border-radius: var(--radius);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+.streak-fire {
+    font-size: 32px;
+    line-height: 1;
+}
+.streak-info h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+.streak-info p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+}
+
+/* ============ PR CARD ============ */
+.pr-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 14px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 4px solid #FFD700;
+}
+.pr-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: #FFF7ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+.pr-info { flex: 1; }
+.pr-info h4 { font-size: 13px; font-weight: 600; color: var(--dark); }
+.pr-info p { font-size: 11px; color: var(--gray-500); margin-top: 2px; }
+.pr-value {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--primary);
+}
+.pr-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    background: #FEF3C7;
+    color: #92400E;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+}
+
+/* ============ BADGE GRID ============ */
+.badges-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.badge-item {
+    text-align: center;
+    cursor: pointer;
+}
+.badge-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: 0 auto 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: relative;
+}
+.badge-icon.common { background: linear-gradient(135deg, #e5e7eb, #d1d5dc); }
+.badge-icon.rare { background: linear-gradient(135deg, #dbeafe, #93c5fd); }
+.badge-icon.epic { background: linear-gradient(135deg, #e9d5ff, #a78bfa); }
+.badge-icon.legendary { background: linear-gradient(135deg, #fef3c7, #fbbf24); box-shadow: 0 0 12px rgba(251,191,36,0.3); }
+.badge-icon.locked {
+    background: var(--gray-100);
+    opacity: 0.4;
+    filter: grayscale(1);
+}
+.badge-name {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--gray-700);
+    line-height: 1.2;
+}
+.badge-item.locked .badge-name { color: var(--gray-400); }
+
+/* ============ PROGRESS CHART (mock) ============ */
+.chart-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 16px;
+}
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.chart-header h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark);
+}
+.chart-header .chart-period {
+    font-size: 11px;
+    color: var(--gray-500);
+    background: var(--gray-100);
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+}
+.chart-mock {
+    height: 140px;
+    background: var(--gray-50);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 8px 8px;
+    gap: 4px;
+}
+.chart-bar {
+    flex: 1;
+    background: var(--primary);
+    border-radius: 4px 4px 0 0;
+    opacity: 0.7;
+    min-height: 8px;
+    transition: height 0.3s;
+}
+.chart-bar.highlight {
+    opacity: 1;
+    background: var(--gradient-primary);
+}
+.chart-line-mock {
+    height: 140px;
+    background: var(--gray-50);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.chart-line-mock svg {
+    width: 100%;
+    height: 100%;
+}
+.chart-legend {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 10px;
+    color: var(--gray-400);
+}
+
+/* ============ SUMMARY CARD ============ */
+.summary-card {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    border-radius: var(--radius);
+    padding: 18px;
+    margin-bottom: 16px;
+}
+.summary-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.summary-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+.summary-stat {
+    text-align: center;
+}
+.summary-stat .value {
+    font-size: 20px;
+    font-weight: 800;
+    display: block;
+}
+.summary-stat .label {
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+/* ============ COACH NOTE BANNER (read-only) ============ */
+.coach-note {
+    background: var(--primary-light);
+    border: 1px solid rgba(207, 35, 75, 0.2);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--primary-dark);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+.coach-note i {
+    font-size: 14px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* ============ WEEK DOTS (streak) ============ */
+.week-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.week-dot {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+}
+.week-dot.done {
+    background: var(--primary);
+    color: white;
+}
+.week-dot.today {
+    background: var(--white);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+.week-dot.future {
+    background: var(--gray-100);
+    color: var(--gray-400);
+}
+
+/* ============ BADGE DETAIL MODAL ============ */
+.badge-detail {
+    text-align: center;
+    padding: 20px;
+}
+.badge-detail .badge-icon-large {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+}
+.badge-detail h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+.badge-detail .badge-rarity {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.badge-detail .badge-rarity.common { color: var(--gray-500); }
+.badge-detail .badge-rarity.rare { color: #3b82f6; }
+.badge-detail .badge-rarity.epic { color: #8b5cf6; }
+.badge-detail .badge-rarity.legendary { color: #f59e0b; }
+.badge-detail p {
+    font-size: 13px;
+    color: var(--gray-500);
+    line-height: 1.5;
+}
+
+/* ============ TABS INLINE ============ */
+.tabs-inline {
+    display: flex;
+    gap: 0;
+    background: var(--gray-100);
+    border-radius: 10px;
+    padding: 3px;
+    margin-bottom: 16px;
+}
+.tab-inline {
+    flex: 1;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray-500);
+    border: none;
+    background: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+.tab-inline.active {
+    background: var(--white);
+    color: var(--dark);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ============ REAL BADGES (from badges.html) ============ */
+
+/* Badge color themes */
+.b-gold { background: linear-gradient(135deg, #f59e0b, #d97706); border-color: #f59e0b; color: #fff; }
+.b-silver { background: linear-gradient(135deg, #94a3b8, #64748b); border-color: #94a3b8; color: #fff; }
+.b-bronze { background: linear-gradient(135deg, #c2854a, #92622d); border-color: #c2854a; color: #fff; }
+.b-red { background: linear-gradient(135deg, #ef4444, #b91c1c); border-color: #ef4444; color: #fff; }
+.b-crimson { background: linear-gradient(135deg, #cf234b, #9f1239); border-color: #cf234b; color: #fff; }
+.b-blue { background: linear-gradient(135deg, #3b82f6, #1d4ed8); border-color: #3b82f6; color: #fff; }
+.b-purple { background: linear-gradient(135deg, #a855f7, #7c3aed); border-color: #a855f7; color: #fff; }
+.b-green { background: linear-gradient(135deg, #22c55e, #16a34a); border-color: #22c55e; color: #fff; }
+.b-emerald { background: linear-gradient(135deg, #10b981, #059669); border-color: #10b981; color: #fff; }
+.b-orange { background: linear-gradient(135deg, #f97316, #ea580c); border-color: #f97316; color: #fff; }
+.b-pink { background: linear-gradient(135deg, #ec4899, #db2777); border-color: #ec4899; color: #fff; }
+.b-cyan { background: linear-gradient(135deg, #06b6d4, #0891b2); border-color: #06b6d4; color: #fff; }
+.b-dark { background: linear-gradient(135deg, var(--secondary), var(--secondary-dark)); border-color: var(--secondary); color: #fff; }
+.b-diamond { background: linear-gradient(135deg, #e0f2fe, #7dd3fc, #38bdf8); border-color: #38bdf8; color: #0c4a6e; }
+.b-fire { background: linear-gradient(135deg, #fbbf24, #f97316, #ef4444); border-color: #f97316; color: #fff; }
+.b-rainbow { background: linear-gradient(135deg, #ef4444, #f97316, #fbbf24, #22c55e, #3b82f6, #a855f7); border-color: #a855f7; color: #fff; }
+.b-black { background: linear-gradient(135deg, #1e1e1e, #000); border-color: #444; color: #fbbf24; }
+
+/* Badge shape variants */
+.badge-icon.shield { border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%; }
+.badge-icon.hex { border-radius: 25%; }
+.badge-icon.star-shape { border-radius: 30% 70% 30% 70% / 70% 30% 70% 30%; }
+.badge-icon.diamond { border-radius: 12px; transform: rotate(45deg); }
+.badge-icon.diamond i { transform: rotate(-45deg); }
+
+/* Badge ring border */
+.badge-icon::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: inherit;
+    border: 2.5px solid;
+    border-color: inherit;
+    opacity: 0.3;
+}
+
+/* Rarity glow */
+.badge-item.rare .badge-icon { box-shadow: 0 0 10px rgba(59, 130, 246, 0.3); }
+.badge-item.epic .badge-icon { box-shadow: 0 0 12px rgba(168, 85, 247, 0.35); }
+.badge-item.legendary .badge-icon { box-shadow: 0 0 14px rgba(255, 215, 0, 0.4); }
+
+/* Rarity tags */
+.rarity-tag {
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-top: 2px;
+}
+.rarity-common { background: rgba(148,163,184,0.15); color: #94a3b8; }
+.rarity-rare { background: rgba(59,130,246,0.15); color: #60a5fa; }
+.rarity-epic { background: rgba(168,85,247,0.15); color: #a855f7; }
+.rarity-legendary { background: rgba(251,191,36,0.15); color: #d97706; }
+
+/* Progression badges (flame levels) */
+.prog-badge {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.prog-badge i { position: relative; z-index: 2; }
+.prog-badge::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    border: 2.5px solid;
+    border-color: inherit;
+    opacity: 0.3;
+}
+.prog-1 { background: linear-gradient(180deg, #94a3b8, #64748b); border-color: #94a3b8; color: #fff; font-size: 18px; }
+.prog-2 { background: linear-gradient(180deg, #c2854a, #8b6131); border-color: #c2854a; color: #fff; font-size: 19px; }
+.prog-3 { background: linear-gradient(180deg, #c0c7d1, #7c8594); border-color: #d1d5db; color: #fff; font-size: 20px; box-shadow: 0 0 8px rgba(192, 199, 209, 0.2); }
+.prog-4 { background: linear-gradient(180deg, #60a5fa, #2563eb); border-color: #60a5fa; color: #fff; font-size: 21px; box-shadow: 0 0 10px rgba(96, 165, 250, 0.3); }
+.prog-5 { background: linear-gradient(180deg, #fbbf24, #d97706); border-color: #fbbf24; color: #fff; font-size: 22px; box-shadow: 0 0 12px rgba(251, 191, 36, 0.35); }
+.prog-6 { background: linear-gradient(180deg, #c084fc, #7c3aed); border-color: #c084fc; color: #fff; font-size: 23px; box-shadow: 0 0 16px rgba(192, 132, 252, 0.4); }
+.prog-7 { background: linear-gradient(180deg, #fbbf24, #f97316, #ef4444); border-color: #f97316; color: #fff; font-size: 24px; box-shadow: 0 0 20px rgba(249, 115, 22, 0.5); }
+.prog-8 { background: linear-gradient(180deg, #1a1a1a, #000); border-color: #fbbf24; color: #fbbf24; font-size: 25px; box-shadow: 0 0 24px rgba(251, 191, 36, 0.5); }
+
+/* Progress bar under badge */
+.prog-bar-wrapper {
+    width: 48px;
+    height: 3px;
+    background: var(--gray-200);
+    border-radius: 2px;
+    margin: 4px auto 0;
+    overflow: hidden;
+}
+.prog-bar-fill { height: 100%; border-radius: 2px; }
+.prog-bar-1 .prog-bar-fill { width: 12.5%; background: #94a3b8; }
+.prog-bar-2 .prog-bar-fill { width: 25%; background: #c2854a; }
+.prog-bar-3 .prog-bar-fill { width: 37.5%; background: #c0c7d1; }
+.prog-bar-4 .prog-bar-fill { width: 50%; background: #60a5fa; }
+.prog-bar-5 .prog-bar-fill { width: 62.5%; background: #fbbf24; }
+.prog-bar-6 .prog-bar-fill { width: 75%; background: #c084fc; }
+.prog-bar-7 .prog-bar-fill { width: 87.5%; background: #f97316; }
+.prog-bar-8 .prog-bar-fill { width: 100%; background: linear-gradient(90deg, #fbbf24, #f97316); }
+
+/* Finisher medal */
+.finisher-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    position: relative;
+}
+.finisher-icon::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    border: 2.5px solid;
+    border-color: inherit;
+    opacity: 0.3;
+}
+.f-5k { background: linear-gradient(135deg, #22c55e, #16a34a); border-color: #22c55e; color: #fff; }
+.f-10k { background: linear-gradient(135deg, #3b82f6, #1d4ed8); border-color: #3b82f6; color: #fff; }
+.f-semi { background: linear-gradient(135deg, #a855f7, #7c3aed); border-color: #a855f7; color: #fff; }
+.f-marathon { background: linear-gradient(135deg, #fbbf24, #d97706); border-color: #fbbf24; color: #fff; }
+
+/* Locked badge in grid */
+.badge-item.locked .badge-icon,
+.badge-item.locked .prog-badge,
+.badge-item.locked .finisher-icon {
+    opacity: 0.25;
+    filter: grayscale(1);
+    box-shadow: none !important;
+}
+
+@keyframes pulse-ring {
+    0%, 100% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(1.08); opacity: 0.6; }
+}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- CONFIG: Ce bloc est rempli par le script de generation ou par l'IA -->
+    <script id="salle-config">
+        let CONFIG = null;
+    </script>
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="phone-screen">
+
+<!-- ================================================================ -->
+<!-- ECRAN 1 : CONNEXION                                              -->
+<!-- ================================================================ -->
+<div class="screen active" id="screen-connexion">
+    <div class="screen-content" style="padding:0;">
+        <!-- Hero avec logo -->
+        <div style="position:relative;height:260px;overflow:hidden;background:var(--secondary);">
+            <img src="" style="width:100%;height:100%;object-fit:cover;opacity:0.4;" onerror="this.style.display='none'" />
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.2) 0%,var(--secondary) 100%);"></div>
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 30px 20px;">
+                <img src="" style="max-width:180px;max-height:80px;margin-bottom:12px;" onerror="this.style.display='none'" />
+                <div style="font-family:'Montserrat',sans-serif;font-size:24px;font-weight:900;color:#fff;text-align:center;text-shadow:0 2px 8px rgba(0,0,0,0.4);">MA SALLE</div>
+                <div style="font-size:12px;color:rgba(255,255,255,0.6);margin-top:4px;"></div>
+            </div>
+        </div>
+        <div class="auth-body" style="padding:24px 20px 20px;margin-top:-20px;background:white;border-radius:20px 20px 0 0;position:relative;z-index:2;">
+            <h1 class="auth-title">Connexion</h1>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Marie@email.com">
+            </div>
+            <div class="form-group">
+                <label>Mot de passe</label>
+                <input type="password" placeholder="Saisir ici...">
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="remember">
+                <label for="remember">Se souvenir de moi</label>
+            </div>
+            <button class="btn btn-primary btn-block" onclick="navigateTo('screen-coach-dashboard')">Se connecter</button>
+            <button class="btn btn-sportigo btn-block" onclick="navigateTo('screen-coach-dashboard')">
+                <i class="fas fa-bolt"></i> Se connecter avec Sportigo
+            </button>
+            <p class="auth-link" style="margin-top:10px"><a href="#" style="color:var(--gray-500);font-weight:500">Mot de passe oublie ?</a></p>
+            <p class="auth-link">Pas de compte ? <a href="#" onclick="navigateTo('screen-inscription')">S'inscrire</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 2 : INSCRIPTION                                            -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-inscription">
+    <div class="screen-content" style="padding:0;">
+        <div style="position:relative;height:180px;overflow:hidden;background:var(--secondary);">
+            <img src="" style="width:100%;height:100%;object-fit:cover;opacity:0.4;" onerror="this.style.display='none'" />
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.2) 0%,var(--secondary) 100%);"></div>
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 30px 20px;">
+                <img src="" style="max-width:140px;max-height:60px;margin-bottom:8px;" onerror="this.style.display='none'" />
+                <div style="font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:#fff;">MA SALLE</div>
+            </div>
+        </div>
+        <div class="auth-body" style="padding:24px 20px 20px;margin-top:-20px;background:white;border-radius:20px 20px 0 0;position:relative;z-index:2;">
+            <h1 class="auth-title">Inscription</h1>
+            <div class="inline-row">
+                <div class="form-group">
+                    <label>Prenom</label>
+                    <input type="text" placeholder="Marie">
+                </div>
+                <div class="form-group">
+                    <label>Nom</label>
+                    <input type="text" placeholder="Dupont">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Marie@email.com">
+            </div>
+            <div class="form-group">
+                <label>Mot de passe</label>
+                <input type="password" placeholder="Saisir ici...">
+            </div>
+            <div class="form-group">
+                <label>Je suis</label>
+            </div>
+            <div class="role-selector">
+                <button class="role-btn active" onclick="selectRole('student')">
+                    <i class="fas fa-user"></i>
+                    <span>Eleve</span>
+                </button>
+                <button class="role-btn" onclick="selectRole('coach')">
+                    <i class="fas fa-whistle"></i>
+                    <span>Coach</span>
+                </button>
+            </div>
+            <button class="btn btn-primary btn-block" onclick="navigateTo('screen-eleve-dashboard')">S'inscrire</button>
+            <button class="btn btn-sportigo btn-block">
+                <i class="fas fa-bolt"></i> S'inscrire avec Sportigo
+            </button>
+            <p class="auth-link">Deja un compte ? <a href="#" onclick="navigateTo('screen-connexion')">Connexion</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ========= VUES COACH ============================================ -->
+<!-- ================================================================ -->
+
+<!-- ================================================================ -->
+<!-- ECRAN 3 : DASHBOARD COACH                                        -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-dashboard">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header has-tabbar">
+        <h1 class="page-title">Bonjour, Coach Thomas</h1>
+        <p class="page-subtitle">Mercredi 1 avril 2026 - 3 creneaux aujourd'hui</p>
+
+        <div class="alert-banner">
+            <i class="fas fa-calendar-check"></i>
+            <span>Prochain creneau dans 25 min (10h00 - 11h00)</span>
+        </div>
+
+        <h2 class="section-title"><i class="fas fa-clock"></i> Creneaux du jour</h2>
+
+        <div class="slot-card" onclick="navigateTo('screen-coach-slot')">
+            <div class="slot-time">10h<br>11h</div>
+            <div class="slot-info">
+                <h4>Creneau matin</h4>
+                <p>6 eleves inscrits</p>
+            </div>
+            <span class="slot-badge">6/8</span>
+        </div>
+        <div class="slot-card">
+            <div class="slot-time">14h<br>15h</div>
+            <div class="slot-info">
+                <h4>Creneau apres-midi</h4>
+                <p>4 eleves inscrits</p>
+            </div>
+            <span class="slot-badge">4/8</span>
+        </div>
+        <div class="slot-card">
+            <div class="slot-time">18h<br>19h</div>
+            <div class="slot-info">
+                <h4>Creneau soir</h4>
+                <p>8 eleves inscrits</p>
+            </div>
+            <span class="slot-badge" style="background:var(--red)">8/8</span>
+        </div>
+
+        <h2 class="section-title" style="margin-top:20px"><i class="fas fa-users"></i> Acces rapide eleves</h2>
+        <div class="student-card" onclick="navigateTo('screen-coach-student-file')">
+            <div class="student-avatar">ML</div>
+            <div class="student-card-info">
+                <h4>Marie Lambert</h4>
+                <p>Derniere seance : 28 mars</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+        <div class="student-card" onclick="navigateTo('screen-coach-student-file')">
+            <div class="student-avatar">PD</div>
+            <div class="student-card-info">
+                <h4>Pierre Durand</h4>
+                <p>Derniere seance : 30 mars</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+        <div class="student-card" onclick="navigateTo('screen-coach-student-file')">
+            <div class="student-avatar">SB</div>
+            <div class="student-card-info">
+                <h4>Sophie Bernard</h4>
+                <p>Derniere seance : 1 avril</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+    </div>
+    <button class="fab" onclick="navigateTo('screen-coach-create-select')"><i class="fas fa-plus"></i></button>
+    <nav class="tab-bar">
+        <button class="tab-item active" onclick="navigateTo('screen-coach-dashboard')">
+            <i class="fas fa-home"></i><span>Accueil</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-coach-students')">
+            <i class="fas fa-users"></i><span>Eleves</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-coach-history')">
+            <i class="fas fa-history"></i><span>Historique</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-profil-coach')">
+            <i class="fas fa-user-cog"></i><span>Profil</span>
+        </button>
+    </nav>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 4 : COACH - VUE CRENEAU                                    -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-slot">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header has-tabbar">
+        <button class="back-btn" onclick="navigateTo('screen-coach-dashboard')">
+            <i class="fas fa-arrow-left"></i> Creneau 10h - 11h
+        </button>
+
+        <div class="alert-banner">
+            <i class="fas fa-users"></i>
+            <span>6 eleves - 2 coachs sur ce creneau</span>
+        </div>
+
+        <h2 class="section-title">Eleves du creneau</h2>
+        <div class="student-pills">
+            <button class="student-pill active" onclick="selectStudent(this)">
+                <div class="avatar-mini">ML</div> Marie L.
+            </button>
+            <button class="student-pill" onclick="selectStudent(this)">
+                <div class="avatar-mini">PD</div> Pierre D.
+            </button>
+            <button class="student-pill" onclick="selectStudent(this)">
+                <div class="avatar-mini">SB</div> Sophie B.
+            </button>
+            <button class="student-pill" onclick="selectStudent(this)">
+                <div class="avatar-mini">JM</div> Julie M.
+            </button>
+            <button class="student-pill" onclick="selectStudent(this)">
+                <div class="avatar-mini">LR</div> Lucas R.
+            </button>
+            <button class="student-pill" onclick="selectStudent(this)">
+                <div class="avatar-mini">AC</div> Ana C.
+            </button>
+        </div>
+
+        <div class="card" style="margin-bottom:12px">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                <div class="student-avatar" style="width:36px;height:36px;font-size:13px">ML</div>
+                <div>
+                    <h4 style="font-size:14px;font-weight:600">Marie Lambert</h4>
+                    <p style="font-size:11px;color:var(--gray-500)">Seance du jour : Haut du corps</p>
+                </div>
+            </div>
+            <div style="display:flex;gap:8px">
+                <button class="btn btn-primary btn-small" onclick="navigateTo('screen-coach-session-live')"><i class="fas fa-eye"></i> Voir seance</button>
+                <button class="btn btn-ghost btn-small" onclick="navigateTo('screen-coach-create-select')"><i class="fas fa-plus"></i> Creer</button>
+                <button class="btn btn-outline btn-small" onclick="navigateTo('screen-coach-student-file')"><i class="fas fa-folder"></i> Fiche</button>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top:16px">Seance de Marie - Haut du corps</h2>
+
+        <div class="exercise-item done">
+            <div class="exercise-number">1</div>
+            <div class="exercise-info">
+                <h4>Developpe couche</h4>
+                <p>Barre - Pectoraux</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag weight">60 kg</span>
+                    <span class="exercise-tag reps">4x10</span>
+                </div>
+            </div>
+            <div class="exercise-check" onclick="toggleExerciseCheck(this, event)"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item current" onclick="navigateTo('screen-coach-session-live')">
+            <div class="exercise-number">2</div>
+            <div class="exercise-info">
+                <h4>Rowing barre</h4>
+                <p>Barre - Dos</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag weight">50 kg</span>
+                    <span class="exercise-tag reps">4x12</span>
+                </div>
+            </div>
+            <div class="exercise-check"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item">
+            <div class="exercise-number">3</div>
+            <div class="exercise-info">
+                <h4>Eleves laterales</h4>
+                <p>Halteres - Epaules</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag weight">8 kg</span>
+                    <span class="exercise-tag reps">3x15</span>
+                </div>
+            </div>
+            <div class="exercise-check"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item">
+            <div class="exercise-number">4</div>
+            <div class="exercise-info">
+                <h4>Curl biceps</h4>
+                <p>Halteres - Biceps</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag weight">12 kg</span>
+                    <span class="exercise-tag reps">3x12</span>
+                </div>
+            </div>
+            <div class="exercise-check"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item">
+            <div class="exercise-number">5</div>
+            <div class="exercise-info">
+                <h4>Dips</h4>
+                <p>Poids du corps - Triceps</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag reps">3x10</span>
+                </div>
+            </div>
+            <div class="exercise-check"><i class="fas fa-check"></i></div>
+        </div>
+    </div>
+    <nav class="tab-bar">
+        <button class="tab-item active" onclick="navigateTo('screen-coach-dashboard')">
+            <i class="fas fa-home"></i><span>Accueil</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-coach-students')">
+            <i class="fas fa-users"></i><span>Eleves</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-coach-history')">
+            <i class="fas fa-history"></i><span>Historique</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-profil-coach')">
+            <i class="fas fa-user-cog"></i><span>Profil</span>
+        </button>
+    </nav>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 5 : COACH - SESSION LIVE (simplifie : sets + note)         -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-session-live">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header">
+        <button class="back-btn" onclick="navigateTo('screen-coach-slot')">
+            <i class="fas fa-arrow-left"></i> Rowing barre
+        </button>
+
+        <div class="card">
+            <h3 style="font-size:16px;font-weight:700;color:var(--dark);margin-bottom:4px">Rowing barre</h3>
+            <p style="font-size:12px;color:var(--gray-500);margin-bottom:4px">Barre - Dos (grands dorsaux, trapezes)</p>
+            <div class="tag-row">
+                <span class="exercise-tag weight">Poids</span>
+                <span class="exercise-tag reps">Repetitions</span>
+            </div>
+        </div>
+
+        <div class="coach-note">
+            <i class="fas fa-user-tie"></i>
+            <span>Note coach : Garder le dos bien droit, serrer les omoplates en haut du mouvement.</span>
+        </div>
+
+        <div class="card">
+            <h4 style="font-size:14px;font-weight:600;margin-bottom:8px">Series</h4>
+            <div class="sets-table">
+                <div class="set-header">
+                    <span>Set</span>
+                    <span>Poids</span>
+                    <span>Reps</span>
+                    <span>Repos</span>
+                    <span></span>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">1</span>
+                    <input type="text" value="50 kg">
+                    <input type="text" value="12">
+                    <input type="text" value="90s">
+                    <div class="set-check checked" onclick="toggleSetCheck(this)"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">2</span>
+                    <input type="text" value="50 kg">
+                    <input type="text" value="12">
+                    <input type="text" value="90s">
+                    <div class="set-check checked" onclick="toggleSetCheck(this)"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">3</span>
+                    <input type="text" value="50 kg">
+                    <input type="text" value="10">
+                    <input type="text" value="90s">
+                    <div class="set-check" onclick="toggleSetCheck(this)"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">4</span>
+                    <input type="text" value="50 kg">
+                    <input type="text" value="">
+                    <input type="text" value="90s">
+                    <div class="set-check" onclick="toggleSetCheck(this)"><i class="fas fa-check"></i></div>
+                </div>
+            </div>
+            <button class="btn btn-ghost btn-small" style="margin-top:4px"><i class="fas fa-plus"></i> Ajouter une serie</button>
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:12px;padding-bottom:20px">
+            <button class="btn btn-outline" style="flex:1" onclick="navigateTo('screen-coach-slot')"><i class="fas fa-arrow-left"></i> Precedent</button>
+            <button class="btn btn-primary" style="flex:1" onclick="navigateTo('screen-coach-slot')">Suivant <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 6 : COACH - CREER SEANCE : CHOIX ELEVE                    -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-create-select">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header">
+        <button class="back-btn" onclick="navigateTo('screen-coach-dashboard')">
+            <i class="fas fa-arrow-left"></i> Creer une seance
+        </button>
+
+        <h2 class="section-title">Pour quel eleve ?</h2>
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Rechercher un eleve...">
+        </div>
+
+        <div class="student-card" onclick="navigateTo('screen-coach-create-choose')">
+            <div class="student-avatar">ML</div>
+            <div class="student-card-info">
+                <h4>Marie Lambert</h4>
+                <p>Derniere seance : Haut du corps - 28 mars</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+        <div class="student-card" onclick="navigateTo('screen-coach-create-choose')">
+            <div class="student-avatar">PD</div>
+            <div class="student-card-info">
+                <h4>Pierre Durand</h4>
+                <p>Derniere seance : Jambes - 30 mars</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+        <div class="student-card" onclick="navigateTo('screen-coach-create-choose')">
+            <div class="student-avatar">SB</div>
+            <div class="student-card-info">
+                <h4>Sophie Bernard</h4>
+                <p>Derniere seance : Full body - 1 avril</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+        <div class="student-card" onclick="navigateTo('screen-coach-create-choose')">
+            <div class="student-avatar">JM</div>
+            <div class="student-card-info">
+                <h4>Julie Martin</h4>
+                <p>Aucune seance precedente</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+
+        <h2 class="section-title" style="margin-top:20px"><i class="fas fa-redo"></i> Reprendre une seance</h2>
+        <p class="page-subtitle">Reutiliser une seance precedente comme template</p>
+
+        <div class="history-item" onclick="navigateTo('screen-coach-create-recap')">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+                <div class="history-date">28 mars 2026</div>
+                <span class="template-badge"><i class="fas fa-copy"></i> Template</span>
+            </div>
+            <h4>Marie - Haut du corps</h4>
+            <p>5 exercices - Developpe couche, Rowing, Eleves lat...</p>
+        </div>
+        <div class="history-item" onclick="navigateTo('screen-coach-create-recap')">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+                <div class="history-date">30 mars 2026</div>
+                <span class="template-badge"><i class="fas fa-copy"></i> Template</span>
+            </div>
+            <h4>Pierre - Jambes</h4>
+            <p>6 exercices - Squat, Presse, Fentes, Leg curl...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 7 : COACH - CREER : FROM SCRATCH OU TEMPLATE               -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-create-choose">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header">
+        <button class="back-btn" onclick="navigateTo('screen-coach-create-select')">
+            <i class="fas fa-arrow-left"></i> Seance pour Marie
+        </button>
+
+        <h2 class="section-title">Comment creer la seance ?</h2>
+
+        <div class="card" style="cursor:pointer;border:2px solid transparent;transition:border-color 0.2s" onclick="navigateTo('screen-coach-create-exos')">
+            <div style="display:flex;align-items:center;gap:12px">
+                <div style="width:48px;height:48px;border-radius:12px;background:var(--primary-light);display:flex;align-items:center;justify-content:center">
+                    <i class="fas fa-plus" style="font-size:20px;color:var(--primary)"></i>
+                </div>
+                <div>
+                    <h4 style="font-size:15px;font-weight:600;color:var(--dark)">Nouvelle seance</h4>
+                    <p style="font-size:12px;color:var(--gray-500)">Partir de zero et ajouter les exercices</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top:20px"><i class="fas fa-history"></i> Reprendre une seance de Marie</h2>
+
+        <div class="history-item" onclick="navigateTo('screen-coach-create-recap')">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+                <div class="history-date">28 mars 2026</div>
+                <span class="template-badge"><i class="fas fa-copy"></i> Reutiliser</span>
+            </div>
+            <h4>Haut du corps</h4>
+            <p>5 exercices - Developpe couche, Rowing, Eleves lat, Curl, Dips</p>
+            <div class="history-stats">
+                <span class="history-stat"><i class="fas fa-dumbbell"></i> 5 exos</span>
+                <span class="history-stat"><i class="fas fa-clock"></i> 50 min</span>
+            </div>
+        </div>
+        <div class="history-item" onclick="navigateTo('screen-coach-create-recap')">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+                <div class="history-date">21 mars 2026</div>
+                <span class="template-badge"><i class="fas fa-copy"></i> Reutiliser</span>
+            </div>
+            <h4>Bas du corps</h4>
+            <p>6 exercices - Squat, Fentes, Presse, Leg curl, Mollets, Gainage</p>
+            <div class="history-stats">
+                <span class="history-stat"><i class="fas fa-dumbbell"></i> 6 exos</span>
+                <span class="history-stat"><i class="fas fa-clock"></i> 55 min</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 8 : COACH - CREER : AJOUT EXERCICES                        -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-create-exos">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header">
+        <button class="back-btn" onclick="navigateTo('screen-coach-create-choose')">
+            <i class="fas fa-arrow-left"></i> Ajouter des exercices
+        </button>
+
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Rechercher un exercice...">
+        </div>
+
+        <h2 class="section-title">Groupe musculaire</h2>
+        <div class="category-grid">
+            <div class="category-card active" onclick="selectCategory(this)">
+                <i class="fas fa-child"></i>
+                <span>Pectoraux</span>
+            </div>
+            <div class="category-card" onclick="selectCategory(this)">
+                <i class="fas fa-hand-rock"></i>
+                <span>Dos</span>
+            </div>
+            <div class="category-card" onclick="selectCategory(this)">
+                <i class="fas fa-fist-raised"></i>
+                <span>Epaules</span>
+            </div>
+            <div class="category-card" onclick="selectCategory(this)">
+                <i class="fas fa-dumbbell"></i>
+                <span>Bras</span>
+            </div>
+            <div class="category-card" onclick="selectCategory(this)">
+                <i class="fas fa-running"></i>
+                <span>Jambes</span>
+            </div>
+            <div class="category-card" onclick="selectCategory(this)">
+                <i class="fas fa-fire"></i>
+                <span>Abdos</span>
+            </div>
+            <div class="category-card" onclick="selectCategory(this)">
+                <i class="fas fa-heartbeat"></i>
+                <span>Cardio</span>
+            </div>
+            <div class="category-card" onclick="selectCategory(this)">
+                <i class="fas fa-spa"></i>
+                <span>Stretching</span>
+            </div>
+        </div>
+
+        <h2 class="section-title">Pectoraux - Exercices</h2>
+
+        <div class="exercise-item" onclick="navigateTo('screen-coach-create-config')">
+            <div class="exercise-number"><i class="fas fa-plus" style="font-size:12px"></i></div>
+            <div class="exercise-info">
+                <h4>Developpe couche barre</h4>
+                <p>Barre &bull; Pectoraux, Epaules, Triceps</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag reps">Force</span>
+                    <span class="exercise-tag">Debutant</span>
+                    <span class="exercise-tag weight">Compose</span>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right" style="color:var(--gray-400)"></i>
+        </div>
+        <div class="exercise-item" onclick="navigateTo('screen-coach-create-config')">
+            <div class="exercise-number"><i class="fas fa-plus" style="font-size:12px"></i></div>
+            <div class="exercise-info">
+                <h4>Developpe incline halteres</h4>
+                <p>Halteres &bull; Pectoraux, Epaules, Triceps</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag reps">Force</span>
+                    <span class="exercise-tag">Intermediaire</span>
+                    <span class="exercise-tag weight">Compose</span>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right" style="color:var(--gray-400)"></i>
+        </div>
+        <div class="exercise-item" onclick="navigateTo('screen-coach-create-config')">
+            <div class="exercise-number"><i class="fas fa-plus" style="font-size:12px"></i></div>
+            <div class="exercise-info">
+                <h4>Ecarte couche halteres</h4>
+                <p>Halteres &bull; Pectoraux</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag reps">Force</span>
+                    <span class="exercise-tag">Debutant</span>
+                    <span class="exercise-tag weight">Isolation</span>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right" style="color:var(--gray-400)"></i>
+        </div>
+        <div class="exercise-item" onclick="navigateTo('screen-coach-create-config')">
+            <div class="exercise-number"><i class="fas fa-plus" style="font-size:12px"></i></div>
+            <div class="exercise-info">
+                <h4>Pompes</h4>
+                <p>Poids du corps &bull; Pectoraux, Epaules, Triceps</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag reps">Force</span>
+                    <span class="exercise-tag">Debutant</span>
+                    <span class="exercise-tag weight">Compose</span>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right" style="color:var(--gray-400)"></i>
+        </div>
+        <div class="exercise-item" onclick="navigateTo('screen-coach-create-config')">
+            <div class="exercise-number"><i class="fas fa-plus" style="font-size:12px"></i></div>
+            <div class="exercise-info">
+                <h4>Butterfly (Machine)</h4>
+                <p>Machine &bull; Pectoraux</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag reps">Force</span>
+                    <span class="exercise-tag">Debutant</span>
+                    <span class="exercise-tag weight">Isolation</span>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right" style="color:var(--gray-400)"></i>
+        </div>
+        <div class="exercise-item" onclick="navigateTo('screen-coach-create-config')">
+            <div class="exercise-number"><i class="fas fa-plus" style="font-size:12px"></i></div>
+            <div class="exercise-info">
+                <h4>Cable Crossover</h4>
+                <p>Cable &bull; Pectoraux, Epaules</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag reps">Force</span>
+                    <span class="exercise-tag">Intermediaire</span>
+                    <span class="exercise-tag weight">Isolation</span>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right" style="color:var(--gray-400)"></i>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 9 : COACH - CREER : CONFIG EXERCICE                        -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-create-config">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header">
+        <button class="back-btn" onclick="navigateTo('screen-coach-create-exos')">
+            <i class="fas fa-arrow-left"></i> Configurer l'exercice
+        </button>
+
+        <div class="card">
+            <h3 style="font-size:16px;font-weight:700;color:var(--dark);margin-bottom:2px">Developpe couche barre</h3>
+            <p style="font-size:12px;color:var(--gray-500);margin-bottom:4px">Barre &bull; Pectoraux, Epaules, Triceps</p>
+            <div class="exercise-meta" style="margin-bottom:12px">
+                <span class="exercise-tag reps">Force</span>
+                <span class="exercise-tag">Debutant</span>
+                <span class="exercise-tag weight">Compose &bull; Push</span>
+            </div>
+
+            <div class="form-group">
+                <label>Type de mesure</label>
+            </div>
+            <div class="tag-row">
+                <button class="tag-selectable active" onclick="toggleTag(this)">Poids (kg)</button>
+                <button class="tag-selectable active" onclick="toggleTag(this)">Repetitions</button>
+                <button class="tag-selectable" onclick="toggleTag(this)">Temps</button>
+                <button class="tag-selectable" onclick="toggleTag(this)">Distance (m)</button>
+                <button class="tag-selectable" onclick="toggleTag(this)">Calories</button>
+            </div>
+
+            <div class="form-group">
+                <label>Equipement / Machine</label>
+                <select>
+                    <option>Barre olympique</option>
+                    <option>Halteres</option>
+                    <option>Machine Smith</option>
+                    <option>Poids du corps</option>
+                </select>
+            </div>
+
+            <h4 style="font-size:14px;font-weight:600;margin:12px 0 8px">Series</h4>
+
+            <div class="sets-table">
+                <div class="set-header">
+                    <span>Set</span>
+                    <span>Poids</span>
+                    <span>Reps</span>
+                    <span>Repos</span>
+                    <span></span>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">1</span>
+                    <input type="text" placeholder="kg" value="60">
+                    <input type="text" placeholder="reps" value="10">
+                    <input type="text" placeholder="sec" value="90">
+                    <button class="set-check" style="border:none;background:none;color:var(--red);font-size:14px;cursor:pointer"><i class="fas fa-trash"></i></button>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">2</span>
+                    <input type="text" placeholder="kg" value="60">
+                    <input type="text" placeholder="reps" value="10">
+                    <input type="text" placeholder="sec" value="90">
+                    <button class="set-check" style="border:none;background:none;color:var(--red);font-size:14px;cursor:pointer"><i class="fas fa-trash"></i></button>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">3</span>
+                    <input type="text" placeholder="kg" value="65">
+                    <input type="text" placeholder="reps" value="8">
+                    <input type="text" placeholder="sec" value="120">
+                    <button class="set-check" style="border:none;background:none;color:var(--red);font-size:14px;cursor:pointer"><i class="fas fa-trash"></i></button>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">4</span>
+                    <input type="text" placeholder="kg" value="65">
+                    <input type="text" placeholder="reps" value="8">
+                    <input type="text" placeholder="sec" value="120">
+                    <button class="set-check" style="border:none;background:none;color:var(--red);font-size:14px;cursor:pointer"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+            <button class="btn btn-ghost btn-small" style="margin-top:6px"><i class="fas fa-plus"></i> Ajouter une serie</button>
+
+            <div class="form-group" style="margin-top:14px">
+                <label>Note pour l'eleve</label>
+                <textarea placeholder="Ex: Garder les coudes a 45 degres, descendre jusqu'a la poitrine..."></textarea>
+            </div>
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:12px;padding-bottom:20px">
+            <button class="btn btn-outline" style="flex:1" onclick="navigateTo('screen-coach-create-exos')">Annuler</button>
+            <button class="btn btn-primary" style="flex:1" onclick="navigateTo('screen-coach-create-recap')"><i class="fas fa-check"></i> Ajouter</button>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 10 : COACH - CREER : RECAP                                 -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-create-recap">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header">
+        <button class="back-btn" onclick="navigateTo('screen-coach-create-exos')">
+            <i class="fas fa-arrow-left"></i> Recapitulatif seance
+        </button>
+
+        <div class="card" style="margin-bottom:16px">
+            <div class="inline-row">
+                <div class="form-group">
+                    <label>Nom de la seance</label>
+                    <input type="text" value="Haut du corps">
+                </div>
+            </div>
+            <div class="inline-row">
+                <div class="form-group">
+                    <label>Eleve</label>
+                    <input type="text" value="Marie Lambert" disabled style="background:var(--gray-50)">
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" value="2026-04-01">
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title"><i class="fas fa-grip-vertical"></i> Exercices (glisser pour reordonner)</h2>
+
+        <div class="recap-item">
+            <i class="fas fa-grip-vertical drag-handle"></i>
+            <div class="recap-info">
+                <h4>1. Developpe couche</h4>
+                <p>4 series - 60-65kg - 8-10 reps</p>
+            </div>
+            <div class="recap-actions">
+                <button class="edit-btn" onclick="navigateTo('screen-coach-create-config')"><i class="fas fa-pen"></i></button>
+                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="recap-item">
+            <i class="fas fa-grip-vertical drag-handle"></i>
+            <div class="recap-info">
+                <h4>2. Rowing barre</h4>
+                <p>4 series - 50kg - 12 reps</p>
+            </div>
+            <div class="recap-actions">
+                <button class="edit-btn" onclick="navigateTo('screen-coach-create-config')"><i class="fas fa-pen"></i></button>
+                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="recap-item">
+            <i class="fas fa-grip-vertical drag-handle"></i>
+            <div class="recap-info">
+                <h4>3. Eleves laterales</h4>
+                <p>3 series - 8kg - 15 reps</p>
+            </div>
+            <div class="recap-actions">
+                <button class="edit-btn" onclick="navigateTo('screen-coach-create-config')"><i class="fas fa-pen"></i></button>
+                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="recap-item">
+            <i class="fas fa-grip-vertical drag-handle"></i>
+            <div class="recap-info">
+                <h4>4. Curl biceps</h4>
+                <p>3 series - 12kg - 12 reps</p>
+            </div>
+            <div class="recap-actions">
+                <button class="edit-btn" onclick="navigateTo('screen-coach-create-config')"><i class="fas fa-pen"></i></button>
+                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="recap-item">
+            <i class="fas fa-grip-vertical drag-handle"></i>
+            <div class="recap-info">
+                <h4>5. Dips</h4>
+                <p>3 series - PDC - 10 reps</p>
+            </div>
+            <div class="recap-actions">
+                <button class="edit-btn" onclick="navigateTo('screen-coach-create-config')"><i class="fas fa-pen"></i></button>
+                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+
+        <button class="btn btn-ghost btn-block" style="margin:12px 0" onclick="navigateTo('screen-coach-create-exos')">
+            <i class="fas fa-plus"></i> Ajouter un exercice
+        </button>
+
+        <div style="display:flex;gap:8px;padding-bottom:20px">
+            <button class="btn btn-outline" style="flex:1" onclick="navigateTo('screen-coach-dashboard')">Annuler</button>
+            <button class="btn btn-primary" style="flex:1" onclick="navigateTo('screen-coach-dashboard')"><i class="fas fa-check"></i> Valider la seance</button>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 11 : COACH - LISTE ELEVES                                  -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-students">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header has-tabbar">
+        <h1 class="page-title">Mes eleves</h1>
+        <p class="page-subtitle">6 eleves actifs</p>
+
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Rechercher un eleve...">
+        </div>
+
+        <div class="student-card" onclick="navigateTo('screen-coach-student-file')">
+            <div class="student-avatar">ML</div>
+            <div class="student-card-info">
+                <h4>Marie Lambert</h4>
+                <p>12 seances - Derniere : 28 mars</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+        <div class="student-card" onclick="navigateTo('screen-coach-student-file')">
+            <div class="student-avatar">PD</div>
+            <div class="student-card-info">
+                <h4>Pierre Durand</h4>
+                <p>8 seances - Derniere : 30 mars</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+        <div class="student-card" onclick="navigateTo('screen-coach-student-file')">
+            <div class="student-avatar">SB</div>
+            <div class="student-card-info">
+                <h4>Sophie Bernard</h4>
+                <p>15 seances - Derniere : 1 avril</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+        <div class="student-card" onclick="navigateTo('screen-coach-student-file')">
+            <div class="student-avatar">JM</div>
+            <div class="student-card-info">
+                <h4>Julie Martin</h4>
+                <p>3 seances - Derniere : 25 mars</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+        <div class="student-card" onclick="navigateTo('screen-coach-student-file')">
+            <div class="student-avatar">LR</div>
+            <div class="student-card-info">
+                <h4>Lucas Renaud</h4>
+                <p>20 seances - Derniere : 31 mars</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+        <div class="student-card" onclick="navigateTo('screen-coach-student-file')">
+            <div class="student-avatar">AC</div>
+            <div class="student-card-info">
+                <h4>Ana Costa</h4>
+                <p>6 seances - Derniere : 29 mars</p>
+            </div>
+            <i class="fas fa-chevron-right student-card-action"></i>
+        </div>
+    </div>
+    <nav class="tab-bar">
+        <button class="tab-item" onclick="navigateTo('screen-coach-dashboard')">
+            <i class="fas fa-home"></i><span>Accueil</span>
+        </button>
+        <button class="tab-item active" onclick="navigateTo('screen-coach-students')">
+            <i class="fas fa-users"></i><span>Eleves</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-coach-history')">
+            <i class="fas fa-history"></i><span>Historique</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-profil-coach')">
+            <i class="fas fa-user-cog"></i><span>Profil</span>
+        </button>
+    </nav>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 12 : COACH - FICHE ELEVE                                   -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-student-file">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header">
+        <button class="back-btn" onclick="navigateTo('screen-coach-students')">
+            <i class="fas fa-arrow-left"></i> Fiche eleve
+        </button>
+
+        <div class="profil-avatar" style="margin-bottom:14px">
+            <div class="profil-avatar-circle" style="width:64px;height:64px;font-size:24px">ML</div>
+            <h2 style="font-size:16px">Marie Lambert</h2>
+            <p>Inscrite depuis janvier 2026</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Seances</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">48</span>
+                <span class="stat-label">Exercices faits</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">65 kg</span>
+                <span class="stat-label">Max developpe</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">3/sem</span>
+                <span class="stat-label">Frequence</span>
+            </div>
+        </div>
+
+        <div style="display:flex;gap:8px;margin-bottom:16px">
+            <button class="btn btn-primary btn-small" style="flex:1" onclick="navigateTo('screen-coach-create-choose')"><i class="fas fa-plus"></i> Creer seance</button>
+            <button class="btn btn-outline btn-small" style="flex:1" onclick="navigateTo('screen-coach-history')"><i class="fas fa-history"></i> Historique</button>
+        </div>
+
+        <h2 class="section-title">Derniere seance - 28 mars</h2>
+
+        <div class="exercise-item done">
+            <div class="exercise-number">1</div>
+            <div class="exercise-info">
+                <h4>Developpe couche</h4>
+                <div class="exercise-meta">
+                    <span class="exercise-tag weight">60 kg</span>
+                    <span class="exercise-tag reps">4x10</span>
+                </div>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item done">
+            <div class="exercise-number">2</div>
+            <div class="exercise-info">
+                <h4>Rowing barre</h4>
+                <div class="exercise-meta">
+                    <span class="exercise-tag weight">50 kg</span>
+                    <span class="exercise-tag reps">4x12</span>
+                </div>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item done">
+            <div class="exercise-number">3</div>
+            <div class="exercise-info">
+                <h4>Eleves laterales</h4>
+                <div class="exercise-meta">
+                    <span class="exercise-tag weight">8 kg</span>
+                    <span class="exercise-tag reps">3x15</span>
+                </div>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 13 : COACH - HISTORIQUE GLOBAL                             -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-history">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header has-tabbar">
+        <h1 class="page-title">Historique</h1>
+        <p class="page-subtitle">Toutes les seances passees</p>
+
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Rechercher par eleve, exercice...">
+        </div>
+
+        <div class="tag-row" style="margin-bottom:14px">
+            <button class="tag-selectable active" onclick="toggleTag(this)">Tous</button>
+            <button class="tag-selectable" onclick="toggleTag(this)">Marie</button>
+            <button class="tag-selectable" onclick="toggleTag(this)">Pierre</button>
+            <button class="tag-selectable" onclick="toggleTag(this)">Sophie</button>
+        </div>
+
+        <div class="history-item" onclick="navigateTo('screen-coach-session-detail')">
+            <div class="history-date">1 avril 2026</div>
+            <h4>Sophie Bernard - Full body</h4>
+            <p>7 exercices completes</p>
+            <div class="history-stats">
+                <span class="history-stat"><i class="fas fa-dumbbell"></i> 7 exos</span>
+                <span class="history-stat"><i class="fas fa-clock"></i> 55 min</span>
+                <span class="history-stat"><i class="fas fa-check-circle"></i> 100%</span>
+            </div>
+        </div>
+        <div class="history-item" onclick="navigateTo('screen-coach-session-detail')">
+            <div class="history-date">30 mars 2026</div>
+            <h4>Pierre Durand - Jambes</h4>
+            <p>6 exercices - 5 completes</p>
+            <div class="history-stats">
+                <span class="history-stat"><i class="fas fa-dumbbell"></i> 6 exos</span>
+                <span class="history-stat"><i class="fas fa-clock"></i> 50 min</span>
+                <span class="history-stat"><i class="fas fa-check-circle"></i> 83%</span>
+            </div>
+        </div>
+        <div class="history-item" onclick="navigateTo('screen-coach-session-detail')">
+            <div class="history-date">28 mars 2026</div>
+            <h4>Marie Lambert - Haut du corps</h4>
+            <p>5 exercices completes</p>
+            <div class="history-stats">
+                <span class="history-stat"><i class="fas fa-dumbbell"></i> 5 exos</span>
+                <span class="history-stat"><i class="fas fa-clock"></i> 50 min</span>
+                <span class="history-stat"><i class="fas fa-check-circle"></i> 100%</span>
+            </div>
+        </div>
+        <div class="history-item" onclick="navigateTo('screen-coach-session-detail')">
+            <div class="history-date">25 mars 2026</div>
+            <h4>Julie Martin - Decouverte</h4>
+            <p>4 exercices - 3 completes</p>
+            <div class="history-stats">
+                <span class="history-stat"><i class="fas fa-dumbbell"></i> 4 exos</span>
+                <span class="history-stat"><i class="fas fa-clock"></i> 35 min</span>
+                <span class="history-stat"><i class="fas fa-check-circle"></i> 75%</span>
+            </div>
+        </div>
+        <div class="history-item" onclick="navigateTo('screen-coach-session-detail')">
+            <div class="history-date">21 mars 2026</div>
+            <h4>Marie Lambert - Bas du corps</h4>
+            <p>6 exercices completes</p>
+            <div class="history-stats">
+                <span class="history-stat"><i class="fas fa-dumbbell"></i> 6 exos</span>
+                <span class="history-stat"><i class="fas fa-clock"></i> 55 min</span>
+                <span class="history-stat"><i class="fas fa-check-circle"></i> 100%</span>
+            </div>
+        </div>
+    </div>
+    <nav class="tab-bar">
+        <button class="tab-item" onclick="navigateTo('screen-coach-dashboard')">
+            <i class="fas fa-home"></i><span>Accueil</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-coach-students')">
+            <i class="fas fa-users"></i><span>Eleves</span>
+        </button>
+        <button class="tab-item active" onclick="navigateTo('screen-coach-history')">
+            <i class="fas fa-history"></i><span>Historique</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-profil-coach')">
+            <i class="fas fa-user-cog"></i><span>Profil</span>
+        </button>
+    </nav>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 14 : COACH - DETAIL SEANCE PASSEE                          -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-coach-session-detail">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header">
+        <button class="back-btn" onclick="navigateTo('screen-coach-history')">
+            <i class="fas fa-arrow-left"></i> Detail seance
+        </button>
+
+        <div class="card" style="margin-bottom:12px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                <div>
+                    <h3 style="font-size:16px;font-weight:700;color:var(--dark)">Haut du corps</h3>
+                    <p style="font-size:12px;color:var(--gray-500)">Marie Lambert - 28 mars 2026</p>
+                </div>
+                <button class="btn btn-ghost btn-small" onclick="navigateTo('screen-coach-create-recap')"><i class="fas fa-copy"></i> Reutiliser</button>
+            </div>
+            <div class="history-stats">
+                <span class="history-stat"><i class="fas fa-dumbbell"></i> 5 exercices</span>
+                <span class="history-stat"><i class="fas fa-clock"></i> 50 min</span>
+                <span class="history-stat"><i class="fas fa-check-circle"></i> 100%</span>
+            </div>
+        </div>
+
+        <div class="exercise-item done">
+            <div class="exercise-number">1</div>
+            <div class="exercise-info">
+                <h4>Developpe couche</h4>
+                <p>4 series : 60kg x10, 60kg x10, 65kg x8, 65kg x8</p>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item done">
+            <div class="exercise-number">2</div>
+            <div class="exercise-info">
+                <h4>Rowing barre</h4>
+                <p>4 series : 50kg x12 (toutes)</p>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item done">
+            <div class="exercise-number">3</div>
+            <div class="exercise-info">
+                <h4>Eleves laterales</h4>
+                <p>3 series : 8kg x15 (toutes)</p>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item done">
+            <div class="exercise-number">4</div>
+            <div class="exercise-info">
+                <h4>Curl biceps</h4>
+                <p>3 series : 12kg x12 (toutes)</p>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item done">
+            <div class="exercise-number">5</div>
+            <div class="exercise-info">
+                <h4>Dips</h4>
+                <p>3 series : PDC x10 (toutes)</p>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 15 : COACH - PROFIL                                        -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-profil-coach">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header has-tabbar">
+        <h1 class="page-title">Mon profil</h1>
+
+        <div class="profil-avatar">
+            <div class="profil-avatar-circle"><i class="fas fa-user"></i></div>
+            <h2>Coach Thomas</h2>
+            <p>Thomas@ma-salle.fr</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Eleves actifs</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">47</span>
+                <span class="stat-label">Seances creees</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="settings-item">
+                <i class="fas fa-user-edit"></i>
+                <span>Modifier mon profil</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="settings-item">
+                <i class="fas fa-bolt"></i>
+                <span>Connexion Sportigo</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="settings-item">
+                <i class="fas fa-bell"></i>
+                <span>Notifications</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="settings-item">
+                <i class="fas fa-question-circle"></i>
+                <span>Aide / FAQ</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="settings-item" style="border:none">
+                <i class="fas fa-file-alt"></i>
+                <span>Mentions legales</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+
+        <button class="btn btn-danger btn-block" style="margin-top:12px" onclick="navigateTo('screen-connexion')">
+            Se deconnecter
+        </button>
+    </div>
+    <nav class="tab-bar">
+        <button class="tab-item" onclick="navigateTo('screen-coach-dashboard')">
+            <i class="fas fa-home"></i><span>Accueil</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-coach-students')">
+            <i class="fas fa-users"></i><span>Eleves</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-coach-history')">
+            <i class="fas fa-history"></i><span>Historique</span>
+        </button>
+        <button class="tab-item active" onclick="navigateTo('screen-profil-coach')">
+            <i class="fas fa-user-cog"></i><span>Profil</span>
+        </button>
+    </nav>
+</div>
+
+<!-- ================================================================ -->
+<!-- ========= VUES ELEVE ============================================ -->
+<!-- ================================================================ -->
+
+<!-- ================================================================ -->
+<!-- ECRAN 16 : ELEVE - DASHBOARD (redesigne)                         -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-eleve-dashboard">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header has-tabbar">
+        <h1 class="page-title">Salut Marie !</h1>
+        <p class="page-subtitle">Mercredi 1 avril 2026</p>
+
+        <!-- Streak de la semaine -->
+        <div class="streak-banner">
+            <div class="streak-fire">&#128293;</div>
+            <div class="streak-info">
+                <h3>7 seances d'affilee !</h3>
+                <p>Ta meilleure serie. Continue comme ca !</p>
+            </div>
+        </div>
+
+        <!-- Jours de la semaine -->
+        <div class="week-dots">
+            <div class="week-dot done">L</div>
+            <div class="week-dot done">M</div>
+            <div class="week-dot today">M</div>
+            <div class="week-dot future">J</div>
+            <div class="week-dot future">V</div>
+            <div class="week-dot future">S</div>
+            <div class="week-dot future">D</div>
+        </div>
+
+        <!-- Seance du jour -->
+        <div class="card" style="cursor:pointer" onclick="navigateTo('screen-eleve-session')">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                <h3 style="font-size:16px;font-weight:700;color:var(--dark)">Haut du corps</h3>
+                <span class="exercise-tag reps">5 exercices</span>
+            </div>
+            <p style="font-size:12px;color:var(--gray-500);margin-bottom:10px">Developpe couche, Rowing, Eleves lat, Curl, Dips</p>
+            <div class="history-stats">
+                <span class="history-stat"><i class="fas fa-clock"></i> ~50 min</span>
+                <span class="history-stat"><i class="fas fa-user-tie"></i> Coach Thomas</span>
+            </div>
+            <button class="btn btn-primary btn-block" style="margin-top:12px" onclick="event.stopPropagation(); navigateTo('screen-eleve-session')">
+                <i class="fas fa-play"></i> Commencer la seance
+            </button>
+        </div>
+
+        <!-- Derniers badges debloques -->
+        <h2 class="section-title"><i class="fas fa-trophy"></i> Derniers badges</h2>
+        <div style="display:flex;gap:10px;overflow-x:auto;padding-bottom:8px;margin-bottom:16px">
+            <div style="flex-shrink:0;text-align:center;width:72px">
+                <div class="prog-badge prog-3" style="width:48px;height:48px;font-size:18px;margin:0 auto 4px"><i class="fas fa-fire"></i></div>
+                <div class="badge-name">Feu de camp</div>
+                <span class="rarity-tag rarity-rare" style="font-size:7px">Niv. 3</span>
+            </div>
+            <div style="flex-shrink:0;text-align:center;width:72px">
+                <div class="badge-icon b-blue" style="width:48px;height:48px;font-size:18px;margin:0 auto 4px;position:relative"><i class="fas fa-fire-flame-curved"></i></div>
+                <div class="badge-name">Serie de 7</div>
+                <span class="rarity-tag rarity-rare">Rare</span>
+            </div>
+            <div style="flex-shrink:0;text-align:center;width:72px">
+                <div class="badge-icon b-red" style="width:48px;height:48px;font-size:18px;margin:0 auto 4px;position:relative"><i class="fas fa-arrow-up"></i></div>
+                <div class="badge-name">Nouveau record</div>
+                <span class="rarity-tag rarity-common">Commun</span>
+            </div>
+            <div style="flex-shrink:0;text-align:center;width:72px">
+                <div class="badge-icon b-bronze hex" style="width:48px;height:48px;font-size:18px;margin:0 auto 4px;position:relative"><i class="fas fa-dumbbell"></i></div>
+                <div class="badge-name">Club 60kg</div>
+                <span class="rarity-tag rarity-common">Commun</span>
+            </div>
+            <div style="flex-shrink:0;text-align:center;width:72px">
+                <div class="badge-icon b-pink" style="width:48px;height:48px;font-size:18px;margin:0 auto 4px;position:relative"><i class="fas fa-user-plus"></i></div>
+                <div class="badge-name">Bienvenue</div>
+                <span class="rarity-tag rarity-common">Commun</span>
+            </div>
+        </div>
+        <button class="btn btn-ghost btn-small btn-block" onclick="navigateTo('screen-eleve-progres')">Voir tous mes badges <i class="fas fa-arrow-right"></i></button>
+
+        <!-- PRs recents -->
+        <h2 class="section-title" style="margin-top:16px"><i class="fas fa-medal"></i> Records personnels</h2>
+        <div class="pr-card">
+            <div class="pr-icon">&#127942;</div>
+            <div class="pr-info">
+                <h4>Developpe couche</h4>
+                <p>Nouveau PR il y a 3 jours</p>
+            </div>
+            <div>
+                <div class="pr-value">65 kg</div>
+                <div class="pr-badge"><i class="fas fa-arrow-up"></i> +2.5 kg</div>
+            </div>
+        </div>
+        <div class="pr-card">
+            <div class="pr-icon">&#127942;</div>
+            <div class="pr-info">
+                <h4>Squat</h4>
+                <p>PR il y a 10 jours</p>
+            </div>
+            <div>
+                <div class="pr-value">80 kg</div>
+                <div class="pr-badge"><i class="fas fa-arrow-up"></i> +5 kg</div>
+            </div>
+        </div>
+
+        <!-- Stats rapides -->
+        <h2 class="section-title" style="margin-top:16px"><i class="fas fa-chart-line"></i> Mes stats</h2>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Seances</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">3/sem</span>
+                <span class="stat-label">Frequence</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">65 kg</span>
+                <span class="stat-label">Max developpe</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">48</span>
+                <span class="stat-label">Exos faits</span>
+            </div>
+        </div>
+    </div>
+    <nav class="tab-bar">
+        <button class="tab-item active" onclick="navigateTo('screen-eleve-dashboard')">
+            <i class="fas fa-home"></i><span>Accueil</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-eleve-session')">
+            <i class="fas fa-dumbbell"></i><span>Seance</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-eleve-progres')">
+            <i class="fas fa-trophy"></i><span>Progres</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-profil-eleve')">
+            <i class="fas fa-user"></i><span>Profil</span>
+        </button>
+    </nav>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 17 : ELEVE - SEANCE EN COURS (simplifie)                   -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-eleve-session">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header has-tabbar">
+        <h1 class="page-title">Haut du corps</h1>
+        <p class="page-subtitle">Coach Thomas - 5 exercices</p>
+
+        <div class="exercise-item done" onclick="navigateTo('screen-eleve-exercise')">
+            <div class="exercise-number">1</div>
+            <div class="exercise-info">
+                <h4>Developpe couche</h4>
+                <p>Barre - Pectoraux</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag weight">60 kg</span>
+                    <span class="exercise-tag reps">4x10</span>
+                </div>
+            </div>
+            <div class="exercise-check" onclick="toggleExerciseCheck(this, event)"><i class="fas fa-check"></i></div>
+        </div>
+
+        <div class="exercise-item current" onclick="navigateTo('screen-eleve-exercise')">
+            <div class="exercise-number">2</div>
+            <div class="exercise-info">
+                <h4>Rowing barre</h4>
+                <p>Barre - Dos</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag weight">50 kg</span>
+                    <span class="exercise-tag reps">4x12</span>
+                </div>
+            </div>
+            <div class="exercise-check" onclick="toggleExerciseCheck(this, event)"><i class="fas fa-check"></i></div>
+        </div>
+
+        <div class="exercise-item" onclick="navigateTo('screen-eleve-exercise')">
+            <div class="exercise-number">3</div>
+            <div class="exercise-info">
+                <h4>Eleves laterales</h4>
+                <p>Halteres - Epaules</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag weight">8 kg</span>
+                    <span class="exercise-tag reps">3x15</span>
+                </div>
+            </div>
+            <div class="exercise-check" onclick="toggleExerciseCheck(this, event)"><i class="fas fa-check"></i></div>
+        </div>
+
+        <div class="exercise-item" onclick="navigateTo('screen-eleve-exercise')">
+            <div class="exercise-number">4</div>
+            <div class="exercise-info">
+                <h4>Curl biceps</h4>
+                <p>Halteres - Biceps</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag weight">12 kg</span>
+                    <span class="exercise-tag reps">3x12</span>
+                </div>
+            </div>
+            <div class="exercise-check" onclick="toggleExerciseCheck(this, event)"><i class="fas fa-check"></i></div>
+        </div>
+
+        <div class="exercise-item" onclick="navigateTo('screen-eleve-exercise')">
+            <div class="exercise-number">5</div>
+            <div class="exercise-info">
+                <h4>Dips</h4>
+                <p>Poids du corps - Triceps</p>
+                <div class="exercise-meta">
+                    <span class="exercise-tag reps">3x10</span>
+                </div>
+            </div>
+            <div class="exercise-check" onclick="toggleExerciseCheck(this, event)"><i class="fas fa-check"></i></div>
+        </div>
+
+        <button class="btn btn-primary btn-block" style="margin-top:16px" onclick="navigateTo('screen-eleve-dashboard')">
+            <i class="fas fa-flag-checkered"></i> Terminer la seance
+        </button>
+    </div>
+    <nav class="tab-bar">
+        <button class="tab-item" onclick="navigateTo('screen-eleve-dashboard')">
+            <i class="fas fa-home"></i><span>Accueil</span>
+        </button>
+        <button class="tab-item active" onclick="navigateTo('screen-eleve-session')">
+            <i class="fas fa-dumbbell"></i><span>Seance</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-eleve-progres')">
+            <i class="fas fa-trophy"></i><span>Progres</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-profil-eleve')">
+            <i class="fas fa-user"></i><span>Profil</span>
+        </button>
+    </nav>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 18 : ELEVE - EXERCICE DETAIL (simplifie, sans timer)       -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-eleve-exercise">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header">
+        <button class="back-btn" onclick="navigateTo('screen-eleve-session')">
+            <i class="fas fa-arrow-left"></i> Rowing barre
+        </button>
+
+        <div class="card">
+            <h3 style="font-size:16px;font-weight:700;color:var(--dark);margin-bottom:4px">Rowing barre</h3>
+            <p style="font-size:12px;color:var(--gray-500);margin-bottom:8px">Barre - Dos (grands dorsaux, trapezes)</p>
+        </div>
+
+        <div class="coach-note">
+            <i class="fas fa-user-tie"></i>
+            <span>Garder le dos bien droit, serrer les omoplates en haut du mouvement.</span>
+        </div>
+
+        <div class="card">
+            <h4 style="font-size:14px;font-weight:600;margin-bottom:8px">Mes series</h4>
+            <div class="sets-table">
+                <div class="set-header">
+                    <span>Set</span>
+                    <span>Poids</span>
+                    <span>Reps</span>
+                    <span>Repos</span>
+                    <span></span>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">1</span>
+                    <input type="text" value="50 kg">
+                    <input type="text" value="12">
+                    <input type="text" value="90s">
+                    <div class="set-check checked" onclick="toggleSetCheck(this)"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">2</span>
+                    <input type="text" value="50 kg">
+                    <input type="text" value="12">
+                    <input type="text" value="90s">
+                    <div class="set-check checked" onclick="toggleSetCheck(this)"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">3</span>
+                    <input type="text" value="50 kg">
+                    <input type="text" value="">
+                    <input type="text" value="90s">
+                    <div class="set-check" onclick="toggleSetCheck(this)"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="set-row">
+                    <span class="set-num">4</span>
+                    <input type="text" value="50 kg">
+                    <input type="text" value="">
+                    <input type="text" value="90s">
+                    <div class="set-check" onclick="toggleSetCheck(this)"><i class="fas fa-check"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:12px;padding-bottom:20px">
+            <button class="btn btn-outline" style="flex:1" onclick="navigateTo('screen-eleve-session')"><i class="fas fa-arrow-left"></i> Precedent</button>
+            <button class="btn btn-primary" style="flex:1" onclick="navigateTo('screen-eleve-session')">Suivant <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 19 : ELEVE - PROGRES (NOUVEAU - badges + stats + graphes)  -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-eleve-progres">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header has-tabbar">
+        <h1 class="page-title">Mes progres</h1>
+        <p class="page-subtitle">Analyse et motivation</p>
+
+        <!-- Tabs inline : Stats / Badges / Historique -->
+        <div class="tabs-inline">
+            <button class="tab-inline active" data-target="tab-stats" onclick="switchTab(this, 'progres-panels')">Stats</button>
+            <button class="tab-inline" data-target="tab-badges" onclick="switchTab(this, 'progres-panels')">Badges</button>
+            <button class="tab-inline" data-target="tab-history" onclick="switchTab(this, 'progres-panels')">Historique</button>
+        </div>
+
+        <div id="progres-panels">
+
+            <!-- TAB : STATS -->
+            <div class="tab-panel" data-tab="tab-stats" style="display:block">
+
+                <!-- Resume mensuel -->
+                <div class="summary-card">
+                    <h3><i class="fas fa-calendar"></i> Resume de mars 2026</h3>
+                    <div class="summary-stats">
+                        <div class="summary-stat">
+                            <span class="value">12</span>
+                            <span class="label">Seances</span>
+                        </div>
+                        <div class="summary-stat">
+                            <span class="value">3</span>
+                            <span class="label">PRs</span>
+                        </div>
+                        <div class="summary-stat">
+                            <span class="value">+8%</span>
+                            <span class="label">Volume</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphe de progression -->
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h4><i class="fas fa-chart-line" style="color:var(--primary);margin-right:4px"></i> Developpe couche</h4>
+                        <span class="chart-period">3 mois</span>
+                    </div>
+                    <div class="chart-line-mock">
+                        <svg viewBox="0 0 300 140" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" style="stop-color:var(--primary);stop-opacity:0.3"/>
+                                    <stop offset="100%" style="stop-color:var(--primary);stop-opacity:0.02"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M0,120 L30,115 L60,110 L90,105 L120,95 L150,90 L180,80 L210,75 L240,60 L270,50 L300,40" fill="none" stroke="var(--primary)" stroke-width="2.5"/>
+                            <path d="M0,120 L30,115 L60,110 L90,105 L120,95 L150,90 L180,80 L210,75 L240,60 L270,50 L300,40 L300,140 L0,140 Z" fill="url(#grad1)"/>
+                            <circle cx="300" cy="40" r="4" fill="var(--primary)"/>
+                        </svg>
+                    </div>
+                    <div class="chart-legend">
+                        <span>Jan</span><span>Fev</span><span>Mars</span>
+                    </div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+                        <span style="font-size:12px;color:var(--gray-500)">55 kg &rarr; 65 kg</span>
+                        <span class="pr-badge"><i class="fas fa-arrow-up"></i> +18%</span>
+                    </div>
+                </div>
+
+                <!-- Frequence -->
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h4><i class="fas fa-calendar-check" style="color:var(--primary);margin-right:4px"></i> Frequence</h4>
+                        <span class="chart-period">4 semaines</span>
+                    </div>
+                    <div class="chart-mock">
+                        <div class="chart-bar" style="height:60%"></div>
+                        <div class="chart-bar" style="height:80%"></div>
+                        <div class="chart-bar" style="height:60%"></div>
+                        <div class="chart-bar" style="height:100%"></div>
+                        <div class="chart-bar" style="height:80%"></div>
+                        <div class="chart-bar" style="height:60%"></div>
+                        <div class="chart-bar" style="height:100%"></div>
+                        <div class="chart-bar" style="height:80%"></div>
+                        <div class="chart-bar" style="height:100%"></div>
+                        <div class="chart-bar" style="height:80%"></div>
+                        <div class="chart-bar" style="height:100%"></div>
+                        <div class="chart-bar highlight" style="height:100%"></div>
+                    </div>
+                    <div class="chart-legend">
+                        <span>Sem 1</span><span>Sem 2</span><span>Sem 3</span><span>Sem 4</span>
+                    </div>
+                </div>
+
+                <!-- Records personnels -->
+                <h2 class="section-title"><i class="fas fa-medal"></i> Tous mes records</h2>
+                <div class="pr-card">
+                    <div class="pr-icon">&#127942;</div>
+                    <div class="pr-info">
+                        <h4>Developpe couche</h4>
+                        <p>28 mars 2026</p>
+                    </div>
+                    <div class="pr-value">65 kg</div>
+                </div>
+                <div class="pr-card">
+                    <div class="pr-icon">&#127942;</div>
+                    <div class="pr-info">
+                        <h4>Squat</h4>
+                        <p>21 mars 2026</p>
+                    </div>
+                    <div class="pr-value">80 kg</div>
+                </div>
+                <div class="pr-card">
+                    <div class="pr-icon">&#127942;</div>
+                    <div class="pr-info">
+                        <h4>Rowing barre</h4>
+                        <p>28 mars 2026</p>
+                    </div>
+                    <div class="pr-value">52.5 kg</div>
+                </div>
+                <div class="pr-card">
+                    <div class="pr-icon">&#127942;</div>
+                    <div class="pr-info">
+                        <h4>Curl biceps</h4>
+                        <p>14 mars 2026</p>
+                    </div>
+                    <div class="pr-value">14 kg</div>
+                </div>
+            </div>
+
+            <!-- TAB : BADGES -->
+            <div class="tab-panel" data-tab="tab-badges" style="display:none">
+
+                <div class="summary-card" style="background:linear-gradient(135deg, var(--secondary), var(--secondary-dark))">
+                    <h3><i class="fas fa-trophy"></i> 12 badges debloques sur 60</h3>
+                    <div style="background:rgba(255,255,255,0.2);border-radius:8px;height:8px;margin-top:8px">
+                        <div style="background:white;border-radius:8px;height:100%;width:20%"></div>
+                    </div>
+                </div>
+
+                <!-- PROGRESSION (flammes) -->
+                <h2 class="section-title"><i class="fas fa-fire" style="color:var(--primary)"></i> Progression</h2>
+                <div class="badges-grid">
+                    <div class="badge-item">
+                        <div class="prog-badge prog-1"><i class="fas fa-fire"></i></div>
+                        <div class="badge-name">Etincelle</div>
+                        <div class="prog-bar-wrapper prog-bar-1"><div class="prog-bar-fill"></div></div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="prog-badge prog-2"><i class="fas fa-fire"></i></div>
+                        <div class="badge-name">Flamme naissante</div>
+                        <div class="prog-bar-wrapper prog-bar-2"><div class="prog-bar-fill"></div></div>
+                    </div>
+                    <div class="badge-item">
+                        <div class="prog-badge prog-3"><i class="fas fa-fire"></i></div>
+                        <div class="badge-name">Feu de camp</div>
+                        <div class="prog-bar-wrapper prog-bar-3"><div class="prog-bar-fill"></div></div>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="prog-badge prog-4"><i class="fas fa-fire"></i></div>
+                        <div class="badge-name">Flamme bleue</div>
+                        <div class="prog-bar-wrapper prog-bar-4"><div class="prog-bar-fill"></div></div>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="prog-badge prog-5"><i class="fas fa-fire"></i></div>
+                        <div class="badge-name">Brasier</div>
+                        <div class="prog-bar-wrapper prog-bar-5"><div class="prog-bar-fill"></div></div>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="prog-badge prog-6"><i class="fas fa-fire"></i></div>
+                        <div class="badge-name">Fournaise</div>
+                        <div class="prog-bar-wrapper prog-bar-6"><div class="prog-bar-fill"></div></div>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="prog-badge prog-7"><i class="fas fa-fire"></i></div>
+                        <div class="badge-name">Inferno</div>
+                        <div class="prog-bar-wrapper prog-bar-7"><div class="prog-bar-fill"></div></div>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="prog-badge prog-8"><i class="fas fa-fire"></i></div>
+                        <div class="badge-name">Soleil noir</div>
+                        <div class="prog-bar-wrapper prog-bar-8"><div class="prog-bar-fill"></div></div>
+                    </div>
+                </div>
+
+                <!-- REGULARITE -->
+                <h2 class="section-title" style="margin-top:16px"><i class="fas fa-calendar-check" style="color:#3b82f6"></i> Regularite</h2>
+                <div class="badges-grid">
+                    <div class="badge-item">
+                        <div class="badge-icon b-green" style="position:relative"><i class="fas fa-check-double"></i></div>
+                        <div class="badge-name">Semaine complete</div>
+                        <span class="rarity-tag rarity-common">Commun</span>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-icon b-emerald shield" style="position:relative"><i class="fas fa-calendar-week"></i></div>
+                        <div class="badge-name">Machine de guerre</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item rare">
+                        <div class="badge-icon b-blue" style="position:relative"><i class="fas fa-fire-flame-curved"></i></div>
+                        <div class="badge-name">Serie de 7</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-cyan hex" style="position:relative"><i class="fas fa-snowflake"></i></div>
+                        <div class="badge-name">Zero absence</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-purple" style="position:relative"><i class="fas fa-bolt"></i></div>
+                        <div class="badge-name">Inarretable</div>
+                        <span class="rarity-tag rarity-epic">Epique</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-crimson star-shape" style="position:relative"><i class="fas fa-heart-pulse"></i></div>
+                        <div class="badge-name">Mode de vie</div>
+                        <span class="rarity-tag rarity-epic">Epique</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-gold" style="position:relative"><i class="fas fa-trophy"></i></div>
+                        <div class="badge-name">1 an de fer</div>
+                        <span class="rarity-tag rarity-legendary">Legendaire</span>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-icon b-orange" style="position:relative"><i class="fas fa-sun"></i></div>
+                        <div class="badge-name">Leve-tot</div>
+                        <span class="rarity-tag rarity-common">Commun</span>
+                    </div>
+                </div>
+
+                <!-- PERFORMANCE -->
+                <h2 class="section-title" style="margin-top:16px"><i class="fas fa-bolt-lightning" style="color:#f97316"></i> Performance</h2>
+                <div class="badges-grid">
+                    <div class="badge-item">
+                        <div class="badge-icon b-red" style="position:relative"><i class="fas fa-arrow-up"></i></div>
+                        <div class="badge-name">Nouveau record</div>
+                        <span class="rarity-tag rarity-common">Commun</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-orange shield" style="position:relative"><i class="fas fa-weight-hanging"></i></div>
+                        <div class="badge-name">+10kg en 1 mois</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-blue" style="position:relative"><i class="fas fa-chart-line"></i></div>
+                        <div class="badge-name">Courbe ascendante</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-icon b-bronze hex" style="position:relative"><i class="fas fa-dumbbell"></i></div>
+                        <div class="badge-name">Club des 60kg</div>
+                        <span class="rarity-tag rarity-common">Commun</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-silver hex" style="position:relative"><i class="fas fa-dumbbell"></i></div>
+                        <div class="badge-name">Club des 80kg</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-gold hex" style="position:relative"><i class="fas fa-dumbbell"></i></div>
+                        <div class="badge-name">Club des 100kg</div>
+                        <span class="rarity-tag rarity-epic">Epique</span>
+                    </div>
+                    <div class="badge-item">
+                        <div class="badge-icon b-emerald" style="position:relative"><i class="fas fa-clipboard-check"></i></div>
+                        <div class="badge-name">Perfectionniste</div>
+                        <span class="rarity-tag rarity-common">Commun</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-rainbow star-shape" style="position:relative"><i class="fas fa-star"></i></div>
+                        <div class="badge-name">Athlete complet</div>
+                        <span class="rarity-tag rarity-legendary">Legendaire</span>
+                    </div>
+                </div>
+
+                <!-- CHALLENGES HEBDO -->
+                <h2 class="section-title" style="margin-top:16px"><i class="fas fa-flag-checkered" style="color:#a855f7"></i> Challenges hebdo</h2>
+                <div class="badges-grid">
+                    <div class="badge-item">
+                        <div class="badge-icon b-purple" style="position:relative"><i class="fas fa-flag"></i></div>
+                        <div class="badge-name">Premier defi</div>
+                        <span class="rarity-tag rarity-common">Commun</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-orange" style="position:relative"><i class="fas fa-fire"></i></div>
+                        <div class="badge-name">Defi 5 seances</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-green" style="position:relative"><i class="fas fa-rotate"></i></div>
+                        <div class="badge-name">Full rotation</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-fire" style="position:relative"><i class="fas fa-dragon"></i></div>
+                        <div class="badge-name">Champion defis</div>
+                        <span class="rarity-tag rarity-legendary">Legendaire</span>
+                    </div>
+                </div>
+
+                <!-- VARIETE -->
+                <h2 class="section-title" style="margin-top:16px"><i class="fas fa-layer-group" style="color:#22c55e"></i> Variete</h2>
+                <div class="badges-grid">
+                    <div class="badge-item">
+                        <div class="badge-icon b-green" style="position:relative"><i class="fas fa-list-check"></i></div>
+                        <div class="badge-name">10 exos differents</div>
+                        <span class="rarity-tag rarity-common">Commun</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-emerald shield" style="position:relative"><i class="fas fa-cubes"></i></div>
+                        <div class="badge-name">Explorateur</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-cyan hex" style="position:relative"><i class="fas fa-compass"></i></div>
+                        <div class="badge-name">Encyclopedie</div>
+                        <span class="rarity-tag rarity-epic">Epique</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-orange" style="position:relative"><i class="fas fa-arrows-spin"></i></div>
+                        <div class="badge-name">Polyvalent</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                </div>
+
+                <!-- SOCIAL -->
+                <h2 class="section-title" style="margin-top:16px"><i class="fas fa-users" style="color:#ec4899"></i> Social</h2>
+                <div class="badges-grid">
+                    <div class="badge-item">
+                        <div class="badge-icon b-pink" style="position:relative"><i class="fas fa-user-plus"></i></div>
+                        <div class="badge-name">Bienvenue</div>
+                        <span class="rarity-tag rarity-common">Commun</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-purple shield" style="position:relative"><i class="fas fa-user-tie"></i></div>
+                        <div class="badge-name">Duo de choc</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-orange" style="position:relative"><i class="fas fa-share-nodes"></i></div>
+                        <div class="badge-name">Ambassadeur</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-diamond" style="position:relative"><i class="fas fa-people-group"></i></div>
+                        <div class="badge-name">Pilier de la salle</div>
+                        <span class="rarity-tag rarity-legendary">Legendaire</span>
+                    </div>
+                </div>
+
+                <!-- MILESTONES -->
+                <h2 class="section-title" style="margin-top:16px"><i class="fas fa-cake-candles" style="color:#fbbf24"></i> Milestones</h2>
+                <div class="badges-grid">
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-gold" style="position:relative"><i class="fas fa-cake-candles"></i></div>
+                        <div class="badge-name">Anniversaire 1 an</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-red" style="position:relative"><i class="fas fa-champagne-glasses"></i></div>
+                        <div class="badge-name">Bonne annee muscu</div>
+                        <span class="rarity-tag rarity-rare">Rare</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-black" style="position:relative"><i class="fas fa-skull"></i></div>
+                        <div class="badge-name">365 jours</div>
+                        <span class="rarity-tag rarity-legendary">Legendaire</span>
+                    </div>
+                    <div class="badge-item locked">
+                        <div class="badge-icon b-rainbow hex" style="position:relative"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <div class="badge-name">Collectionneur ultime</div>
+                        <span class="rarity-tag rarity-legendary">Legendaire</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB : HISTORIQUE -->
+            <div class="tab-panel" data-tab="tab-history" style="display:none">
+                <div class="history-item" onclick="navigateTo('screen-eleve-history-detail')">
+                    <div class="history-date">28 mars 2026</div>
+                    <h4>Haut du corps</h4>
+                    <p>5 exercices - Coach Thomas</p>
+                    <div class="history-stats">
+                        <span class="history-stat"><i class="fas fa-dumbbell"></i> 5 exos</span>
+                        <span class="history-stat"><i class="fas fa-clock"></i> 50 min</span>
+                        <span class="history-stat"><i class="fas fa-check-circle"></i> 100%</span>
+                    </div>
+                </div>
+                <div class="history-item" onclick="navigateTo('screen-eleve-history-detail')">
+                    <div class="history-date">21 mars 2026</div>
+                    <h4>Bas du corps</h4>
+                    <p>6 exercices - Coach Thomas</p>
+                    <div class="history-stats">
+                        <span class="history-stat"><i class="fas fa-dumbbell"></i> 6 exos</span>
+                        <span class="history-stat"><i class="fas fa-clock"></i> 55 min</span>
+                        <span class="history-stat"><i class="fas fa-check-circle"></i> 100%</span>
+                    </div>
+                </div>
+                <div class="history-item" onclick="navigateTo('screen-eleve-history-detail')">
+                    <div class="history-date">14 mars 2026</div>
+                    <h4>Full body</h4>
+                    <p>7 exercices - Coach Thomas</p>
+                    <div class="history-stats">
+                        <span class="history-stat"><i class="fas fa-dumbbell"></i> 7 exos</span>
+                        <span class="history-stat"><i class="fas fa-clock"></i> 60 min</span>
+                        <span class="history-stat"><i class="fas fa-check-circle"></i> 100%</span>
+                    </div>
+                </div>
+                <div class="history-item" onclick="navigateTo('screen-eleve-history-detail')">
+                    <div class="history-date">7 mars 2026</div>
+                    <h4>Haut du corps</h4>
+                    <p>5 exercices - Coach Thomas</p>
+                    <div class="history-stats">
+                        <span class="history-stat"><i class="fas fa-dumbbell"></i> 5 exos</span>
+                        <span class="history-stat"><i class="fas fa-clock"></i> 48 min</span>
+                        <span class="history-stat"><i class="fas fa-check-circle"></i> 80%</span>
+                    </div>
+                </div>
+                <div class="history-item" onclick="navigateTo('screen-eleve-history-detail')">
+                    <div class="history-date">28 fevrier 2026</div>
+                    <h4>Jambes</h4>
+                    <p>6 exercices - Coach Sophie</p>
+                    <div class="history-stats">
+                        <span class="history-stat"><i class="fas fa-dumbbell"></i> 6 exos</span>
+                        <span class="history-stat"><i class="fas fa-clock"></i> 52 min</span>
+                        <span class="history-stat"><i class="fas fa-check-circle"></i> 100%</span>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /progres-panels -->
+    </div>
+    <nav class="tab-bar">
+        <button class="tab-item" onclick="navigateTo('screen-eleve-dashboard')">
+            <i class="fas fa-home"></i><span>Accueil</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-eleve-session')">
+            <i class="fas fa-dumbbell"></i><span>Seance</span>
+        </button>
+        <button class="tab-item active" onclick="navigateTo('screen-eleve-progres')">
+            <i class="fas fa-trophy"></i><span>Progres</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-profil-eleve')">
+            <i class="fas fa-user"></i><span>Profil</span>
+        </button>
+    </nav>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 20 : ELEVE - DETAIL SEANCE PASSEE                          -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-eleve-history-detail">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header">
+        <button class="back-btn" onclick="navigateTo('screen-eleve-progres')">
+            <i class="fas fa-arrow-left"></i> Detail seance
+        </button>
+
+        <div class="card" style="margin-bottom:12px">
+            <h3 style="font-size:16px;font-weight:700;color:var(--dark)">Haut du corps</h3>
+            <p style="font-size:12px;color:var(--gray-500);margin-bottom:8px">Coach Thomas - 28 mars 2026</p>
+            <div class="history-stats">
+                <span class="history-stat"><i class="fas fa-dumbbell"></i> 5 exercices</span>
+                <span class="history-stat"><i class="fas fa-clock"></i> 50 min</span>
+                <span class="history-stat"><i class="fas fa-check-circle"></i> 100%</span>
+            </div>
+        </div>
+
+        <div class="exercise-item done">
+            <div class="exercise-number">1</div>
+            <div class="exercise-info">
+                <h4>Developpe couche</h4>
+                <p>60kg x10, 60kg x10, 65kg x8, 65kg x8</p>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item done">
+            <div class="exercise-number">2</div>
+            <div class="exercise-info">
+                <h4>Rowing barre</h4>
+                <p>50kg x12 (x4 series)</p>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item done">
+            <div class="exercise-number">3</div>
+            <div class="exercise-info">
+                <h4>Eleves laterales</h4>
+                <p>8kg x15 (x3 series)</p>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item done">
+            <div class="exercise-number">4</div>
+            <div class="exercise-info">
+                <h4>Curl biceps</h4>
+                <p>12kg x12 (x3 series)</p>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="exercise-item done">
+            <div class="exercise-number">5</div>
+            <div class="exercise-info">
+                <h4>Dips</h4>
+                <p>PDC x10 (x3 series)</p>
+            </div>
+            <div class="exercise-check" style="border-color:var(--primary);background:var(--primary);color:white"><i class="fas fa-check"></i></div>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ECRAN 21 : ELEVE - PROFIL                                        -->
+<!-- ================================================================ -->
+<div class="screen" id="screen-profil-eleve">
+    <header class="app-header">
+        <div class="logo"><img src="" style="height:28px;vertical-align:middle;" onerror="this.outerHTML='MA SALLE'"> </div>
+        <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </header>
+    <div class="screen-content has-header has-tabbar">
+        <h1 class="page-title">Mon profil</h1>
+
+        <div class="profil-avatar">
+            <div class="profil-avatar-circle"><i class="fas fa-user"></i></div>
+            <h2>Marie Lambert</h2>
+            <p>Marie@email.com</p>
+        </div>
+
+        <!-- Badges en vedette -->
+        <div style="display:flex;justify-content:center;gap:12px;margin-bottom:20px">
+            <div class="prog-badge prog-3" style="width:44px;height:44px;font-size:16px"><i class="fas fa-fire"></i></div>
+            <div class="badge-icon b-blue" style="width:44px;height:44px;font-size:16px;position:relative"><i class="fas fa-fire-flame-curved"></i></div>
+            <div class="badge-icon b-bronze hex" style="width:44px;height:44px;font-size:16px;position:relative"><i class="fas fa-dumbbell"></i></div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Seances</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">48</span>
+                <span class="stat-label">Exercices</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">65 kg</span>
+                <span class="stat-label">Max developpe</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">3/sem</span>
+                <span class="stat-label">Frequence</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="settings-item">
+                <i class="fas fa-user-edit"></i>
+                <span>Modifier mon profil</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="settings-item">
+                <i class="fas fa-bolt"></i>
+                <span>Connexion Sportigo</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="settings-item">
+                <i class="fas fa-bell"></i>
+                <span>Notifications</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="settings-item">
+                <i class="fas fa-question-circle"></i>
+                <span>Aide / FAQ</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="settings-item" style="border:none">
+                <i class="fas fa-file-alt"></i>
+                <span>Mentions legales</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+
+        <button class="btn btn-danger btn-block" style="margin-top:12px" onclick="navigateTo('screen-connexion')">
+            Se deconnecter
+        </button>
+    </div>
+    <nav class="tab-bar">
+        <button class="tab-item" onclick="navigateTo('screen-eleve-dashboard')">
+            <i class="fas fa-home"></i><span>Accueil</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-eleve-session')">
+            <i class="fas fa-dumbbell"></i><span>Seance</span>
+        </button>
+        <button class="tab-item" onclick="navigateTo('screen-eleve-progres')">
+            <i class="fas fa-trophy"></i><span>Progres</span>
+        </button>
+        <button class="tab-item active" onclick="navigateTo('screen-profil-eleve')">
+            <i class="fas fa-user"></i><span>Profil</span>
+        </button>
+    </nav>
+</div>
+
+<!-- ================================================================ -->
+<!-- MENU LATERAL                                                     -->
+<!-- ================================================================ -->
+<div class="side-menu" id="side-menu">
+    <button class="close-menu" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
+    <nav class="side-menu-nav">
+        <a href="#" onclick="toggleMenu(); navigateTo('screen-coach-dashboard')">Dashboard Coach</a>
+        <a href="#" onclick="toggleMenu(); navigateTo('screen-eleve-dashboard')">Dashboard Eleve</a>
+        <a href="#" onclick="toggleMenu(); navigateTo('screen-coach-students')">Eleves</a>
+        <a href="#" onclick="toggleMenu(); navigateTo('screen-eleve-progres')">Progres</a>
+        <a href="#" onclick="toggleMenu(); navigateTo('screen-coach-history')">Historique</a>
+    </nav>
+    <button class="btn btn-danger" onclick="toggleMenu(); navigateTo('screen-connexion')" style="margin-top:auto;">Se deconnecter</button>
+    <div class="side-menu-footer">
+        <div class="logo" style="color:white;font-size:18px;margin-bottom:4px">MA SALLE</div>
+        <p>&copy; 2026 - Tous droits reserves</p>
+    </div>
+</div>
+<div class="menu-overlay" id="menu-overlay" onclick="toggleMenu()"></div>
+
+        </div>
+    </div>
+    <script>
+// ============ NAVIGATION ============
+function navigateTo(screenId) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    const target = document.getElementById(screenId);
+    if (target) {
+        target.classList.add('active');
+        const content = target.querySelector('.screen-content');
+        if (content) content.scrollTop = 0;
+    }
+    closeSideMenu();
+}
+
+// ============ MENU LATERAL ============
+function toggleMenu() {
+    document.getElementById('side-menu').classList.toggle('open');
+    document.getElementById('menu-overlay').classList.toggle('open');
+}
+function closeSideMenu() {
+    document.getElementById('side-menu').classList.remove('open');
+    document.getElementById('menu-overlay').classList.remove('open');
+}
+
+// ============ ROLE SWITCH ============
+function selectRole(role) {
+    document.querySelectorAll('.role-btn').forEach(b => b.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+}
+
+// ============ STUDENT PILL SWITCH ============
+function selectStudent(el) {
+    document.querySelectorAll('.student-pill').forEach(p => p.classList.remove('active'));
+    el.classList.add('active');
+}
+
+// ============ SET CHECK TOGGLE ============
+function toggleSetCheck(el) {
+    el.classList.toggle('checked');
+}
+
+// ============ EXERCISE CHECK ============
+function toggleExerciseCheck(el, ev) {
+    ev.stopPropagation();
+    const item = el.closest('.exercise-item');
+    item.classList.toggle('done');
+}
+
+// ============ CATEGORY SELECT ============
+function selectCategory(el) {
+    document.querySelectorAll('.category-card').forEach(c => c.classList.remove('active'));
+    el.classList.add('active');
+}
+
+// ============ TAG SELECT ============
+function toggleTag(el) {
+    el.classList.toggle('active');
+}
+
+// ============ INLINE TABS ============
+function switchTab(el, groupId) {
+    const group = el.closest('.tabs-inline');
+    group.querySelectorAll('.tab-inline').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+
+    const container = document.getElementById(groupId);
+    if (container) {
+        container.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
+        const targetPanel = container.querySelector('[data-tab="' + el.dataset.target + '"]');
+        if (targetPanel) targetPanel.style.display = 'block';
+    }
+}
+
+// ============ INIT ============
+document.addEventListener('DOMContentLoaded', async () => {
+    document.body.style.overflow = 'hidden';
+    
+    // Lire le slug depuis l'URL: ?salle=original-addicts-paris
+    const params = new URLSearchParams(window.location.search);
+    const salleSlug = params.get('salle');
+    
+    if (!salleSlug) {
+        document.querySelector('.phone-screen').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;text-align:center;padding:40px;font-family:Montserrat,sans-serif;"><div><h2 style="font-size:20px;color:#333;margin-bottom:12px;">Maquette personnalisee</h2><p style="color:#888;font-size:14px;">Ajoutez <strong>?salle=nom-salle</strong> a l\'URL pour charger une demo.</p></div></div>';
+        return;
+    }
+    
+    try {
+        const response = await fetch('configs/' + salleSlug + '.json');
+        if (!response.ok) throw new Error('Config introuvable');
+        CONFIG = await response.json();
+        
+        const salle = CONFIG.salle;
+        const design = CONFIG.design;
+        
+        // 1. Appliquer les couleurs CSS
+        const root = document.documentElement;
+        root.style.setProperty('--primary', design.couleur_primary);
+        root.style.setProperty('--primary-dark', design.couleur_primary_dark);
+        root.style.setProperty('--primary-light', design.couleur_primary_light);
+        root.style.setProperty('--primary-glow', design.couleur_primary_glow);
+        root.style.setProperty('--secondary', design.couleur_secondary);
+        root.style.setProperty('--secondary-dark', design.couleur_secondary_dark);
+        root.style.setProperty('--accent', design.couleur_primary);
+        root.style.setProperty('--accent-light', design.couleur_primary_light);
+        root.style.setProperty('--purple', design.couleur_secondary);
+        root.style.setProperty('--dark', design.couleur_secondary);
+        root.style.setProperty('--dark-soft', design.couleur_secondary_dark);
+        root.style.setProperty('--shadow-primary', design.shadow_primary);
+        root.style.setProperty('--gradient-primary', design.gradient_primary);
+        root.style.setProperty('--gradient-warm', design.gradient_primary);
+        
+        // 2. Remplacer les textes
+        document.title = salle.nom + ' - Votre App Sur Mesure';
+        
+        // Nom de la salle (logos)
+        document.querySelectorAll('.logo').forEach(el => {
+            if (salle.logo_url) {
+                el.innerHTML = '<img src="' + salle.logo_url + '" style="height:28px;vertical-align:middle;" onerror="this.outerHTML=\'' + salle.nom + '\'">';
+            } else {
+                el.textContent = salle.nom;
+            }
+        });
+        
+        // Logo big (auth screens)
+        document.querySelectorAll('.logo-big').forEach(el => {
+            el.textContent = salle.nom;
+        });
+        
+        // Remplacer tous les textes par data-attribute ou contenu
+        const coachNom = salle.coach_exemple || 'Thomas';
+        const elevePrenom = salle.eleve_exemple || 'Marie';
+        const eleveInitiales = elevePrenom[0].toUpperCase() + 'L';
+        
+        // Replace text content throughout the page
+        const body = document.querySelector('.phone-screen');
+        let html = body.innerHTML;
+        html = html.replace(/MA SALLE/g, salle.nom);
+        html = html.replace(/Coach Thomas/g, 'Coach ' + coachNom);
+        html = html.replace(/Thomas/g, coachNom);
+        html = html.replace(/>ML</g, '>' + eleveInitiales + '<');
+        
+        // Hero images
+        if (salle.hero_url) {
+            document.querySelectorAll('img[src=""]').forEach(img => {
+                if (img.closest('.auth-header, [style*="hero"], [style*="260px"]')) {
+                    img.src = salle.hero_url;
+                }
+            });
+        }
+        
+        // Logo images in auth screens
+        if (salle.logo_url) {
+            document.querySelectorAll('.auth-header img, [style*="max-width:180px"], [style*="max-width:140px"]').forEach(img => {
+                if (!img.src || img.src === window.location.href) {
+                    img.src = salle.logo_url;
+                }
+            });
+        }
+        
+        // Side menu logo
+        const sideMenuLogo = document.querySelector('.side-menu .logo');
+        if (sideMenuLogo) {
+            sideMenuLogo.style.color = 'white';
+            sideMenuLogo.style.fontSize = '18px';
+            if (salle.logo_url) {
+                sideMenuLogo.innerHTML = '<img src="' + salle.logo_url + '" style="height:24px;filter:brightness(10);" onerror="this.outerHTML=\'' + salle.nom + '\'">';
+            } else {
+                sideMenuLogo.textContent = salle.nom;
+            }
+        }
+        
+        body.innerHTML = html;
+        
+        console.log('Config chargee:', salle.nom, salle.ville);
+        
+    } catch (e) {
+        document.querySelector('.phone-screen').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;text-align:center;padding:40px;font-family:Montserrat,sans-serif;"><div><h2 style="font-size:20px;color:#e63946;margin-bottom:12px;">Salle introuvable</h2><p style="color:#888;font-size:14px;">La config <strong>' + salleSlug + '</strong> n\'existe pas.</p></div></div>';
+    }
+});
+
+    </script>
+</body>
+</html>
