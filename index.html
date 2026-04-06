@@ -83,7 +83,7 @@ body {
 }
 .phone-screen {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 4px);
     background: var(--white);
     border-radius: 44px;
     overflow: hidden;
@@ -121,8 +121,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background: rgba(255,255,255,0.97);
-    background-size: cover;
-    background-position: center;
+    backdrop-filter: blur(12px);
     z-index: 10;
     border-bottom: 1px solid var(--gray-100);
 }
@@ -1426,14 +1425,16 @@ body {
 <!-- ================================================================ -->
 <div class="screen active" id="screen-connexion">
     <div class="screen-content" style="padding:0;">
-        <!-- Hero avec logo -->
-        <div style="position:relative;height:260px;overflow:hidden;background:var(--secondary);">
-            <img src="" style="width:100%;height:100%;object-fit:cover;opacity:0.4;" onerror="this.style.display='none'" />
-            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.2) 0%,var(--secondary) 100%);"></div>
-            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 30px 20px;">
-                <img src="" style="max-width:180px;max-height:80px;margin-bottom:12px;" onerror="this.style.display='none'" />
-                <div style="font-family:'Montserrat',sans-serif;font-size:24px;font-weight:900;color:#fff;text-align:center;text-shadow:0 2px 8px rgba(0,0,0,0.4);">MA SALLE</div>
-                <div style="font-size:12px;color:rgba(255,255,255,0.6);margin-top:4px;"></div>
+        <!-- Hero video avec logo -->
+        <div class="auth-hero" style="position:relative;height:280px;overflow:hidden;background:var(--secondary);">
+            <video autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.35;">
+                <source src="https://videos.pexels.com/video-files/4761434/4761434-uhd_1440_2560_25fps.mp4" type="video/mp4">
+            </video>
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.1) 0%,var(--secondary) 100%);"></div>
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:50px 30px 20px;">
+                <img class="auth-logo" src="" style="max-width:180px;max-height:80px;margin-bottom:12px;" onerror="this.style.display='none'" />
+                <div class="auth-salle-nom" style="font-family:'Montserrat',sans-serif;font-size:24px;font-weight:900;color:#fff;text-align:center;text-shadow:0 2px 8px rgba(0,0,0,0.5);">MA SALLE</div>
+                <div class="auth-salle-ville" style="font-size:12px;color:rgba(255,255,255,0.6);margin-top:4px;"></div>
             </div>
         </div>
         <div class="auth-body" style="padding:24px 20px 20px;margin-top:-20px;background:white;border-radius:20px 20px 0 0;position:relative;z-index:2;">
@@ -1465,12 +1466,14 @@ body {
 <!-- ================================================================ -->
 <div class="screen" id="screen-inscription">
     <div class="screen-content" style="padding:0;">
-        <div style="position:relative;height:180px;overflow:hidden;background:var(--secondary);">
-            <img src="" style="width:100%;height:100%;object-fit:cover;opacity:0.4;" onerror="this.style.display='none'" />
-            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.2) 0%,var(--secondary) 100%);"></div>
+        <div class="auth-hero" style="position:relative;height:180px;overflow:hidden;background:var(--secondary);">
+            <video autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.35;">
+                <source src="https://videos.pexels.com/video-files/4761434/4761434-uhd_1440_2560_25fps.mp4" type="video/mp4">
+            </video>
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.1) 0%,var(--secondary) 100%);"></div>
             <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 30px 20px;">
-                <img src="" style="max-width:140px;max-height:60px;margin-bottom:8px;" onerror="this.style.display='none'" />
-                <div style="font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:#fff;">MA SALLE</div>
+                <img class="auth-logo" src="" style="max-width:140px;max-height:60px;margin-bottom:8px;" onerror="this.style.display='none'" />
+                <div class="auth-salle-nom" style="font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:#fff;">MA SALLE</div>
             </div>
         </div>
         <div class="auth-body" style="padding:24px 20px 20px;margin-top:-20px;background:white;border-radius:20px 20px 0 0;position:relative;z-index:2;">
@@ -3767,24 +3770,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // --- Apres innerHTML: appliquer images et styles ---
 
-        // Hero images dans les ecrans auth (connexion/inscription)
-        if (salle.hero_url) {
-            body.querySelectorAll('img[src=""]').forEach(img => {
-                const parent = img.closest('[style*="260px"], [style*="180px"]');
-                if (parent) img.src = salle.hero_url;
-            });
-            // Fallback: toute image vide dans un bloc sombre
-            body.querySelectorAll('#screen-connexion img[src=""], #screen-inscription img[src=""]').forEach(img => {
-                if (img.style.objectFit === 'cover') img.src = salle.hero_url;
+        // Logo dans les ecrans auth (connexion/inscription)
+        if (salle.logo_url) {
+            body.querySelectorAll('.auth-logo').forEach(img => {
+                img.src = salle.logo_url;
             });
         }
 
-        // Logo images dans les ecrans auth
-        if (salle.logo_url) {
-            body.querySelectorAll('#screen-connexion img[src=""], #screen-inscription img[src=""]').forEach(img => {
-                if (img.style.maxWidth) img.src = salle.logo_url;
-            });
-        }
+        // Nom et ville dans les ecrans auth
+        body.querySelectorAll('.auth-salle-nom').forEach(el => {
+            el.textContent = salle.nom;
+        });
+        body.querySelectorAll('.auth-salle-ville').forEach(el => {
+            el.textContent = salle.ville || '';
+        });
 
         // Logos dans les headers app
         body.querySelectorAll('.logo').forEach(el => {
@@ -3805,20 +3804,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             } else {
                 sideMenuLogo.textContent = salle.nom;
             }
-        }
-
-        // Hero en background des headers app
-        if (salle.hero_url) {
-            body.querySelectorAll('.app-header').forEach(header => {
-                header.style.background = 'linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(' + salle.hero_url + ') center/cover';
-                header.style.borderBottom = 'none';
-                header.querySelectorAll('.logo, .logo img').forEach(el => {
-                    el.style.filter = 'brightness(10)';
-                });
-                header.querySelectorAll('.menu-btn').forEach(btn => {
-                    btn.style.color = 'white';
-                });
-            });
         }
 
         console.log('Config chargee:', salle.nom, salle.ville);
