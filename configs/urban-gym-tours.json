@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "URBAN GYM",
+        "ville": "Tours",
+        "slogan": "",
+        "site": "https://www.salle-sport-tours.fr/",
+        "email_contact": "david.simon75@hotmail.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e31619",
+        "couleur_primary_dark": "#aa1012",
+        "couleur_primary_light": "#fdf1f1",
+        "couleur_primary_glow": "rgba(227, 22, 25, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e31619, #aa1012)",
+        "shadow_primary": "0 4px 16px rgba(227, 22, 25, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "92",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 92 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

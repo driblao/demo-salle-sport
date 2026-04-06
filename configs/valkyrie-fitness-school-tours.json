@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "VALKYRIE FITNESS SCHOOL",
+        "ville": "Tours",
+        "slogan": "",
+        "site": "https://www.valkyriefitnessschool.fr/",
+        "email_contact": "utilisateur@domaine.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "http://static1.squarespace.com/static/6968b1dfeef3a77141357822/t/6968b756c61fbc1b3038402d/1768470358748/LOGO_1_VALIDE%CC%81-removebg-preview.png?format=1500w",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ffcc00",
+        "couleur_primary_dark": "#bf9900",
+        "couleur_primary_light": "#fffcf0",
+        "couleur_primary_glow": "rgba(255, 204, 0, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ffcc00, #bf9900)",
+        "shadow_primary": "0 4px 16px rgba(255, 204, 0, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "45",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 45 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

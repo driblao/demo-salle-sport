@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "NOVA GYM",
+        "ville": "Tours",
+        "slogan": "",
+        "site": "https://www.novagym.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://novagym.fr/wp-content/uploads/2023/10/logo.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e01270",
+        "couleur_primary_dark": "#a80d54",
+        "couleur_primary_light": "#fdf1f6",
+        "couleur_primary_glow": "rgba(224, 18, 112, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e01270, #a80d54)",
+        "shadow_primary": "0 4px 16px rgba(224, 18, 112, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "101",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 101 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

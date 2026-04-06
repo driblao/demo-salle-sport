@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "AMBITION SPORT",
+        "ville": "Clermont-Ferrand",
+        "slogan": "",
+        "site": "http://www.ambitionsport.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://o2swit.ch/assets/favicon.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#1c3350",
+        "couleur_primary_dark": "#15263c",
+        "couleur_primary_light": "#f1f3f4",
+        "couleur_primary_glow": "rgba(28, 51, 80, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #1c3350, #15263c)",
+        "shadow_primary": "0 4px 16px rgba(28, 51, 80, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "147",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 147 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

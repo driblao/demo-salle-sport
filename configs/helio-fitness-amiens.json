@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "HÉLIO FITNESS",
+        "ville": "Amiens",
+        "slogan": "",
+        "site": "http://www.crossfitteranga.com/",
+        "email_contact": "Amiens@helio.fitness",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfitteranga.com/favicon/apple-touch-icon.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#5bdbf8",
+        "couleur_primary_dark": "#44a4ba",
+        "couleur_primary_light": "#f5fdfe",
+        "couleur_primary_glow": "rgba(91, 219, 248, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #5bdbf8, #44a4ba)",
+        "shadow_primary": "0 4px 16px rgba(91, 219, 248, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "59",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 59 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

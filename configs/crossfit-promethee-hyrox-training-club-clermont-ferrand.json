@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT PROMÉTHÉE, HYROX TRAINING CLUB",
+        "ville": "Clermont-Ferrand",
+        "slogan": "",
+        "site": "http://www.crossfit-promethee.fr/",
+        "email_contact": "contact@crossfit-promethee.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfit-promethee.fr/uploads/images/logo-header.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ea505e",
+        "couleur_primary_dark": "#af3c46",
+        "couleur_primary_light": "#fef4f5",
+        "couleur_primary_glow": "rgba(234, 80, 94, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ea505e, #af3c46)",
+        "shadow_primary": "0 4px 16px rgba(234, 80, 94, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "61",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 61 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

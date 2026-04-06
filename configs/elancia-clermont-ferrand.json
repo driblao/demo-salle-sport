@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "ELANCIA",
+        "ville": "Clermont-Ferrand",
+        "slogan": "",
+        "site": "https://www.elancia.fr/salles-de-sport/salle-de-sport-clermont-le-brezet/?utm_source=google&utm_medium=seo&utm_campaign=LOCALE_LE_BREZET_RSA",
+        "email_contact": "le-brezet@elancia.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.elancia.fr/wp-content/uploads/2025/08/cropped-4198ca10e82703ea8b48e2097c7f14110643e8bd-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#3e5d58",
+        "couleur_primary_dark": "#2e4542",
+        "couleur_primary_light": "#f3f5f5",
+        "couleur_primary_glow": "rgba(62, 93, 88, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #3e5d58, #2e4542)",
+        "shadow_primary": "0 4px 16px rgba(62, 93, 88, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "220",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 220 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

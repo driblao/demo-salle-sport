@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "BURPEES CROSSFIT TOURS SUD - 2 LIONS",
+        "ville": "Tours",
+        "slogan": "",
+        "site": "https://burpees-tours-sud.fr/",
+        "email_contact": "jean.dupont@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://burpees-tours-sud.fr/wp-content/uploads/sites/3/2019/08/cropped-logo-burpees2.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e3000f",
+        "couleur_primary_dark": "#aa000b",
+        "couleur_primary_light": "#fdf0f0",
+        "couleur_primary_glow": "rgba(227, 0, 15, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e3000f, #aa000b)",
+        "shadow_primary": "0 4px 16px rgba(227, 0, 15, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "154",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 154 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

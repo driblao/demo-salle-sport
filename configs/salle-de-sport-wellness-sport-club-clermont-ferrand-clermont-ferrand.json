@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SALLE DE SPORT - WELLNESS SPORT CLUB CLERMONT-FERRAND",
+        "ville": "Clermont-Ferrand",
+        "slogan": "",
+        "site": "https://www.wellness-sportclub.fr/clubs/clermont-ferrand/?utm_source=gmb",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.wellness-sportclub.fr/wp-content/uploads/2020/01/logo-site2-300x86-c-default.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#a61e1f",
+        "couleur_primary_dark": "#7c1617",
+        "couleur_primary_light": "#f9f1f1",
+        "couleur_primary_glow": "rgba(166, 30, 31, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #a61e1f, #7c1617)",
+        "shadow_primary": "0 4px 16px rgba(166, 30, 31, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "341",
+        "note_google": "4.2",
+        "argument_personnalise": "Avec 4.2 etoiles et 341 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

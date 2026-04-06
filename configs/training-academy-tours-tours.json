@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "TRAINING ACADEMY TOURS",
+        "ville": "Tours",
+        "slogan": "",
+        "site": "http://www.trainingacademy.fr/",
+        "email_contact": "trainingacademy44@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://o2swit.ch/assets/favicon.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0000ee",
+        "couleur_primary_dark": "#0000b2",
+        "couleur_primary_light": "#f0f0fe",
+        "couleur_primary_glow": "rgba(0, 0, 238, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0000ee, #0000b2)",
+        "shadow_primary": "0 4px 16px rgba(0, 0, 238, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "1160",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 1160 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
