@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT IKI",
+        "ville": "Marseille",
+        "slogan": "",
+        "site": "https://www.crossfitiki.com/",
+        "email_contact": "team@crossfitiki.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfitiki.com/wp-content/uploads/2024/09/Logo-Classique-Fond-Clair.jpg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e57132",
+        "couleur_primary_dark": "#ab5425",
+        "couleur_primary_light": "#fdf6f3",
+        "couleur_primary_glow": "rgba(229, 113, 50, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e57132, #ab5425)",
+        "shadow_primary": "0 4px 16px rgba(229, 113, 50, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "80",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 80 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

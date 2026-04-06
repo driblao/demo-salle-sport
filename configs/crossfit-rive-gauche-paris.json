@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT RIVE GAUCHE",
+        "ville": "Paris",
+        "slogan": "",
+        "site": "http://www.crossfitrg.com/",
+        "email_contact": "hello@crossfitrg.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfitrg.com/wp-content/uploads/2020/04/logo-crossfit-rg-complet.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#84171d",
+        "couleur_primary_dark": "#631115",
+        "couleur_primary_light": "#f7f1f1",
+        "couleur_primary_glow": "rgba(132, 23, 29, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #84171d, #631115)",
+        "shadow_primary": "0 4px 16px rgba(132, 23, 29, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "122",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 122 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

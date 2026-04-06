@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SILVATICUS CROSSFIT & HYROX",
+        "ville": "Paris",
+        "slogan": "",
+        "site": "http://www.silvaticus.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "http://static1.squarespace.com/static/5852974b4402433dbd826ab3/t/61713f9afeb494526f21c173/1634811802587/Design+1+-+Black.png?format=1500w",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ffcc00",
+        "couleur_primary_dark": "#bf9900",
+        "couleur_primary_light": "#fffcf0",
+        "couleur_primary_glow": "rgba(255, 204, 0, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ffcc00, #bf9900)",
+        "shadow_primary": "0 4px 16px rgba(255, 204, 0, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "156",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 156 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
