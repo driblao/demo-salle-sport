@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SQUARE GYM BORDEAUX CHARTRONS",
+        "ville": "Bordeaux",
+        "slogan": "",
+        "site": "https://squaregym.fr/salle-de-sport/chartrons/",
+        "email_contact": "merignac@squaregym.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://squaregym.fr/app/uploads/2023/06/logo.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#7061ff",
+        "couleur_primary_dark": "#5448bf",
+        "couleur_primary_light": "#f6f5ff",
+        "couleur_primary_glow": "rgba(112, 97, 255, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #7061ff, #5448bf)",
+        "shadow_primary": "0 4px 16px rgba(112, 97, 255, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "574",
+        "note_google": "4.6",
+        "argument_personnalise": "Avec 4.6 etoiles et 574 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

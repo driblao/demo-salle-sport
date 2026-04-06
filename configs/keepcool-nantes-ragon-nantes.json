@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "KEEPCOOL NANTES RAGON",
+        "ville": "Nantes",
+        "slogan": "",
+        "site": "https://www.keepcool.fr/s/salle-de-sport-nantes-ragon",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://cdn.prod.website-files.com/66990f58fa50dc4bb49ee966/669e69fb73457bffd8e178cb_Logo.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#66cc99",
+        "couleur_primary_dark": "#4c9972",
+        "couleur_primary_light": "#f6fcf9",
+        "couleur_primary_glow": "rgba(102, 204, 153, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #66cc99, #4c9972)",
+        "shadow_primary": "0 4px 16px rgba(102, 204, 153, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "251",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 251 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

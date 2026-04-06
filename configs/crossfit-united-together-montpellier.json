@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT UNITED TOGETHER",
+        "ville": "Montpellier",
+        "slogan": "",
+        "site": "https://crossfitunitedtogether.com/",
+        "email_contact": "crossfitunitedtogether@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "http://crossfitunitedtogether.com/wp-content/uploads/2019/08/open_graph.jpg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ff675b",
+        "couleur_primary_dark": "#bf4d44",
+        "couleur_primary_light": "#fff6f5",
+        "couleur_primary_glow": "rgba(255, 103, 91, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ff675b, #bf4d44)",
+        "shadow_primary": "0 4px 16px rgba(255, 103, 91, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "59",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 59 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

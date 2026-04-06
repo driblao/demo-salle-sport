@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "M34 CROSSFIT INITIAL",
+        "ville": "Montpellier",
+        "slogan": "",
+        "site": "https://www.m34-crossfit.fr/",
+        "email_contact": "east@m34-crossfit.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.m34-crossfit.fr/wp-content/uploads/2021/05/FAV.jpg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#d2b955",
+        "couleur_primary_dark": "#9d8a3f",
+        "couleur_primary_light": "#fcfbf5",
+        "couleur_primary_glow": "rgba(210, 185, 85, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #d2b955, #9d8a3f)",
+        "shadow_primary": "0 4px 16px rgba(210, 185, 85, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "41",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 41 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

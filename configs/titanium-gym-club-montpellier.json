@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "TITANIUM GYM CLUB",
+        "ville": "Montpellier",
+        "slogan": "",
+        "site": "https://titanium-gym-club.fr/",
+        "email_contact": "Fichier-4@4x-1024x582.png",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://titanium-gym-club.fr/wp-content/uploads/2025/08/TIT-blanc.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#dbb101",
+        "couleur_primary_dark": "#a48400",
+        "couleur_primary_light": "#fdfaf0",
+        "couleur_primary_glow": "rgba(219, 177, 1, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #dbb101, #a48400)",
+        "shadow_primary": "0 4px 16px rgba(219, 177, 1, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "12",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 12 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

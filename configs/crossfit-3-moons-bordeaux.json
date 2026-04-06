@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT 3 MOONS",
+        "ville": "Bordeaux",
+        "slogan": "",
+        "site": "http://www.crossfit3moons.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfit3moons.fr/wp-content/themes/crossfit3moons/assets/img/logo.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#9bcde2",
+        "couleur_primary_dark": "#7499a9",
+        "couleur_primary_light": "#f9fcfd",
+        "couleur_primary_glow": "rgba(155, 205, 226, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #9bcde2, #7499a9)",
+        "shadow_primary": "0 4px 16px rgba(155, 205, 226, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "101",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 101 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

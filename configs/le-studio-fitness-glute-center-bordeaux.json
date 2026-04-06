@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "LE STUDIO FITNESS - GLUTE CENTER",
+        "ville": "Bordeaux",
+        "slogan": "",
+        "site": "http://www.le-studio-fitness.fr/",
+        "email_contact": "contact@le-studio-fitness.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://le-studio-fitness.fr/wp-content/uploads/2023/01/cropped-Sans-titre-12-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#c5b786",
+        "couleur_primary_dark": "#938964",
+        "couleur_primary_light": "#fbfaf8",
+        "couleur_primary_glow": "rgba(197, 183, 134, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #c5b786, #938964)",
+        "shadow_primary": "0 4px 16px rgba(197, 183, 134, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "55",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 55 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

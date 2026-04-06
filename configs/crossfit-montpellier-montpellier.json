@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT MONTPELLIER",
+        "ville": "Montpellier",
+        "slogan": "",
+        "site": "https://crossfitmontpellier.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfitmontpellier.fr/wp-content/themes/CFM2023/images/favicons/apple-touch-icon.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#f7b5cd",
+        "couleur_primary_dark": "#b98799",
+        "couleur_primary_light": "#fefafc",
+        "couleur_primary_glow": "rgba(247, 181, 205, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #f7b5cd, #b98799)",
+        "shadow_primary": "0 4px 16px rgba(247, 181, 205, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "181",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 181 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

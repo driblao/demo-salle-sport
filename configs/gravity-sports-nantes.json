@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "GRAVITY SPORTS",
+        "ville": "Nantes",
+        "slogan": "",
+        "site": "https://gravity-sports.fr/",
+        "email_contact": "contact@gravity-sports.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://gravity-sports.fr/wp-content/uploads/2024/09/cropped-android-chrome-192x192-1-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#f6831f",
+        "couleur_primary_dark": "#b86217",
+        "couleur_primary_light": "#fef7f1",
+        "couleur_primary_glow": "rgba(246, 131, 31, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #f6831f, #b86217)",
+        "shadow_primary": "0 4px 16px rgba(246, 131, 31, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "82",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 82 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
