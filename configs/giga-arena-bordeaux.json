@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "GIGA ARENA",
+        "ville": "Bordeaux",
+        "slogan": "",
+        "site": "https://www.giga-arena-bordeaux.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.giga-arena-bordeaux.fr/wp-content/uploads/2024/08/cropped-Capture-decran-2024-08-24-a-10.03.59-1-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#fff61d",
+        "couleur_primary_dark": "#bfb815",
+        "couleur_primary_light": "#fffef1",
+        "couleur_primary_glow": "rgba(255, 246, 29, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #fff61d, #bfb815)",
+        "shadow_primary": "0 4px 16px rgba(255, 246, 29, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "186",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 186 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
