@@ -1459,6 +1459,9 @@ body {
             </button>
             <p class="auth-link" style="margin-top:10px"><a href="#" style="color:var(--gray-500);font-weight:500">Mot de passe oublie ?</a></p>
             <p class="auth-link">Pas de compte ? <a href="#" onclick="navigateTo('screen-inscription')">S'inscrire</a></p>
+            <a class="salle-site-link" href="#" target="_blank" style="display:block;text-align:center;margin-top:16px;padding:10px;background:var(--gray-50);border-radius:10px;text-decoration:none;color:var(--gray-500);font-size:12px;">
+                <i class="fas fa-globe" style="margin-right:4px;"></i> <span class="salle-site-text">Visiter notre site web</span>
+            </a>
         </div>
     </div>
 </div>
@@ -3557,6 +3560,12 @@ body {
             </div>
         </div>
 
+        <a class="salle-site-link" href="#" target="_blank" style="display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--primary-light);border-radius:var(--radius);margin-bottom:12px;text-decoration:none;color:var(--primary);font-size:14px;font-weight:600;">
+            <i class="fas fa-globe" style="font-size:18px;"></i>
+            <span class="salle-site-text" style="flex:1;">Visiter le site de la salle</span>
+            <i class="fas fa-external-link-alt" style="font-size:12px;opacity:0.6;"></i>
+        </a>
+
         <div class="card">
             <div class="settings-item">
                 <i class="fas fa-user-edit"></i>
@@ -3806,6 +3815,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             } else {
                 sideMenuLogo.textContent = salle.nom;
             }
+        }
+
+        // Liens vers le site de la salle
+        if (salle.site) {
+            body.querySelectorAll('.salle-site-link').forEach(link => {
+                link.href = salle.site;
+            });
+            body.querySelectorAll('.salle-site-text').forEach(el => {
+                el.textContent = 'Visiter ' + salle.nom;
+            });
         }
 
         console.log('Config chargee:', salle.nom, salle.ville);
