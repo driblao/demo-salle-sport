@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT VILLEURBANNE",
+        "ville": "Lyon",
+        "slogan": "",
+        "site": "http://www.nekocrossfitvilleurbanne.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjIgMjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLXdpZHRoPSIwLjVweCI+PHVzZSBocmVmPSIjb3BlbkFycm93SGVhZCIvPjwvc3ZnPg==",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#190ffe",
+        "couleur_primary_dark": "#120bbe",
+        "couleur_primary_light": "#f1f0ff",
+        "couleur_primary_glow": "rgba(25, 15, 254, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #190ffe, #120bbe)",
+        "shadow_primary": "0 4px 16px rgba(25, 15, 254, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "103",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 103 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

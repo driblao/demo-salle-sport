@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT GRAND ROND",
+        "ville": "Toulouse",
+        "slogan": "",
+        "site": "https://crossfitgrandrond.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfitgrandrond.fr/wp-content/uploads/2022/02/cropped-favicon-1-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#a0432c",
+        "couleur_primary_dark": "#783221",
+        "couleur_primary_light": "#f9f4f2",
+        "couleur_primary_glow": "rgba(160, 67, 44, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #a0432c, #783221)",
+        "shadow_primary": "0 4px 16px rgba(160, 67, 44, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "47",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 47 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT VAISE DISTRICT",
+        "ville": "Lyon",
+        "slogan": "",
+        "site": "https://crossfitvaisedistrict.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_180,h_180/https://crossfitvaisedistrict.fr/wp-content/uploads/2025/09/cropped-favicon_crossfit-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#d31024",
+        "couleur_primary_dark": "#9e0c1b",
+        "couleur_primary_light": "#fcf0f2",
+        "couleur_primary_glow": "rgba(211, 16, 36, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #d31024, #9e0c1b)",
+        "shadow_primary": "0 4px 16px rgba(211, 16, 36, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "150",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 150 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

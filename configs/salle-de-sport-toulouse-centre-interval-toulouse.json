@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SALLE DE SPORT TOULOUSE CENTRE - INTERVAL",
+        "ville": "Toulouse",
+        "slogan": "",
+        "site": "https://www.interval.fr/salles-de-sport/toulouse-carnot-challenge/",
+        "email_contact": "carnotchallenge@interval.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.interval.fr/wp-content/uploads/2021/05/logo-interval.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#df0067",
+        "couleur_primary_dark": "#a7004d",
+        "couleur_primary_light": "#fdf0f6",
+        "couleur_primary_glow": "rgba(223, 0, 103, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #df0067, #a7004d)",
+        "shadow_primary": "0 4px 16px rgba(223, 0, 103, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "324",
+        "note_google": "4.1",
+        "argument_personnalise": "Avec 4.1 etoiles et 324 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT DES PENTES",
+        "ville": "Lyon",
+        "slogan": "",
+        "site": "http://www.crossfitdespentes.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfitdespentes.fr/_nuxt/img/logo-light.4228eec.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ef5f60",
+        "couleur_primary_dark": "#b34748",
+        "couleur_primary_light": "#fef5f5",
+        "couleur_primary_glow": "rgba(239, 95, 96, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ef5f60, #b34748)",
+        "shadow_primary": "0 4px 16px rgba(239, 95, 96, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "86",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 86 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

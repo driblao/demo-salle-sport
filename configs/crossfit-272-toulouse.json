@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT 272",
+        "ville": "Toulouse",
+        "slogan": "",
+        "site": "https://www.crossfit272.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfit272.com/wp-content/uploads/sites/6/2024/11/Logo_Crossfit_blanc.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e63035",
+        "couleur_primary_dark": "#ac2427",
+        "couleur_primary_light": "#fdf2f3",
+        "couleur_primary_glow": "rgba(230, 48, 53, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e63035, #ac2427)",
+        "shadow_primary": "0 4px 16px rgba(230, 48, 53, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "61",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 61 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "WAR MACHINE ATHLETICS 1",
+        "ville": "Nantes",
+        "slogan": "",
+        "site": "https://warmachineathletics.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://warmachineathletics.fr/wp-content/uploads/2025/11/Logo-WM-ATHLETICS.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#d81d1d",
+        "couleur_primary_dark": "#a21515",
+        "couleur_primary_light": "#fcf1f1",
+        "couleur_primary_glow": "rgba(216, 29, 29, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #d81d1d, #a21515)",
+        "shadow_primary": "0 4px 16px rgba(216, 29, 29, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "146",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 146 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

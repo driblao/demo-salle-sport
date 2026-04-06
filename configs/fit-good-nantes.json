@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "FIT-GOOD",
+        "ville": "Nantes",
+        "slogan": "",
+        "site": "https://fit-good.fr/",
+        "email_contact": "contact@fit-good.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%2048'%3E%3C/svg%3E",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#064f2e",
+        "couleur_primary_dark": "#043b22",
+        "couleur_primary_light": "#f0f4f2",
+        "couleur_primary_glow": "rgba(6, 79, 46, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #064f2e, #043b22)",
+        "shadow_primary": "0 4px 16px rgba(6, 79, 46, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "1045",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 1045 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

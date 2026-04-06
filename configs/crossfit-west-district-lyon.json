@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT WEST DISTRICT",
+        "ville": "Lyon",
+        "slogan": "",
+        "site": "https://www.crossfitwestdistrict.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_180,h_180/https://crossfitwestdistrict.fr/wp-content/uploads/2025/07/cropped-fw-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#b3863b",
+        "couleur_primary_dark": "#86642c",
+        "couleur_primary_light": "#faf8f3",
+        "couleur_primary_glow": "rgba(179, 134, 59, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #b3863b, #86642c)",
+        "shadow_primary": "0 4px 16px rgba(179, 134, 59, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "31",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 31 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

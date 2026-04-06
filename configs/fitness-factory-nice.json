@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "FITNESS FACTORY",
+        "ville": "Nice",
+        "slogan": "",
+        "site": "https://www.instagram.com/fitnessfactory06",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://scontent-cdg6-1.cdninstagram.com/v/t51.82787-19/604670906_18410271808190370_1231401945024672652_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDI0LmMyIn0&_nc_ht=scontent-cdg6-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gEh1cYG_klThO0EeRGkydLVr1Ojhnr4FhDtrclFgNmJN72QLZIKGMhdFS8jWRNwyKadLrLJYCJlQPjVdAim9cbT&_nc_ohc=j--N13cbykIQ7kNvwG7oK5L&_nc_gid=RGxFTxl2YAi2TktEBUmhww&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af0VilWBhSK_YIRS1EAevXTtBMaTweVCB0e1qxWZwbXiOw&oe=69D9952B&_nc_sid=10d13b",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#4150f7",
+        "couleur_primary_dark": "#303cb9",
+        "couleur_primary_light": "#f3f4fe",
+        "couleur_primary_glow": "rgba(65, 80, 247, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #4150f7, #303cb9)",
+        "shadow_primary": "0 4px 16px rgba(65, 80, 247, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "246",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 246 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT LYON",
+        "ville": "Lyon",
+        "slogan": "",
+        "site": "https://crossfit-lyon.com/",
+        "email_contact": "hellocrossfitlyon@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfit-lyon.com/wp-content/uploads/2017/06/crossfit-lyon-logo-cfl-retina.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#357ebf",
+        "couleur_primary_dark": "#275e8f",
+        "couleur_primary_light": "#f3f7fb",
+        "couleur_primary_glow": "rgba(53, 126, 191, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #357ebf, #275e8f)",
+        "shadow_primary": "0 4px 16px rgba(53, 126, 191, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "164",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 164 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT SECTEUR 3 - LYON",
+        "ville": "Lyon",
+        "slogan": "",
+        "site": "http://www.crossfit-secteur3.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfit-secteur3.fr/wp-content/uploads/2020/08/cropped-Crossfit-secteur3-logo_Plan-de-travail-1-copie-1-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#4dadf9",
+        "couleur_primary_dark": "#3981ba",
+        "couleur_primary_light": "#f4fafe",
+        "couleur_primary_glow": "rgba(77, 173, 249, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #4dadf9, #3981ba)",
+        "shadow_primary": "0 4px 16px rgba(77, 173, 249, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "121",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 121 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

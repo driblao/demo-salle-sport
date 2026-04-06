@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "VIBES FITNESS",
+        "ville": "Marseille",
+        "slogan": "",
+        "site": "https://www.vibesfitness.fr/",
+        "email_contact": "13007@vibesfitness.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.vibesfitness.fr/wp-content/uploads/go-x/u/5388ec24-893f-424b-a9b4-88fe1d345719/image-455x455.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#c4a151",
+        "couleur_primary_dark": "#93783c",
+        "couleur_primary_light": "#fbf9f4",
+        "couleur_primary_glow": "rgba(196, 161, 81, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #c4a151, #93783c)",
+        "shadow_primary": "0 4px 16px rgba(196, 161, 81, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "81",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 81 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

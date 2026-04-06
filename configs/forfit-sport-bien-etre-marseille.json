@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "FORFIT SPORT & BIEN-ÊTRE",
+        "ville": "Marseille",
+        "slogan": "",
+        "site": "https://forfit.fr/",
+        "email_contact": "contact@forfit.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://forfit.fr/wp-content/uploads/2021/09/logo-favicon-300x300.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#c2a883",
+        "couleur_primary_dark": "#917e62",
+        "couleur_primary_light": "#fbfaf7",
+        "couleur_primary_glow": "rgba(194, 168, 131, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #c2a883, #917e62)",
+        "shadow_primary": "0 4px 16px rgba(194, 168, 131, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "212",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 212 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

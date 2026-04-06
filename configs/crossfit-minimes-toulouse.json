@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT MINIMES",
+        "ville": "Toulouse",
+        "slogan": "",
+        "site": "http://www.crossfitminimes.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfitminimes.com/wp-content/themes/crossfit2023_wptheme/assets/img/logo/logo.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ec403c",
+        "couleur_primary_dark": "#b1302d",
+        "couleur_primary_light": "#fef3f3",
+        "couleur_primary_glow": "rgba(236, 64, 60, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ec403c, #b1302d)",
+        "shadow_primary": "0 4px 16px rgba(236, 64, 60, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "164",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 164 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

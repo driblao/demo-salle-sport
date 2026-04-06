@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT BALMA",
+        "ville": "Toulouse",
+        "slogan": "",
+        "site": "http://www.crossfitbalma.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://j9n9x3q4.rocketcdn.me/wp-content/uploads/2020/01/Crossfit-Logo-179x95.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#f9c349",
+        "couleur_primary_dark": "#ba9236",
+        "couleur_primary_light": "#fefbf4",
+        "couleur_primary_glow": "rgba(249, 195, 73, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #f9c349, #ba9236)",
+        "shadow_primary": "0 4px 16px rgba(249, 195, 73, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "96",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 96 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT GERLAND",
+        "ville": "Lyon",
+        "slogan": "",
+        "site": "http://www.crossfit-gerland.com/",
+        "email_contact": "contact@crossfitgerland.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "http://www.crossfit-gerland.com/wp-content/uploads/CFG_rond-1.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#00a99d",
+        "couleur_primary_dark": "#007e75",
+        "couleur_primary_light": "#f0faf9",
+        "couleur_primary_glow": "rgba(0, 169, 157, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #00a99d, #007e75)",
+        "shadow_primary": "0 4px 16px rgba(0, 169, 157, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "295",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 295 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

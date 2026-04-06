@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT & HYROX NAVELI ATLANTA",
+        "ville": "Toulouse",
+        "slogan": "",
+        "site": "https://crossfit-naveli.fr/crossfit-toulouse-atlanta",
+        "email_contact": "contactatlanta@crossfit-naveli.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfit-naveli.fr/api/media/file/name-naveli.svg?2025-05-10T10:42:19.830Z",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#134e60",
+        "couleur_primary_dark": "#0e3a48",
+        "couleur_primary_light": "#f1f4f5",
+        "couleur_primary_glow": "rgba(19, 78, 96, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #134e60, #0e3a48)",
+        "shadow_primary": "0 4px 16px rgba(19, 78, 96, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "124",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 124 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

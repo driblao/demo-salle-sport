@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT NAONED",
+        "ville": "Nantes",
+        "slogan": "",
+        "site": "http://www.crossfit-naoned.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "http://crossfit-naoned.com/wp-content/uploads/2019/04/crossfit-naoned-logo-white-full.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#c57150",
+        "couleur_primary_dark": "#93543c",
+        "couleur_primary_light": "#fbf6f4",
+        "couleur_primary_glow": "rgba(197, 113, 80, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #c57150, #93543c)",
+        "shadow_primary": "0 4px 16px rgba(197, 113, 80, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "94",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 94 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

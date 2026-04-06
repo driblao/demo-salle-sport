@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT EPSILON",
+        "ville": "Marseille",
+        "slogan": "",
+        "site": "http://crossfitepsilon.com/",
+        "email_contact": "crossfitepsilon@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#dd3333",
+        "couleur_primary_dark": "#a52626",
+        "couleur_primary_light": "#fdf3f3",
+        "couleur_primary_glow": "rgba(221, 51, 51, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #dd3333, #a52626)",
+        "shadow_primary": "0 4px 16px rgba(221, 51, 51, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "90",
+        "note_google": "4.6",
+        "argument_personnalise": "Avec 4.6 etoiles et 90 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

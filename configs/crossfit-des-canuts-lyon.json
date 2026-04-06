@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT DES CANUTS",
+        "ville": "Lyon",
+        "slogan": "",
+        "site": "https://www.crossfitdescanuts.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfitdescanuts.fr/_nuxt/img/crossfit.466bf47.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#fb9359",
+        "couleur_primary_dark": "#bc6e42",
+        "couleur_primary_light": "#fff8f5",
+        "couleur_primary_glow": "rgba(251, 147, 89, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #fb9359, #bc6e42)",
+        "shadow_primary": "0 4px 16px rgba(251, 147, 89, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "31",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 31 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

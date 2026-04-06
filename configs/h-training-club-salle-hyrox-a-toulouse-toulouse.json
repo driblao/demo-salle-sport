@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "H. TRAINING CLUB - SALLE HYROX À TOULOUSE",
+        "ville": "Toulouse",
+        "slogan": "",
+        "site": "https://www.htrainingclub.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzUiIGhlaWdodD0iNjkiIHZpZXdCb3g9IjAgMCA3NSA2OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCQkJCQkJPHBhdGggZD0iTTAgMEgxOS43Mzc3VjIuNDY3MjZDMTcuNTAwMiAyLjQ2NzI2IDE2LjE1MjMgMi42OTY4NSAxNS42OTI1IDMuMTU2MDJDMTUuMDk4OSAzLjU1MjI5IDE0LjgwMjkgNC42Njg3NyAxNC44MDI5IDYuNTA3MDNWMzIuMDM2N0g0MS4wNTYyVjYuNDA3OTZDNDEuMDU2MiA0Ljc2NjI3IDQwLjgyNjQgMy43MTQyNiA0MC4zNjY2IDMuMjUzNTJDMzkuOTA1MiAyLjcyOTg3IDM4LjQ4OTYgMi40NjcyNiAzNi4xMjE0IDIuNDY3MjZWMEg1NS44NTkxVjIuNDY3MjZDNTMuNjIxNiAyLjQ2NzI2IDUyLjI3MzcgMi42OTY4NSA1MS44MTM5IDMuMTU2MDJDNTEuMjIwMyAzLjU1MjI5IDUwLjkyNDMgNC42Njg3NyA1MC45MjQzIDYuNTA3MDNWNjMuMjgzOUM1MC45MjQzIDY0LjY2NDYgNTEuMTg3MyA2NS41NTE1IDUxLjcxNDcgNjUuOTQ0NkM1Mi4zMDY4IDY2LjM0MDkgNTMuNjg3NyA2Ni41Mzc1IDU1Ljg1NzUgNjYuNTM3NVY2OS4wMDE2SDM2LjExOTlWNjYuNTM3NUMzNy4yMzYzIDY2LjUzNzUgMzguMTI0MyA2Ni40NzE0IDM4Ljc4NDEgNjYuMzQwOUMzOS40NDIzIDY2LjIwODggMzkuOTAyMSA2Ni4wNDIxIDQwLjE2NSA2NS44NDU2QzQwLjc1NzEgNjUuMzIwMyA0MS4wNTQ3IDY0LjQ2NDkgNDEuMDU0NyA2My4yODM5VjM2Ljk2MzNIMTQuODA0NFY2My4yODM5QzE0LjgwNDQgNjQuNjY0NiAxNS4wNjc0IDY1LjU1MTUgMTUuNTk0OSA2NS45NDQ2QzE2LjE4NTQgNjYuMzQwOSAxNy41NjYzIDY2LjUzNzUgMTkuNzM3NyA2Ni41Mzc1VjY5LjAwMTZIMFY2Ni41Mzc1QzEuMTE2MzkgNjYuNTM3NSAyLjAwNDQ3IDY2LjQ3MTQgMi42NjQyMyA2Ni4zNDA5QzMuMzIyNDIgNjYuMjA4OCAzLjc4MjIgNjYuMDQyMSA0LjA0NTE2IDY1Ljg0NTZDNC42MzcyMSA2NS4zMjAzIDQuOTM0ODEgNjQuNDY0OSA0LjkzNDgxIDYzLjI4MzlWNi40MDc5NkM0LjkzNDgxIDQuNzY2MjcgNC43MDMzNCAzLjcxNDI2IDQuMjQxOTkgMy4yNTM1MkMzLjc4MjIgMi43Mjk4NyAyLjM2ODIxIDIuNDY3MjYgMCAyLjQ2NzI2TDAgMFoiIGZpbGw9IiNmZmZmZmYiLz4KCQkJCQkJPHBhdGggZD0iTTczLjIyNTQgNTguODQ3OEM3NC40MDc5IDYwLjAzMTkgNzQuOTk5OSA2MS40NDU2IDc0Ljk5OTkgNjMuMDg3M0M3NC45OTk5IDY0LjcyOSA3NC40NDEgNjYuMTA5NiA3My4zMjMgNjcuMjI0NUM3Mi4xMzczIDY4LjQwODYgNzAuNzIxOCA2OC45OTk5IDY5LjA3NzkgNjguOTk5OUM2Ny40MzQgNjguOTk5OSA2Ni4wNTE1IDY4LjQ0MTYgNjQuOTMxOSA2Ny4zMjUyQzYzLjc0NzggNjYuMTQxMSA2My4xNTczIDY0LjcyOSA2My4xNTczIDYzLjA4NTdDNjMuMTU3MyA2MS40NDI0IDYzLjcxNjMgNjAuMDYzMyA2NC44MzQzIDU4Ljk0NTNDNjYuMDIgNTcuNzYxMiA2Ny40MzQgNTcuMTY5OSA2OS4wNzk0IDU3LjE2OTlDNzAuNzI0OSA1Ny4xNjk5IDcyLjE3MiA1Ny43Mjk3IDczLjIyNTQgNTguODQ3OFoiIGZpbGw9IiNmZmZmZmYiLz4KCQkJCQkJPGNsaXBQYXRoIGlkPSJjbGlwMF83M18yMTgiPgoJCQkJCQk8cmVjdCB3aWR0aD0iNzUiIGhlaWdodD0iNjkiIGZpbGw9IndoaXRlIi8+CgkJCQkJCTwvY2xpcFBhdGg+CgkJCQkJCTwvc3ZnPg==",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#fbd600",
+        "couleur_primary_dark": "#bca000",
+        "couleur_primary_light": "#fffcf0",
+        "couleur_primary_glow": "rgba(251, 214, 0, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #fbd600, #bca000)",
+        "shadow_primary": "0 4px 16px rgba(251, 214, 0, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "16",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 16 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "FORT VAUBAN",
+        "ville": "Marseille",
+        "slogan": "",
+        "site": "https://www.fortvauban.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://static.parastorage.com/client/pfavico.ico",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#9966ff",
+        "couleur_primary_dark": "#724cbf",
+        "couleur_primary_light": "#f9f6ff",
+        "couleur_primary_glow": "rgba(153, 102, 255, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #9966ff, #724cbf)",
+        "shadow_primary": "0 4px 16px rgba(153, 102, 255, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "15",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 15 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
