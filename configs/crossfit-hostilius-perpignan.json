@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT HOSTILIUS",
+        "ville": "Perpignan",
+        "slogan": "",
+        "site": "https://crossfit-hostilius.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfit-hostilius.fr/wp-content/uploads/2023/06/cropped-logo-crossfit-hostilius-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#cc3333",
+        "couleur_primary_dark": "#992626",
+        "couleur_primary_light": "#fcf3f3",
+        "couleur_primary_glow": "rgba(204, 51, 51, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #cc3333, #992626)",
+        "shadow_primary": "0 4px 16px rgba(204, 51, 51, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "64",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 64 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
