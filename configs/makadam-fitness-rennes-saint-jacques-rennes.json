@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "MAKADAM-FITNESS - RENNES SAINT-JACQUES",
+        "ville": "Rennes",
+        "slogan": "",
+        "site": "https://www.makadam-fitness.fr/clubs/salle-de-sport-rennes-saint-jacques-de-la-lande",
+        "email_contact": "stjacques@makadam-fitness.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.makadam-fitness.fr/wp-content/uploads/2020/10/cropped-logo-transparent.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#1e73be",
+        "couleur_primary_dark": "#16568e",
+        "couleur_primary_light": "#f1f6fb",
+        "couleur_primary_glow": "rgba(30, 115, 190, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #1e73be, #16568e)",
+        "shadow_primary": "0 4px 16px rgba(30, 115, 190, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "331",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 331 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "AGORA TRAINING CLUB",
+        "ville": "Rennes",
+        "slogan": "",
+        "site": "https://agoratrainingclub.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/A854k44ox5hKwJDL/capture-daeicran-2026-03-28-ai-21.20.07-VkyyM32Ao36dsZvU.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#a0d3ff",
+        "couleur_primary_dark": "#789ebf",
+        "couleur_primary_light": "#f9fcff",
+        "couleur_primary_glow": "rgba(160, 211, 255, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #a0d3ff, #789ebf)",
+        "shadow_primary": "0 4px 16px rgba(160, 211, 255, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "64",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 64 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

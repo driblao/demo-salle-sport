@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "M GYM CLUB SALLE DE SPORT SAINT ETIENNE",
+        "ville": "Saint-Étienne",
+        "slogan": "",
+        "site": "https://mgymclub.com/",
+        "email_contact": "mgymclub@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#605be5",
+        "couleur_primary_dark": "#4844ab",
+        "couleur_primary_light": "#f5f5fd",
+        "couleur_primary_glow": "rgba(96, 91, 229, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #605be5, #4844ab)",
+        "shadow_primary": "0 4px 16px rgba(96, 91, 229, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "408",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 408 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

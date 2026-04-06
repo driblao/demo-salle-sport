@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "IFORME CENTRE RENNES - SALLE DE FITNESS ET MUSCULATION",
+        "ville": "Rennes",
+        "slogan": "",
+        "site": "http://www.iforme.fr/",
+        "email_contact": "contact@iforme.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://cdn.prod.website-files.com/641c32bf40f9bb2d589be1fe/642301c8b588a56ab624c168_favicon%20fond%20blanc%20256.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#3a4bff",
+        "couleur_primary_dark": "#2b38bf",
+        "couleur_primary_light": "#f3f4ff",
+        "couleur_primary_glow": "rgba(58, 75, 255, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #3a4bff, #2b38bf)",
+        "shadow_primary": "0 4px 16px rgba(58, 75, 255, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "59",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 59 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

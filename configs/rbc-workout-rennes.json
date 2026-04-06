@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "RBC WORKOUT",
+        "ville": "Rennes",
+        "slogan": "",
+        "site": "http://www.rbc-workout.com/",
+        "email_contact": "rbc.workout@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://rbc-workout.com/wp-content/uploads/2021/09/cropped-logo_Jochen-Ravache-1-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#61a229",
+        "couleur_primary_dark": "#48791e",
+        "couleur_primary_light": "#f5f9f2",
+        "couleur_primary_glow": "rgba(97, 162, 41, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #61a229, #48791e)",
+        "shadow_primary": "0 4px 16px rgba(97, 162, 41, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "188",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 188 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

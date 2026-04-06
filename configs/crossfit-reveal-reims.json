@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT REVEAL",
+        "ville": "Reims",
+        "slogan": "",
+        "site": "http://crossfitreveal.fr/",
+        "email_contact": "contact@crossfitreveal.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfitreveal.fr/wp-content/uploads/2025/08/cropped-Crossfit-Reveal-logo-transparent-125x73.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#011d7e",
+        "couleur_primary_dark": "#00155e",
+        "couleur_primary_light": "#f0f1f7",
+        "couleur_primary_glow": "rgba(1, 29, 126, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #011d7e, #00155e)",
+        "shadow_primary": "0 4px 16px rgba(1, 29, 126, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "149",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 149 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

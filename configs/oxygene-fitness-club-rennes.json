@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "OXYGÈNE FITNESS CLUB",
+        "ville": "Rennes",
+        "slogan": "",
+        "site": "https://www.oxygene-fitness.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://oxygene-fitness.com/wp-content/uploads/logo-oxygene-blanc.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#07cffc",
+        "couleur_primary_dark": "#059bbd",
+        "couleur_primary_light": "#f0fcff",
+        "couleur_primary_glow": "rgba(7, 207, 252, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #07cffc, #059bbd)",
+        "shadow_primary": "0 4px 16px rgba(7, 207, 252, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "56",
+        "note_google": "4.6",
+        "argument_personnalise": "Avec 4.6 etoiles et 56 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
