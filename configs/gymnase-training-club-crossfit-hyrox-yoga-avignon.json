@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "GYMNASE TRAINING CLUB / CROSSFIT - HYROX - YOGA",
+        "ville": "Avignon",
+        "slogan": "",
+        "site": "http://www.thegymnase.com/",
+        "email_contact": "contact@thegymnase.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://static.wixstatic.com/media/91a2a6_cd9feb1b0b09427fa8fc2c01879b3689~mv2.png/v1/fill/w_91,h_37,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gymnase_tc_transp_04.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0000ee",
+        "couleur_primary_dark": "#0000b2",
+        "couleur_primary_light": "#f0f0fe",
+        "couleur_primary_glow": "rgba(0, 0, 238, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0000ee, #0000b2)",
+        "shadow_primary": "0 4px 16px rgba(0, 0, 238, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "149",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 149 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

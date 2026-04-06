@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT MULHOUSE FACTORY",
+        "ville": "Mulhouse",
+        "slogan": "",
+        "site": "http://www.crossfit-mulhouse-factory.fr/accueil.php",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfit-mulhouse-factory.fr/wp-content/uploads/2022/07/cropped-logo-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#f29d3f",
+        "couleur_primary_dark": "#b5752f",
+        "couleur_primary_light": "#fef9f3",
+        "couleur_primary_glow": "rgba(242, 157, 63, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #f29d3f, #b5752f)",
+        "shadow_primary": "0 4px 16px rgba(242, 157, 63, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "72",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 72 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

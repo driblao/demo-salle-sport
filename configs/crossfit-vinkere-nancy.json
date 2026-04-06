@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT VINKERE",
+        "ville": "Nancy",
+        "slogan": "",
+        "site": "https://crossfit-vinkere.fr/",
+        "email_contact": "skyztv00@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfit-vinkere.fr/wp-content/uploads/2023/01/cropped-WhatsApp-Image-2022-12-17-at-14.00.33-1-e1673046356259-180x180.jpeg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e6af2f",
+        "couleur_primary_dark": "#ac8323",
+        "couleur_primary_light": "#fdfaf2",
+        "couleur_primary_glow": "rgba(230, 175, 47, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e6af2f, #ac8323)",
+        "shadow_primary": "0 4px 16px rgba(230, 175, 47, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "153",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 153 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

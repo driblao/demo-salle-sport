@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "NEXT-CROSSFIT LES ANGLES",
+        "ville": "Avignon",
+        "slogan": "",
+        "site": "https://www.crossfitlesangles.fr/",
+        "email_contact": "crossfitlesangles@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfitlesangles.fr/wp-content/uploads/2024/05/cropped-EC14E388-7CB4-408E-98B3-D8BF8E8BCE82-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#00b4d8",
+        "couleur_primary_dark": "#0087a2",
+        "couleur_primary_light": "#f0fafc",
+        "couleur_primary_glow": "rgba(0, 180, 216, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #00b4d8, #0087a2)",
+        "shadow_primary": "0 4px 16px rgba(0, 180, 216, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "68",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 68 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

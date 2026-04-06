@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT CASTEÙ - HYROX GYM CENTER",
+        "ville": "Avignon",
+        "slogan": "",
+        "site": "http://www.crossfitcasteu.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfitcasteu.com/wp-content/uploads/2022/10/cropped-CASTEU-LOGO-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#b9261c",
+        "couleur_primary_dark": "#8a1c15",
+        "couleur_primary_light": "#fbf2f1",
+        "couleur_primary_glow": "rgba(185, 38, 28, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #b9261c, #8a1c15)",
+        "shadow_primary": "0 4px 16px rgba(185, 38, 28, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "133",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 133 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

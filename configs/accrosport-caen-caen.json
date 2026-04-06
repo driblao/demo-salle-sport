@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "ACCROSPORT CAEN",
+        "ville": "Caen",
+        "slogan": "",
+        "site": "https://accrosport.com/clubs/caen/?utm_source=GMB_listing&utm_medium=organic",
+        "email_contact": "logo-dark@2x.png",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://accrosport.com/wp-content/themes/reboot-v98/images/logo-dark.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#d50032",
+        "couleur_primary_dark": "#9f0025",
+        "couleur_primary_light": "#fcf0f3",
+        "couleur_primary_glow": "rgba(213, 0, 50, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #d50032, #9f0025)",
+        "shadow_primary": "0 4px 16px rgba(213, 0, 50, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "611",
+        "note_google": "4.4",
+        "argument_personnalise": "Avec 4.4 etoiles et 611 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

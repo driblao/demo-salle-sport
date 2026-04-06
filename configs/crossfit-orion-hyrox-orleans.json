@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT ORION & HYROX",
+        "ville": "Orléans",
+        "slogan": "",
+        "site": "http://www.crossfitorion.fr/",
+        "email_contact": "site@crossfitorion.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#f80000",
+        "couleur_primary_dark": "#ba0000",
+        "couleur_primary_light": "#fef0f0",
+        "couleur_primary_glow": "rgba(248, 0, 0, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #f80000, #ba0000)",
+        "shadow_primary": "0 4px 16px rgba(248, 0, 0, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "421",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 421 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "EVEXIA SPORT SANTÉ BIEN-ÊTRE AVIGNON",
+        "ville": "Avignon",
+        "slogan": "",
+        "site": "http://www.evexia-avignon.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://evexia-avignon.fr/wa_res/icons/Evexia-logo.webp",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0d6efd",
+        "couleur_primary_dark": "#0952bd",
+        "couleur_primary_light": "#f0f6ff",
+        "couleur_primary_glow": "rgba(13, 110, 253, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0d6efd, #0952bd)",
+        "shadow_primary": "0 4px 16px rgba(13, 110, 253, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "213",
+        "note_google": "3.5",
+        "argument_personnalise": "Avec 3.5 etoiles et 213 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

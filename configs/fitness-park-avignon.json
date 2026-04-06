@@ -1,9 +1,9 @@
 {
     "salle": {
         "nom": "FITNESS PARK",
-        "ville": "Perpignan",
+        "ville": "Avignon",
         "slogan": "",
-        "site": "https://www.fitnesspark.fr/club/perpignan-polygone/?utm_medium=Local_Inventory&utm_source=GMB&utm_campaign=Perpignan-Polygone&utm_content=Yext",
+        "site": "https://www.fitnesspark.fr/club/avignon/?utm_medium=Local_Inventory&utm_source=GMB&utm_campaign=Avignon&utm_content=Yext",
         "email_contact": "",
         "coach_exemple": "Alex",
         "eleve_exemple": "Lucas",
@@ -25,8 +25,8 @@
     "prospection": {
         "prenom_destinataire": "",
         "role_destinataire": "gerant",
-        "nb_avis_google": "476",
-        "note_google": "4.4",
-        "argument_personnalise": "Avec 4.4 etoiles et 476 avis Google, vos membres sont clairement satisfaits de votre approche"
+        "nb_avis_google": "803",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 803 avis Google, vos membres sont clairement satisfaits de votre approche"
     }
 }

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT BALLERS - CENTRE DE SANTÉ PAR LE SPORT ET L’ALIMENTATION",
+        "ville": "Rouen",
+        "slogan": "",
+        "site": "http://www.crossfitballers.com/",
+        "email_contact": "contact@crossfitballers.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfitballers.com/wp-content/plugins/gtranslate/flags/24/fr.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#f8a815",
+        "couleur_primary_dark": "#ba7e0f",
+        "couleur_primary_light": "#fefaf1",
+        "couleur_primary_glow": "rgba(248, 168, 21, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #f8a815, #ba7e0f)",
+        "shadow_primary": "0 4px 16px rgba(248, 168, 21, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "93",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 93 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

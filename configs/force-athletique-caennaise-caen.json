@@ -1,13 +1,13 @@
 {
     "salle": {
-        "nom": "FITNESS PARK",
-        "ville": "Perpignan",
+        "nom": "FORCE ATHLÉTIQUE CAENNAISE",
+        "ville": "Caen",
         "slogan": "",
-        "site": "https://www.fitnesspark.fr/club/perpignan-polygone/?utm_medium=Local_Inventory&utm_source=GMB&utm_campaign=Perpignan-Polygone&utm_content=Yext",
+        "site": "https://www.instagram.com/force_athletique_caennaise/",
         "email_contact": "",
         "coach_exemple": "Alex",
         "eleve_exemple": "Lucas",
-        "logo_url": "",
+        "logo_url": "https://static.cdninstagram.com/rsrc.php/yj/r/f01UdNyJjJj.webp",
         "hero_url": ""
     },
     "design": {
@@ -25,8 +25,8 @@
     "prospection": {
         "prenom_destinataire": "",
         "role_destinataire": "gerant",
-        "nb_avis_google": "476",
+        "nb_avis_google": "26",
         "note_google": "4.4",
-        "argument_personnalise": "Avec 4.4 etoiles et 476 avis Google, vos membres sont clairement satisfaits de votre approche"
+        "argument_personnalise": "Avec 4.4 etoiles et 26 avis Google, vos membres sont clairement satisfaits de votre approche"
     }
 }
