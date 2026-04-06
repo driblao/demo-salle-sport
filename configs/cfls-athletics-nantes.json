@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CFLS ATHLETICS",
+        "ville": "Nantes",
+        "slogan": "",
+        "site": "http://www.cfls-athletics.fr/",
+        "email_contact": "contact@cfls-athletics.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://cfls-athletics.fr/wp-content/uploads/2024/06/logo3.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#cc3366",
+        "couleur_primary_dark": "#99264c",
+        "couleur_primary_light": "#fcf3f6",
+        "couleur_primary_glow": "rgba(204, 51, 102, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #cc3366, #99264c)",
+        "shadow_primary": "0 4px 16px rgba(204, 51, 102, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "142",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 142 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "HUMAN PROJECT 360",
+        "ville": "Nantes",
+        "slogan": "",
+        "site": "https://www.human-project-360.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.human-project-360.fr/wp-content/uploads/2025/01/human-project360-300x300.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#1e8dac",
+        "couleur_primary_dark": "#166981",
+        "couleur_primary_light": "#f1f8fa",
+        "couleur_primary_glow": "rgba(30, 141, 172, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #1e8dac, #166981)",
+        "shadow_primary": "0 4px 16px rgba(30, 141, 172, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "137",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 137 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
