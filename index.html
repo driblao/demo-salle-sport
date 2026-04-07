@@ -1442,26 +1442,20 @@ body {
             </div>
         </div>
         <div class="auth-body" style="padding:24px 20px 20px;margin-top:-20px;background:white;border-radius:20px 20px 0 0;position:relative;z-index:2;">
-            <h1 class="auth-title">Connexion</h1>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" placeholder="Marie@email.com">
-            </div>
-            <div class="form-group">
-                <label>Mot de passe</label>
-                <input type="password" placeholder="Saisir ici...">
-            </div>
-            <div class="checkbox-group">
-                <input type="checkbox" id="remember">
-                <label for="remember">Se souvenir de moi</label>
-            </div>
-            <button class="btn btn-primary btn-block" onclick="navigateTo('screen-coach-dashboard')">Se connecter</button>
-            <button class="btn btn-sportigo btn-block" onclick="navigateTo('screen-coach-dashboard')">
-                <i class="fas fa-bolt"></i> Se connecter avec Sportigo
+            <h1 class="auth-title" style="text-align:center;">Decouvrez votre app</h1>
+            <p style="text-align:center;font-size:13px;color:var(--gray-500);margin-bottom:20px;">Explorez la maquette comme si vous y etiez</p>
+
+            <button class="btn btn-primary btn-block" style="padding:16px 20px;font-size:15px;margin-bottom:10px;" onclick="navigateTo('screen-eleve-dashboard')">
+                <i class="fas fa-dumbbell" style="margin-right:8px;"></i> Vue Membre
             </button>
-            <p class="auth-link" style="margin-top:10px"><a href="#" style="color:var(--gray-500);font-weight:500">Mot de passe oublie ?</a></p>
-            <p class="auth-link">Pas de compte ? <a href="#" onclick="navigateTo('screen-inscription')">S'inscrire</a></p>
-            <a class="salle-site-link" href="#" target="_blank" style="display:block;text-align:center;margin-top:16px;padding:10px;background:var(--gray-50);border-radius:10px;text-decoration:none;color:var(--gray-500);font-size:12px;">
+            <p style="text-align:center;font-size:11px;color:var(--gray-400);margin-bottom:20px;">Programme, progression, badges, records personnels</p>
+
+            <button class="btn btn-outline btn-block" style="padding:16px 20px;font-size:15px;margin-bottom:10px;" onclick="navigateTo('screen-coach-dashboard')">
+                <i class="fas fa-user-tie" style="margin-right:8px;"></i> Vue Coach
+            </button>
+            <p style="text-align:center;font-size:11px;color:var(--gray-400);margin-bottom:24px;">Planning, gestion des eleves, creation de seances</p>
+
+            <a class="salle-site-link" href="#" target="_blank" style="display:block;text-align:center;padding:10px;background:var(--gray-50);border-radius:10px;text-decoration:none;color:var(--gray-500);font-size:12px;">
                 <i class="fas fa-globe" style="margin-right:4px;"></i> <span class="salle-site-text">Visiter notre site web</span>
             </a>
         </div>
