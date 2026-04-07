@@ -3752,17 +3752,20 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.title = salle.nom + ' - Votre App Sur Mesure';
         
         // Nom de la salle (logos)
+        var logoText = salle.nom.length > 20 ? 'Votre logo' : salle.nom;
+        var logoFallback = logoText.replace(/'/g, '&#39;');
+
         document.querySelectorAll('.logo').forEach(el => {
             if (salle.logo_url) {
-                el.innerHTML = '<img src="' + salle.logo_url + '" style="height:28px;vertical-align:middle;" onerror="this.outerHTML=\'' + salle.nom + '\'">';
+                el.innerHTML = '<img src="' + salle.logo_url + '" style="height:28px;vertical-align:middle;" onerror="this.outerHTML=\'' + logoFallback + '\'">';
             } else {
-                el.textContent = salle.nom;
+                el.textContent = logoText;
             }
         });
-        
+
         // Logo big (auth screens)
         document.querySelectorAll('.logo-big').forEach(el => {
-            el.textContent = salle.nom;
+            el.textContent = logoText;
         });
         
         // Remplacer tous les textes par data-attribute ou contenu
@@ -3788,6 +3791,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             body.querySelectorAll('.auth-logo').forEach(img => {
                 img.src = salle.logo_url;
             });
+        } else {
+            body.querySelectorAll('.auth-logo').forEach(img => {
+                img.style.display = 'none';
+            });
         }
 
         // Nom et ville dans les ecrans auth
@@ -3801,9 +3808,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Logos dans les headers app
         body.querySelectorAll('.logo').forEach(el => {
             if (salle.logo_url) {
-                el.innerHTML = '<img src="' + salle.logo_url + '" style="height:28px;vertical-align:middle;" onerror="this.outerHTML=\'' + salle.nom + '\'">';
+                el.innerHTML = '<img src="' + salle.logo_url + '" style="height:28px;vertical-align:middle;" onerror="this.outerHTML=\'' + logoFallback + '\'">';
             } else {
-                el.textContent = salle.nom;
+                el.textContent = logoText;
             }
         });
 
