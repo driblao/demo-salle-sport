@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Votre App Sur Mesure</title>
-    <script defer src="/_vercel/insights/script.js"></script>
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
+    <script defer src="/_vercel/insights/script.js"></script>
     <script defer src="/_vercel/web-analytics/script.js"></script>
+    <script>
+        // Track custom event avec le nom de la salle
+        window.addEventListener('load', function() {
+            var params = new URLSearchParams(window.location.search);
+            var salle = params.get('salle');
+            if (salle && window.va) {
+                window.va('event', { name: 'visite_maquette', data: { salle: salle } });
+            }
+        });
+    </script>
     <style>
 /* ============ VARIABLES ============ */
 /* DA NaturoSport : Montserrat + Lato, rouge cramoisi + violet fonce */
