@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "KINZ FAKTORY HYROX TRAINING CLUB / FILIALE DE KINZ SPORT CONCEPT SALLE DE SPORT - AIX EN PROVENCE",
+        "ville": "Aix-en-Provence",
+        "slogan": "",
+        "site": "https://kinz-sportconcept.com/",
+        "email_contact": "kinzfaktory@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://kinzfaktory.fr/wp-content/uploads/2025/10/cropped-favicon-kinz-faktory-new-180x180.webp",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#fdea23",
+        "couleur_primary_dark": "#bdaf1a",
+        "couleur_primary_light": "#fffef2",
+        "couleur_primary_glow": "rgba(253, 234, 35, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #fdea23, #bdaf1a)",
+        "shadow_primary": "0 4px 16px rgba(253, 234, 35, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "69",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 69 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

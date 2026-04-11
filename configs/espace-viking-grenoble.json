@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "ESPACE VIKING",
+        "ville": "Grenoble",
+        "slogan": "",
+        "site": "https://espace-viking.com/",
+        "email_contact": "espaceviking@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://espace-viking.com/storage/cropped-icon-salle-sport-grenoble-viking-180x180.jpg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e02b20",
+        "couleur_primary_dark": "#a82018",
+        "couleur_primary_light": "#fdf2f1",
+        "couleur_primary_glow": "rgba(224, 43, 32, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e02b20, #a82018)",
+        "shadow_primary": "0 4px 16px rgba(224, 43, 32, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "152",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 152 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

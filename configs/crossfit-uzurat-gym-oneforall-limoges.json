@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT UZURAT, GYM ONEFORALL",
+        "ville": "Limoges",
+        "slogan": "",
+        "site": "https://www.crossfit-uzurat.fr/",
+        "email_contact": "contact@crossfit-uzurat.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfit-uzurat.fr/assets/favicon-180x180-17b223de.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#cf234b",
+        "couleur_primary_dark": "#ab213e",
+        "couleur_primary_light": "#fdf2f4",
+        "couleur_primary_glow": "rgba(207, 35, 75, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #cf234b, #ab213e)",
+        "shadow_primary": "0 4px 16px rgba(207, 35, 75, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "52",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 52 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

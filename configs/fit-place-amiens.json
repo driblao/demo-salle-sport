@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "FIT PLACE",
+        "ville": "Amiens",
+        "slogan": "",
+        "site": "https://www.fitplace.fr/",
+        "email_contact": "contact@etre-visible.local.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/67651/Logo%20d'une%20salle%20de%20sport%20%C3%A0%20Amiens.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#337ab7",
+        "couleur_primary_dark": "#265b89",
+        "couleur_primary_light": "#f3f7fa",
+        "couleur_primary_glow": "rgba(51, 122, 183, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #337ab7, #265b89)",
+        "shadow_primary": "0 4px 16px rgba(51, 122, 183, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "115",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 115 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

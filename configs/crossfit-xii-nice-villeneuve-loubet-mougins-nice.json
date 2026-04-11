@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT XII NICE - VILLENEUVE LOUBET - MOUGINS",
+        "ville": "Nice",
+        "slogan": "",
+        "site": "https://www.xiihubsport.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.xiihubsport.com/img/logo-dark.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#bd9a00",
+        "couleur_primary_dark": "#8d7300",
+        "couleur_primary_light": "#fbf9f0",
+        "couleur_primary_glow": "rgba(189, 154, 0, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #bd9a00, #8d7300)",
+        "shadow_primary": "0 4px 16px rgba(189, 154, 0, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "93",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 93 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

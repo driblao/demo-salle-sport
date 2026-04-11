@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT LINESTRA",
+        "ville": "Strasbourg",
+        "slogan": "",
+        "site": "https://www.crossfitlinestra.fr/",
+        "email_contact": "crossfitlinestra@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://v-images.cdnsw.com/site-favicons/1651273.png?preset=apple_touch_icon_57x57&cache_key=1594376201",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#190830",
+        "couleur_primary_dark": "#120624",
+        "couleur_primary_light": "#f1f0f2",
+        "couleur_primary_glow": "rgba(25, 8, 48, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #190830, #120624)",
+        "shadow_primary": "0 4px 16px rgba(25, 8, 48, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "111",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 111 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

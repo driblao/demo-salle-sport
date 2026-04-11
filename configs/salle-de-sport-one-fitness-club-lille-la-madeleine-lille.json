@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SALLE DE SPORT - ONE FITNESS CLUB LILLE LA MADELEINE",
+        "ville": "Lille",
+        "slogan": "",
+        "site": "https://onefitnessclub.fr/trouver-mon-club/lille-la-madeleine",
+        "email_contact": "lille-lamadeleine@onefitnessclub.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://datas.onefitnessclub.fr/LOGO_ONE_FITNESS_CLUB_AS_QUADRI_V1B-01.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e73943",
+        "couleur_primary_dark": "#ad2a32",
+        "couleur_primary_light": "#fdf3f4",
+        "couleur_primary_glow": "rgba(231, 57, 67, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e73943, #ad2a32)",
+        "shadow_primary": "0 4px 16px rgba(231, 57, 67, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "612",
+        "note_google": "4.3",
+        "argument_personnalise": "Avec 4.3 etoiles et 612 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

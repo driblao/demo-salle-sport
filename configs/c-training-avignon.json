@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "C. TRAINING",
+        "ville": "Avignon",
+        "slogan": "",
+        "site": "http://ctraining.fr/",
+        "email_contact": "contact@ctraining.frre",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "http://ctraining.fr/wp-content/uploads/2025/12/image-150x150.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#b64926",
+        "couleur_primary_dark": "#88361c",
+        "couleur_primary_light": "#faf4f2",
+        "couleur_primary_glow": "rgba(182, 73, 38, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #b64926, #88361c)",
+        "shadow_primary": "0 4px 16px rgba(182, 73, 38, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "10",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 10 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

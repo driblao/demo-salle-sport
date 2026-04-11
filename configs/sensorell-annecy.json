@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SENSORELL",
+        "ville": "Annecy",
+        "slogan": "",
+        "site": "http://sensorell74.fr/",
+        "email_contact": "contact@sensorell.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.sensorell74.fr/wp-content/uploads/2020/03/logo-sensorell2-1-e1583313142756.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#2b75ff",
+        "couleur_primary_dark": "#2057bf",
+        "couleur_primary_light": "#f2f7ff",
+        "couleur_primary_glow": "rgba(43, 117, 255, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #2b75ff, #2057bf)",
+        "shadow_primary": "0 4px 16px rgba(43, 117, 255, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "35",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 35 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "PHYSIC FORM",
+        "ville": "Brest",
+        "slogan": "",
+        "site": "http://physicformbrest.com/",
+        "email_contact": "physicformbrest@orange.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://physicformbrest.com/wp-content/uploads/2025/02/cropped-FAVICON_2-removebg-preview-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#007fbf",
+        "couleur_primary_dark": "#005f8f",
+        "couleur_primary_light": "#f0f7fb",
+        "couleur_primary_glow": "rgba(0, 127, 191, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #007fbf, #005f8f)",
+        "shadow_primary": "0 4px 16px rgba(0, 127, 191, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "224",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 224 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "LE CERCLE TINQUEUX REIMS _ COACHING SPORTIF",
+        "ville": "Reims",
+        "slogan": "",
+        "site": "http://www.lecercle-sport.com/",
+        "email_contact": "contact@lecercle-sport.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/A3QOWL9laLFRvx0j/capture-d-a-c-cran-2025-06-12-112657-AE0r0Zx0woi8eWJv.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#b6985e",
+        "couleur_primary_dark": "#887246",
+        "couleur_primary_light": "#faf9f5",
+        "couleur_primary_glow": "rgba(182, 152, 94, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #b6985e, #887246)",
+        "shadow_primary": "0 4px 16px rgba(182, 152, 94, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "110",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 110 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CITY FITNESS METZ",
+        "ville": "Metz",
+        "slogan": "",
+        "site": "https://www.city-fitness-metz.fr/",
+        "email_contact": "Sylvain.zoldick@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://city-fitness-metz.fr/wp-content/themes/fitness/assets/images/ZDK_GYM_fitness_SD.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e20613",
+        "couleur_primary_dark": "#a9040e",
+        "couleur_primary_light": "#fdf0f1",
+        "couleur_primary_glow": "rgba(226, 6, 19, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e20613, #a9040e)",
+        "shadow_primary": "0 4px 16px rgba(226, 6, 19, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "145",
+        "note_google": "4.4",
+        "argument_personnalise": "Avec 4.4 etoiles et 145 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

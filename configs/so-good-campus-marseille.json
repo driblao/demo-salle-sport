@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SO GOOD CAMPUS",
+        "ville": "Marseille",
+        "slogan": "",
+        "site": "https://sogoodfitness.com/clubs/salle-de-sport-marseille/",
+        "email_contact": "marseille@sogoodfitness.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://sogoodfitness.com/wp-content/uploads/2022/07/so-good-fitness-favicon.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#013f7c",
+        "couleur_primary_dark": "#002f5d",
+        "couleur_primary_light": "#f0f3f7",
+        "couleur_primary_glow": "rgba(1, 63, 124, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #013f7c, #002f5d)",
+        "shadow_primary": "0 4px 16px rgba(1, 63, 124, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "134",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 134 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

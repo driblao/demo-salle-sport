@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "FIT 360",
+        "ville": "Toulouse",
+        "slogan": "",
+        "site": "https://fit360.fr/",
+        "email_contact": "contact@fit360.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://fit360.fr/wp-content/uploads/2025/01/favicon-fit-360.webp",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0000ff",
+        "couleur_primary_dark": "#0000bf",
+        "couleur_primary_light": "#f0f0ff",
+        "couleur_primary_glow": "rgba(0, 0, 255, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0000ff, #0000bf)",
+        "shadow_primary": "0 4px 16px rgba(0, 0, 255, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "85",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 85 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

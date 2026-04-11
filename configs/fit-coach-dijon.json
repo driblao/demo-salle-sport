@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "FIT & COACH",
+        "ville": "Dijon",
+        "slogan": "",
+        "site": "https://fitandcoach.com/accueil",
+        "email_contact": "fitcoach@gmx.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0051c3",
+        "couleur_primary_dark": "#003c92",
+        "couleur_primary_light": "#f0f4fb",
+        "couleur_primary_glow": "rgba(0, 81, 195, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0051c3, #003c92)",
+        "shadow_primary": "0 4px 16px rgba(0, 81, 195, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "209",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 209 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
