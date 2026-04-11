@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "WEFIT.CLUB ANGERS STATION FOCH",
+        "ville": "Angers",
+        "slogan": "",
+        "site": "https://wefit.club/club/salle-de-sport-angers-station-foch/?utm_source=google&utm_medium=organic&utm_campaign=gbp-listing&utm_content=angers%20station%20foch",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://wefit.club/wp-content/themes/wefit/images/logo_wefit.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#3bb8bc",
+        "couleur_primary_dark": "#2c8a8d",
+        "couleur_primary_light": "#f3fbfb",
+        "couleur_primary_glow": "rgba(59, 184, 188, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #3bb8bc, #2c8a8d)",
+        "shadow_primary": "0 4px 16px rgba(59, 184, 188, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "497",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 497 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

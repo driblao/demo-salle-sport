@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT BUMBLEBEES BESANÇON",
+        "ville": "Besançon",
+        "slogan": "",
+        "site": "https://www.crossfit-bumblebees.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfit-bumblebees.fr/wp-content/uploads/2023/06/logo-300x300.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ffda03",
+        "couleur_primary_dark": "#bfa302",
+        "couleur_primary_light": "#fffdf0",
+        "couleur_primary_glow": "rgba(255, 218, 3, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ffda03, #bfa302)",
+        "shadow_primary": "0 4px 16px rgba(255, 218, 3, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "65",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 65 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

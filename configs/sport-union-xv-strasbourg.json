@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SPORT UNION XV",
+        "ville": "Strasbourg",
+        "slogan": "",
+        "site": "http://www.sportunionxv.com/",
+        "email_contact": "eric_befort@hotmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.sportunionxv.com/s/misc/touchicon.png?1719600276",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#4267b2",
+        "couleur_primary_dark": "#314d85",
+        "couleur_primary_light": "#f3f6fa",
+        "couleur_primary_glow": "rgba(66, 103, 178, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #4267b2, #314d85)",
+        "shadow_primary": "0 4px 16px rgba(66, 103, 178, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "6",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 6 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

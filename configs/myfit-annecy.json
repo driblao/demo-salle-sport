@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "MYFIT",
+        "ville": "Annecy",
+        "slogan": "",
+        "site": "https://myfit.fr/",
+        "email_contact": "contact@myfit.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://myfit.fr/wp-content/uploads/2020/04/logo-my-fit-annecy-blanc.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ff4f50",
+        "couleur_primary_dark": "#bf3b3c",
+        "couleur_primary_light": "#fff4f4",
+        "couleur_primary_glow": "rgba(255, 79, 80, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ff4f50, #bf3b3c)",
+        "shadow_primary": "0 4px 16px rgba(255, 79, 80, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "213",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 213 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

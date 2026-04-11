@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT OSKI 2",
+        "ville": "Annecy",
+        "slogan": "",
+        "site": "https://www.oskicrossfit.com/",
+        "email_contact": "davy@sowh4t.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://oskicrossfit.com/app/themes/sowh4t-wp-starter/assets/img/oski-logo-simple.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#5b602a",
+        "couleur_primary_dark": "#44481f",
+        "couleur_primary_light": "#f5f5f2",
+        "couleur_primary_glow": "rgba(91, 96, 42, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #5b602a, #44481f)",
+        "shadow_primary": "0 4px 16px rgba(91, 96, 42, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "17",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 17 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

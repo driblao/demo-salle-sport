@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT CAGNES-SUR-MER",
+        "ville": "Cannes",
+        "slogan": "",
+        "site": "https://crossfitcagnes.com/",
+        "email_contact": "crossfit.cagnes06@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfitcagnes.com/wp-content/uploads/2022/06/cropped-cropped-cropped-cropped-cropped-285118590_1406939253086478_2409797708949083048_n-1-180x180.jpg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#03a9f4",
+        "couleur_primary_dark": "#027eb7",
+        "couleur_primary_light": "#f0fafe",
+        "couleur_primary_glow": "rgba(3, 169, 244, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #03a9f4, #027eb7)",
+        "shadow_primary": "0 4px 16px rgba(3, 169, 244, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "71",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 71 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

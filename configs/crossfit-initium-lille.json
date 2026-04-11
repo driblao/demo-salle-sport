@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT INITIUM",
+        "ville": "Lille",
+        "slogan": "",
+        "site": "http://www.crossfit-initium.com/",
+        "email_contact": "crossfitinitium@yahoo.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfit-initium.com/wp-content/uploads/2023/07/cropped-LOGO-INITIUM-MULTI_01-scaled-102x61.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#39b6c0",
+        "couleur_primary_dark": "#2a8890",
+        "couleur_primary_light": "#f3fafb",
+        "couleur_primary_glow": "rgba(57, 182, 192, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #39b6c0, #2a8890)",
+        "shadow_primary": "0 4px 16px rgba(57, 182, 192, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "231",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 231 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

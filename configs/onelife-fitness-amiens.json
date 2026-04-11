@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "ONELIFE FITNESS",
+        "ville": "Amiens",
+        "slogan": "",
+        "site": "http://www.onelife-fitness.fr/",
+        "email_contact": "amiens@onelife-fitness.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://static.wixstatic.com/media/a0295c_8f632b28fc234b2b8550c966dd9f8379~mv2.png/v1/fill/w_208,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ONELIFE%20%E2%80%A2%20LOGO%20rectangle.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#bb2423",
+        "couleur_primary_dark": "#8c1b1a",
+        "couleur_primary_light": "#fbf2f2",
+        "couleur_primary_glow": "rgba(187, 36, 35, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #bb2423, #8c1b1a)",
+        "shadow_primary": "0 4px 16px rgba(187, 36, 35, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "458",
+        "note_google": "4.3",
+        "argument_personnalise": "Avec 4.3 etoiles et 458 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

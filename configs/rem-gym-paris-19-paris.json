@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "REM GYM PARIS 19",
+        "ville": "Paris",
+        "slogan": "",
+        "site": "http://rem-gym.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iYXN0LWFycm93LXN2ZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI2cHgiIGhlaWdodD0iMTYuMDQzcHgiIHZpZXdCb3g9IjU3IDM1LjE3MSAyNiAxNi4wNDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgNTcgMzUuMTcxIDI2IDE2LjA0MyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNTcuNSwzOC4xOTNsMTIuNSwxMi41bDEyLjUtMTIuNWwtMi41LTIuNWwtMTAsMTBsLTEwLTEwTDU3LjUsMzguMTkzeiIvPgogICAgICAgICAgICAgICAgPC9zdmc+",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#252b59",
+        "couleur_primary_dark": "#1b2042",
+        "couleur_primary_light": "#f2f2f5",
+        "couleur_primary_glow": "rgba(37, 43, 89, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #252b59, #1b2042)",
+        "shadow_primary": "0 4px 16px rgba(37, 43, 89, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "173",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 173 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "L'ARÈNE ROUEN",
+        "ville": "Rouen",
+        "slogan": "",
+        "site": "http://www.larene.fit/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20150'%3E%3C/svg%3E",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0000ee",
+        "couleur_primary_dark": "#0000b2",
+        "couleur_primary_light": "#f0f0fe",
+        "couleur_primary_glow": "rgba(0, 0, 238, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0000ee, #0000b2)",
+        "shadow_primary": "0 4px 16px rgba(0, 0, 238, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "314",
+        "note_google": "4.6",
+        "argument_personnalise": "Avec 4.6 etoiles et 314 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

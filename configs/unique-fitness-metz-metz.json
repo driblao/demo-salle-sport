@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "UNIQUE FITNESS METZ",
+        "ville": "Metz",
+        "slogan": "",
+        "site": "https://www.uniquefitness.fr/?utm_source=Google&utm_medium=My%20Business",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.uniquefitness.fr/data/themes/uniquefitness-v3/images/favicon/apple-touch-icon-57x57.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#b6a878",
+        "couleur_primary_dark": "#887e5a",
+        "couleur_primary_light": "#fafaf7",
+        "couleur_primary_glow": "rgba(182, 168, 120, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #b6a878, #887e5a)",
+        "shadow_primary": "0 4px 16px rgba(182, 168, 120, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "252",
+        "note_google": "4.4",
+        "argument_personnalise": "Avec 4.4 etoiles et 252 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "PLANÈTE FORME",
+        "ville": "Limoges",
+        "slogan": "",
+        "site": "https://www.planeteforme.club/",
+        "email_contact": "contact@planeteforme.club",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.planeteforme.club/favicon.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#d2b971",
+        "couleur_primary_dark": "#9d8a54",
+        "couleur_primary_light": "#fcfbf6",
+        "couleur_primary_glow": "rgba(210, 185, 113, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #d2b971, #9d8a54)",
+        "shadow_primary": "0 4px 16px rgba(210, 185, 113, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "161",
+        "note_google": "4.6",
+        "argument_personnalise": "Avec 4.6 etoiles et 161 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

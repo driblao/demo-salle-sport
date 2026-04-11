@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SPORT AVENUE BIZANOS",
+        "ville": "Pau",
+        "slogan": "",
+        "site": "http://sport-avenue-pau.com/",
+        "email_contact": "contact@sport-avenue.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://static.wixstatic.com/media/ba501a_3606a7a7a0714f99bcfe5b52f0c9663b~mv2.jpg/v1/fill/w_183,h_27,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/BODYPUMP%20111%20Lundi%2023%20septembre%2018H15%20AVEC%20____edited.jpg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0000ee",
+        "couleur_primary_dark": "#0000b2",
+        "couleur_primary_light": "#f0f0fe",
+        "couleur_primary_glow": "rgba(0, 0, 238, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0000ee, #0000b2)",
+        "shadow_primary": "0 4px 16px rgba(0, 0, 238, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "528",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 528 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

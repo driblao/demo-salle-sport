@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "FITNESS+ BREST",
+        "ville": "Brest",
+        "slogan": "",
+        "site": "https://www.fitnessplus.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.fitnessplus.fr/wp-content/uploads/2026/01/cropped-favicon-fitness-plus-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0e728b",
+        "couleur_primary_dark": "#0a5568",
+        "couleur_primary_light": "#f0f6f8",
+        "couleur_primary_glow": "rgba(14, 114, 139, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0e728b, #0a5568)",
+        "shadow_primary": "0 4px 16px rgba(14, 114, 139, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "554",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 554 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
