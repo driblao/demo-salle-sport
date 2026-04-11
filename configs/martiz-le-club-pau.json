@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "MARTIZ LE CLUB",
+        "ville": "Pau",
+        "slogan": "",
+        "site": "https://www.instagram.com/martiz_le_club/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-19/524745743_18091616107728287_2364850588912940021_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby42MzkuYzIifQ&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2gHayFHMVieWwo2JiRk1C4PQEVUQmWraXgg_eKE67d5YZi2acoIaYvTvtZzypAMfzKJSxeZ1EyC0Mgi1tpTFM_WW&_nc_ohc=O6S8RudRmloQ7kNvwE7GWKy&_nc_gid=BfEYw3OXmvi_8sjhi-nAOg&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Af1I2MeAdUDGxnUBZF-Bmx-nO5wrBsKCZ_RmYjD7CAKNiA&oe=69DFB330&_nc_sid=8b3546",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#4150f7",
+        "couleur_primary_dark": "#303cb9",
+        "couleur_primary_light": "#f3f4fe",
+        "couleur_primary_glow": "rgba(65, 80, 247, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #4150f7, #303cb9)",
+        "shadow_primary": "0 4px 16px rgba(65, 80, 247, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "106",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 106 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

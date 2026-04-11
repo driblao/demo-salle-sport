@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT BIDART & LE LOCAL TRAINING & SQUASH",
+        "ville": "Bayonne",
+        "slogan": "",
+        "site": "http://www.lelocal-trainingsquash.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://lelocal-trainingsquash.fr/wp-content/uploads/2024/08/cropped-IMG_8334.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e57b7b",
+        "couleur_primary_dark": "#ab5c5c",
+        "couleur_primary_light": "#fdf7f7",
+        "couleur_primary_glow": "rgba(229, 123, 123, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e57b7b, #ab5c5c)",
+        "shadow_primary": "0 4px 16px rgba(229, 123, 123, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "99",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 99 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

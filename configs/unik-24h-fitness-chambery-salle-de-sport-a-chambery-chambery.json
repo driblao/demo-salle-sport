@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "UNIK 24H FITNESS CHAMBÉRY - SALLE DE SPORT À CHAMBÉRY",
+        "ville": "Chambéry",
+        "slogan": "",
+        "site": "http://www.unikfitness.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.unikfitness.fr/images/home.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0079ad",
+        "couleur_primary_dark": "#005a81",
+        "couleur_primary_light": "#f0f7fa",
+        "couleur_primary_glow": "rgba(0, 121, 173, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0079ad, #005a81)",
+        "shadow_primary": "0 4px 16px rgba(0, 121, 173, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "141",
+        "note_google": "3.6",
+        "argument_personnalise": "Avec 3.6 etoiles et 141 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

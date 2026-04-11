@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "WOLFSPIRIT FIT COMMUNITY",
+        "ville": "Pau",
+        "slogan": "",
+        "site": "https://wolfspirit-lescar.fr/",
+        "email_contact": "wolfspirit.fc@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/j4SW7J1mspHUW2Ap/201c30_6db13502ba62401f8f29e346dfdd444e~mv2-3oNDkiGQsIx6gyyC.jpeg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#872619",
+        "couleur_primary_dark": "#651c12",
+        "couleur_primary_light": "#f8f2f1",
+        "couleur_primary_glow": "rgba(135, 38, 25, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #872619, #651c12)",
+        "shadow_primary": "0 4px 16px rgba(135, 38, 25, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "49",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 49 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

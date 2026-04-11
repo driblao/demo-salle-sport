@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "HATSA SPORT BASSUSSARRY",
+        "ville": "Bayonne",
+        "slogan": "",
+        "site": "https://hatsa-sport.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://static.wixstatic.com/media/1d6b2f_6f071ad2dee34dc897a21976848c7d0b~mv2.png/v1/fill/w_106,h_73,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo_bleu_edited.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#d0de70",
+        "couleur_primary_dark": "#9ca654",
+        "couleur_primary_light": "#fcfdf6",
+        "couleur_primary_glow": "rgba(208, 222, 112, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #d0de70, #9ca654)",
+        "shadow_primary": "0 4px 16px rgba(208, 222, 112, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "212",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 212 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

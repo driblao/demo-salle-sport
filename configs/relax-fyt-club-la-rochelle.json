@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "RELAX FYT CLUB",
+        "ville": "La Rochelle",
+        "slogan": "",
+        "site": "http://www.relaxforme.fr/",
+        "email_contact": "rochefort@relaxforme.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "http://www.relaxforme.fr/sites/default/files/relaxforme-logo-white-sm.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#004d6d",
+        "couleur_primary_dark": "#003951",
+        "couleur_primary_light": "#f0f4f6",
+        "couleur_primary_glow": "rgba(0, 77, 109, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #004d6d, #003951)",
+        "shadow_primary": "0 4px 16px rgba(0, 77, 109, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "127",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 127 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

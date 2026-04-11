@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "OCÉANIA CLUB BAYONNE",
+        "ville": "Bayonne",
+        "slogan": "",
+        "site": "http://www.oceania-club.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.oceania-club.fr/wp-content/themes/oceaniaclub/assets/images/oceania-club.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e34100",
+        "couleur_primary_dark": "#aa3000",
+        "couleur_primary_light": "#fdf3f0",
+        "couleur_primary_glow": "rgba(227, 65, 0, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e34100, #aa3000)",
+        "shadow_primary": "0 4px 16px rgba(227, 65, 0, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "484",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 484 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

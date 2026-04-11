@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "NATURAL SPIRIT CROSSFIT BENESSE",
+        "ville": "Bayonne",
+        "slogan": "",
+        "site": "https://www.naturalspiritcrossfit.com/",
+        "email_contact": "CONTACT@NATURALSPIRITCROSSFIT.COM",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://i0.wp.com/naturalspiritcrossfit.com/wp-content/uploads/2021/03/faviconwebsite.png?fit=180%2C180&ssl=1",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#09356c",
+        "couleur_primary_dark": "#062751",
+        "couleur_primary_light": "#f0f3f6",
+        "couleur_primary_glow": "rgba(9, 53, 108, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #09356c, #062751)",
+        "shadow_primary": "0 4px 16px rgba(9, 53, 108, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "34",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 34 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

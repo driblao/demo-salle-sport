@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SCULPT & VOUS",
+        "ville": "Orléans",
+        "slogan": "",
+        "site": "https://sculpt-et-vous.fr/",
+        "email_contact": "contact@sculpt-et-vous.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://sculpt-et-vous.fr/wp-content/uploads/2022/12/cropped-sculpt-et-vous-favicon-512px-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ffdfcd",
+        "couleur_primary_dark": "#bfa799",
+        "couleur_primary_light": "#fffdfc",
+        "couleur_primary_glow": "rgba(255, 223, 205, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ffdfcd, #bfa799)",
+        "shadow_primary": "0 4px 16px rgba(255, 223, 205, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "70",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 70 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

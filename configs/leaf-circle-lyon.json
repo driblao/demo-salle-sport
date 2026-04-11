@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "LEAF CIRCLE",
+        "ville": "Lyon",
+        "slogan": "",
+        "site": "https://leafcircle.com/",
+        "email_contact": "recrutement@leafcircle.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://leafcircle.com/wp-content/uploads/2021/12/logo-leafcircle-sport-society-white-min.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#be9f57",
+        "couleur_primary_dark": "#8e7741",
+        "couleur_primary_light": "#fbf9f5",
+        "couleur_primary_glow": "rgba(190, 159, 87, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #be9f57, #8e7741)",
+        "shadow_primary": "0 4px 16px rgba(190, 159, 87, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "188",
+        "note_google": "4.6",
+        "argument_personnalise": "Avec 4.6 etoiles et 188 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "DYNAFIT - FITNESS LIMOGES (CENTRE DE REMISE EN FORME, SALLE DE SPORT)",
+        "ville": "Limoges",
+        "slogan": "",
+        "site": "http://www.fitnesslimoges.fr/",
+        "email_contact": "dynafitsylviane@sfr.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#996600",
+        "couleur_primary_dark": "#724c00",
+        "couleur_primary_light": "#f9f6f0",
+        "couleur_primary_glow": "rgba(153, 102, 0, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #996600, #724c00)",
+        "shadow_primary": "0 4px 16px rgba(153, 102, 0, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "66",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 66 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

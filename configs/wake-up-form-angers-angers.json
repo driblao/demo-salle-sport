@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "WAKE UP FORM ANGERS",
+        "ville": "Angers",
+        "slogan": "",
+        "site": "http://www.wakeupform.fr/club/angers",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.wakeupform.fr/wp-content/uploads/elementor/thumbs/LOGO-BLANC-WUF-r0ppr69kpg2lgpd40u0q0sqe44mmoc60q0zyh1kupi.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#f8b133",
+        "couleur_primary_dark": "#ba8426",
+        "couleur_primary_light": "#fefaf3",
+        "couleur_primary_glow": "rgba(248, 177, 51, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #f8b133, #ba8426)",
+        "shadow_primary": "0 4px 16px rgba(248, 177, 51, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "254",
+        "note_google": "4.6",
+        "argument_personnalise": "Avec 4.6 etoiles et 254 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

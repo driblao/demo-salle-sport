@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SALLE DE SPORT LILLE - LE HOOK",
+        "ville": "Lille",
+        "slogan": "",
+        "site": "https://lehook.fr/",
+        "email_contact": "contact@lehook.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://lehook.fr/wp-content/uploads/2022/04/logo-HOOK-noir-wb-300x300.webp",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e4b933",
+        "couleur_primary_dark": "#ab8a26",
+        "couleur_primary_light": "#fdfbf3",
+        "couleur_primary_glow": "rgba(228, 185, 51, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e4b933, #ab8a26)",
+        "shadow_primary": "0 4px 16px rgba(228, 185, 51, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "116",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 116 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

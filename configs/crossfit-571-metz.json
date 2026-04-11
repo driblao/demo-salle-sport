@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT 571",
+        "ville": "Metz",
+        "slogan": "",
+        "site": "http://www.crossfit-571.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfit-571.com/assets/img/apple-icon.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#51bcda",
+        "couleur_primary_dark": "#3c8da3",
+        "couleur_primary_light": "#f4fbfd",
+        "couleur_primary_glow": "rgba(81, 188, 218, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #51bcda, #3c8da3)",
+        "shadow_primary": "0 4px 16px rgba(81, 188, 218, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "163",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 163 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

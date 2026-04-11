@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "MAGIC FITNESS",
+        "ville": "Limoges",
+        "slogan": "",
+        "site": "http://www.magicfitness-limoges.fr/",
+        "email_contact": "info@magicfitness-limoges.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.magicfitness-limoges.fr/images/logo.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e5d3b3",
+        "couleur_primary_dark": "#ab9e86",
+        "couleur_primary_light": "#fdfcfa",
+        "couleur_primary_glow": "rgba(229, 211, 179, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e5d3b3, #ab9e86)",
+        "shadow_primary": "0 4px 16px rgba(229, 211, 179, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "167",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 167 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

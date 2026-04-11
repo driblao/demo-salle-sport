@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CERCLE MICHELET ORLÉANS",
+        "ville": "Orléans",
+        "slogan": "",
+        "site": "https://cmo-club.fr/",
+        "email_contact": "Red@2x.png",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://cmo-club.fr/wp-content/uploads/2023/08/CMO_logo-e1691833857172.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#cc3366",
+        "couleur_primary_dark": "#99264c",
+        "couleur_primary_light": "#fcf3f6",
+        "couleur_primary_glow": "rgba(204, 51, 102, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #cc3366, #99264c)",
+        "shadow_primary": "0 4px 16px rgba(204, 51, 102, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "62",
+        "note_google": "4.4",
+        "argument_personnalise": "Avec 4.4 etoiles et 62 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
