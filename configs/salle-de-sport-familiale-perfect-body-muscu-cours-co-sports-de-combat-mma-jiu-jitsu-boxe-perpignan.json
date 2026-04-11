@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SALLE DE SPORT FAMILIALE PERFECT BODY / MUSCU - COURS CO - SPORTS DE COMBAT (MMA - JIU JITSU - BOXE)",
+        "ville": "Perpignan",
+        "slogan": "",
+        "site": "https://www.perfectbody66.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://static.wixstatic.com/media/8c656c_8234eeab73014860b3b524ae1a48efa7~mv2.png/v1/fill/w_160,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOGO%20PERFECT%20BODY%202016_edited.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0000ee",
+        "couleur_primary_dark": "#0000b2",
+        "couleur_primary_light": "#f0f0fe",
+        "couleur_primary_glow": "rgba(0, 0, 238, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0000ee, #0000b2)",
+        "shadow_primary": "0 4px 16px rgba(0, 0, 238, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "205",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 205 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

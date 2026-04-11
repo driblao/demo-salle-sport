@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT MAIGNON",
+        "ville": "Bayonne",
+        "slogan": "",
+        "site": "http://www.crossfit-maignon.com/",
+        "email_contact": "thomas@crossfit-maignon.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfit-maignon.com/wp-content/themes/starter/favicons/apple-touch-icon-57x57.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#f3641e",
+        "couleur_primary_dark": "#b64b16",
+        "couleur_primary_light": "#fef6f1",
+        "couleur_primary_glow": "rgba(243, 100, 30, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #f3641e, #b64b16)",
+        "shadow_primary": "0 4px 16px rgba(243, 100, 30, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "112",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 112 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "UNITY TRAINING",
+        "ville": "Chambéry",
+        "slogan": "",
+        "site": "https://www.unitytraining.fr/",
+        "email_contact": "unitytraining73000@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.unitytraining.fr/wp-content/uploads/sites/2/2018/03/favicon1.jpg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0d76a6",
+        "couleur_primary_dark": "#09587c",
+        "couleur_primary_light": "#f0f7f9",
+        "couleur_primary_glow": "rgba(13, 118, 166, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0d76a6, #09587c)",
+        "shadow_primary": "0 4px 16px rgba(13, 118, 166, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "227",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 227 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "ANTROPOS CROSSFIT PIERRE-BÉNITE",
+        "ville": "Lyon",
+        "slogan": "",
+        "site": "https://antroposcrossfit.com/salle/oullins-pierre-benite/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://antroposcrossfit.com/wp-content/uploads/2025/06/burger-blanc.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#fbd600",
+        "couleur_primary_dark": "#bca000",
+        "couleur_primary_light": "#fffcf0",
+        "couleur_primary_glow": "rgba(251, 214, 0, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #fbd600, #bca000)",
+        "shadow_primary": "0 4px 16px rgba(251, 214, 0, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "170",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 170 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

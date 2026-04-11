@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "LEVEL SALLE DE SPORT LESCAR",
+        "ville": "Pau",
+        "slogan": "",
+        "site": "https://www.level-sport.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.level-sport.fr/wp-content/uploads/2025/12/favicon.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#d18d58",
+        "couleur_primary_dark": "#9c6942",
+        "couleur_primary_light": "#fcf8f5",
+        "couleur_primary_glow": "rgba(209, 141, 88, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #d18d58, #9c6942)",
+        "shadow_primary": "0 4px 16px rgba(209, 141, 88, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "388",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 388 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

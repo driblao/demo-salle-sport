@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT ALTAÏS",
+        "ville": "Annecy",
+        "slogan": "",
+        "site": "https://crossfit-altais.fr/",
+        "email_contact": "crossfitaltais@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfit-altais.fr/wp-content/uploads/logo-crossfit-altais-blanc-seul2x.png.webp",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#d13e20",
+        "couleur_primary_dark": "#9c2e18",
+        "couleur_primary_light": "#fcf3f1",
+        "couleur_primary_glow": "rgba(209, 62, 32, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #d13e20, #9c2e18)",
+        "shadow_primary": "0 4px 16px rgba(209, 62, 32, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "32",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 32 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

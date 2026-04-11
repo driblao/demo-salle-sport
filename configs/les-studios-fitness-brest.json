@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "LES STUDIOS FITNESS",
+        "ville": "Brest",
+        "slogan": "",
+        "site": "https://lesstudiosfitness.com/",
+        "email_contact": "yann@formatpixels.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.lesstudiosfitness.com/wp-content/uploads/2022/03/cropped-ANAGRAMME-FINAL-sans-fond-1-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ff9933",
+        "couleur_primary_dark": "#bf7226",
+        "couleur_primary_light": "#fff9f3",
+        "couleur_primary_glow": "rgba(255, 153, 51, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ff9933, #bf7226)",
+        "shadow_primary": "0 4px 16px rgba(255, 153, 51, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "56",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 56 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

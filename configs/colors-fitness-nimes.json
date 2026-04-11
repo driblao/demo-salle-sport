@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "COLORS FITNESS",
+        "ville": "Nîmes",
+        "slogan": "",
+        "site": "http://www.colorsfitness.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://colorsfitness.com/wp-content/uploads/2022/01/colors-fitness-club-salle-sport-nimes-muscu-cardio-fitness-bike-training-trx-logo-blanc-1.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ef100a",
+        "couleur_primary_dark": "#b30c07",
+        "couleur_primary_light": "#fef0f0",
+        "couleur_primary_glow": "rgba(239, 16, 10, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ef100a, #b30c07)",
+        "shadow_primary": "0 4px 16px rgba(239, 16, 10, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "127",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 127 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

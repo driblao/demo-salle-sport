@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "ANTALGYM",
+        "ville": "Limoges",
+        "slogan": "",
+        "site": "https://www.antalgym.com/",
+        "email_contact": "contact@antalgym.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://antalgym.com/wp-content/uploads/2022/06/cropped-logo-1-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#13aff0",
+        "couleur_primary_dark": "#0e83b4",
+        "couleur_primary_light": "#f1fafe",
+        "couleur_primary_glow": "rgba(19, 175, 240, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #13aff0, #0e83b4)",
+        "shadow_primary": "0 4px 16px rgba(19, 175, 240, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "110",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 110 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

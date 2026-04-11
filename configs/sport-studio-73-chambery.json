@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SPORT STUDIO 73",
+        "ville": "Chambéry",
+        "slogan": "",
+        "site": "http://sportstudio73.fr/",
+        "email_contact": "exemple@monsite.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://static.wixstatic.com/media/b7daf1_9bfd2646d8924dd091f87a5f0227ca4e~mv2.png/v1/crop/x_0,y_137,w_3118,h_1051/fill/w_243,h_81,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/SPORT%20STUDIO%2073.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#0000ee",
+        "couleur_primary_dark": "#0000b2",
+        "couleur_primary_light": "#f0f0fe",
+        "couleur_primary_glow": "rgba(0, 0, 238, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #0000ee, #0000b2)",
+        "shadow_primary": "0 4px 16px rgba(0, 0, 238, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "47",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 47 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

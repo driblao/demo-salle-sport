@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "POWERCAMP BORDEAUX",
+        "ville": "Bordeaux",
+        "slogan": "",
+        "site": "http://powercamp.fr/",
+        "email_contact": "ecom-swiper@11.css",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://powercamp.fr/cdn/shop/files/Sans-titre-2.png?crop=center&height=32&v=1660722773&width=32",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#003366",
+        "couleur_primary_dark": "#00264c",
+        "couleur_primary_light": "#f0f3f6",
+        "couleur_primary_glow": "rgba(0, 51, 102, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #003366, #00264c)",
+        "shadow_primary": "0 4px 16px rgba(0, 51, 102, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "108",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 108 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
