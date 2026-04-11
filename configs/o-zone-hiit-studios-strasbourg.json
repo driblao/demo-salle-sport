@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "O'ZONE HIIT STUDIOS",
+        "ville": "Strasbourg",
+        "slogan": "",
+        "site": "https://o3-zonehiitstudio.fr/",
+        "email_contact": "contact@o3zone.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://o3-zonehiitstudio.fr/wp-content/uploads/cropped-favicon-ozone-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#dc120f",
+        "couleur_primary_dark": "#a50d0b",
+        "couleur_primary_light": "#fdf1f0",
+        "couleur_primary_glow": "rgba(220, 18, 15, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #dc120f, #a50d0b)",
+        "shadow_primary": "0 4px 16px rgba(220, 18, 15, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "264",
+        "note_google": "4.9",
+        "argument_personnalise": "Avec 4.9 etoiles et 264 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "COMPLEXE SPORT 5",
+        "ville": "Marseille",
+        "slogan": "",
+        "site": "https://www.complexesport5.fr/",
+        "email_contact": "contact@complexesport5.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.complexesport5.fr/public/img/medium/P1855024jpg_636aa5ee3e380.jpg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#3b8053",
+        "couleur_primary_dark": "#2c603e",
+        "couleur_primary_light": "#f3f7f4",
+        "couleur_primary_glow": "rgba(59, 128, 83, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #3b8053, #2c603e)",
+        "shadow_primary": "0 4px 16px rgba(59, 128, 83, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "168",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 168 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

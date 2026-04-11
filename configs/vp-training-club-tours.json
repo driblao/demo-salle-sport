@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "VP TRAINING CLUB",
+        "ville": "Tours",
+        "slogan": "",
+        "site": "http://www.vptraining.fr/",
+        "email_contact": "contact@vptrainingclub.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.vptraining.fr/wp-content/uploads/2022/02/cropped-VP-TRAINING-CLUB_contour-blanc_Plan-de-travail-1-copie-2-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#bf9532",
+        "couleur_primary_dark": "#8f6f25",
+        "couleur_primary_light": "#fbf8f3",
+        "couleur_primary_glow": "rgba(191, 149, 50, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #bf9532, #8f6f25)",
+        "shadow_primary": "0 4px 16px rgba(191, 149, 50, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "16",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 16 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

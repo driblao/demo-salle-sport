@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "METABOLIK SOCIAL SPORTS CLUB AIX-EN-PROVENCE",
+        "ville": "Aix-en-Provence",
+        "slogan": "",
+        "site": "https://sportsclub.metabolik.fr/salle-de-sport-aix-en-provence/?utm_campaign=mybusiness-website&utm_medium=organic&utm_source=google",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://sportsclub.metabolik.fr/site/wp-content/uploads/2024/08/new-logo-metabolik.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ff414b",
+        "couleur_primary_dark": "#bf3038",
+        "couleur_primary_light": "#fff3f4",
+        "couleur_primary_glow": "rgba(255, 65, 75, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ff414b, #bf3038)",
+        "shadow_primary": "0 4px 16px rgba(255, 65, 75, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "1078",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 1078 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

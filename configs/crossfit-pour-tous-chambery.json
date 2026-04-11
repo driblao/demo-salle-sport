@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT POUR TOUS",
+        "ville": "Chambéry",
+        "slogan": "",
+        "site": "https://www.crossfit-pour-tous.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfit-pour-tous.com/wp-content/uploads/2020/09/cropped-cfpt_logo_5-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#3f79b0",
+        "couleur_primary_dark": "#2f5a84",
+        "couleur_primary_light": "#f3f7fa",
+        "couleur_primary_glow": "rgba(63, 121, 176, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #3f79b0, #2f5a84)",
+        "shadow_primary": "0 4px 16px rgba(63, 121, 176, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "",
+        "note_google": "",
+        "argument_personnalise": "Votre approche du coaching merite un outil digital a la hauteur"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "LES BERGES D'OLYMPIE",
+        "ville": "Pau",
+        "slogan": "",
+        "site": "http://odyssee-44.fr/",
+        "email_contact": "club.odyssee.44@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://odyssee-44.fr/wp-content/uploads/2020/09/cropped-odysse-logo-180x180.jpeg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#fc7523",
+        "couleur_primary_dark": "#bd571a",
+        "couleur_primary_light": "#fff7f2",
+        "couleur_primary_glow": "rgba(252, 117, 35, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #fc7523, #bd571a)",
+        "shadow_primary": "0 4px 16px rgba(252, 117, 35, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "156",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 156 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

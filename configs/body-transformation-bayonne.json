@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "BODY TRANSFORMATION",
+        "ville": "Bayonne",
+        "slogan": "",
+        "site": "https://www.body-transformation.fr/",
+        "email_contact": "contact@romain-fitness.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.body-transformation.fr/favicon.webp",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#f24a0d",
+        "couleur_primary_dark": "#b53709",
+        "couleur_primary_light": "#fef4f0",
+        "couleur_primary_glow": "rgba(242, 74, 13, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #f24a0d, #b53709)",
+        "shadow_primary": "0 4px 16px rgba(242, 74, 13, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "103",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 103 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

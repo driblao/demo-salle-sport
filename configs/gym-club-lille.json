@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "GYM CLUB",
+        "ville": "Lille",
+        "slogan": "",
+        "site": "https://clubdegym-euralille.fr/",
+        "email_contact": "sportivement@gym-club.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://clubdegym-euralille.fr/wp-content/uploads/2025/06/club-gym-logo-blanc.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#fdd492",
+        "couleur_primary_dark": "#bd9f6d",
+        "couleur_primary_light": "#fffcf8",
+        "couleur_primary_glow": "rgba(253, 212, 146, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #fdd492, #bd9f6d)",
+        "shadow_primary": "0 4px 16px rgba(253, 212, 146, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "480",
+        "note_google": "4.2",
+        "argument_personnalise": "Avec 4.2 etoiles et 480 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

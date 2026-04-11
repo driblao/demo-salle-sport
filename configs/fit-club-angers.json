@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "FIT CLUB",
+        "ville": "Angers",
+        "slogan": "",
+        "site": "https://fitclub-brissac.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MyIgaGVpZ2h0PSI0MyIgdmlld0JveD0iMCAwIDkzIDQzIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBzdHlsZT0iZmlsbDojY2ZkNGRiO2ZpbGwtb3BhY2l0eTogMC4xOyIvPjwvc3ZnPg==",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#a1e108",
+        "couleur_primary_dark": "#78a806",
+        "couleur_primary_light": "#f9fdf0",
+        "couleur_primary_glow": "rgba(161, 225, 8, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #a1e108, #78a806)",
+        "shadow_primary": "0 4px 16px rgba(161, 225, 8, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "55",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 55 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

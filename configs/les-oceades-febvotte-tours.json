@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "LES OCÉADES - FEBVOTTE",
+        "ville": "Tours",
+        "slogan": "",
+        "site": "http://www.lesoceades.fr/",
+        "email_contact": "communication@lesoceades.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.lesoceades.fr/wp-content/uploads/2023/06/lesoceades_favicon-300x300.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#1a2e35",
+        "couleur_primary_dark": "#132227",
+        "couleur_primary_light": "#f1f2f3",
+        "couleur_primary_glow": "rgba(26, 46, 53, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #1a2e35, #132227)",
+        "shadow_primary": "0 4px 16px rgba(26, 46, 53, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "337",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 337 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

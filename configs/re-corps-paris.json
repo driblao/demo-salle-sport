@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "RE-CORPS",
+        "ville": "Paris",
+        "slogan": "",
+        "site": "http://re-corps.com/",
+        "email_contact": "contact@re-corps.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://re-corps.com/assets/images/logo/favicon/apple-touch-icon.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#c7017f",
+        "couleur_primary_dark": "#95005f",
+        "couleur_primary_light": "#fbf0f7",
+        "couleur_primary_glow": "rgba(199, 1, 127, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #c7017f, #95005f)",
+        "shadow_primary": "0 4px 16px rgba(199, 1, 127, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "350",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 350 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

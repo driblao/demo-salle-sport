@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "510 TRAINING CLUB – ENTRAÎNEMENT FONCTIONNEL & HYROX ÉGUILLES",
+        "ville": "Aix-en-Provence",
+        "slogan": "",
+        "site": "https://510.training/",
+        "email_contact": "contact@510.training",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://umsousercontent.com/lib_XefJvLWaUXXnWrVg/9dzzn78cw50bcvku.png?w=145&dpr=2",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#b5fdcf",
+        "couleur_primary_dark": "#87bd9b",
+        "couleur_primary_light": "#fafffc",
+        "couleur_primary_glow": "rgba(181, 253, 207, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #b5fdcf, #87bd9b)",
+        "shadow_primary": "0 4px 16px rgba(181, 253, 207, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "76",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 76 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
