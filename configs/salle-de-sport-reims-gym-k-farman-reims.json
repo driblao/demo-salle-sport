@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SALLE DE SPORT REIMS - GYM K FARMAN",
+        "ville": "Reims",
+        "slogan": "",
+        "site": "https://gymk.fr/club-reims-farman/",
+        "email_contact": "jacques@martin.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://s.w.org/images/core/emoji/17.0.2/svg/1f381.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#1032cf",
+        "couleur_primary_dark": "#0c259b",
+        "couleur_primary_light": "#f0f3fc",
+        "couleur_primary_glow": "rgba(16, 50, 207, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #1032cf, #0c259b)",
+        "shadow_primary": "0 4px 16px rgba(16, 50, 207, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "265",
+        "note_google": "4.3",
+        "argument_personnalise": "Avec 4.3 etoiles et 265 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

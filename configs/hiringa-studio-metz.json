@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "HIRINGA STUDIO",
+        "ville": "Metz",
+        "slogan": "",
+        "site": "https://www.crossfithiringa.com/studio-hiringa/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://crossfithiringa.com/wp-content/uploads/2022/05/cropped-Crossfit-logo-180x180.webp",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#2ea3f2",
+        "couleur_primary_dark": "#227ab5",
+        "couleur_primary_light": "#f2f9fe",
+        "couleur_primary_glow": "rgba(46, 163, 242, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #2ea3f2, #227ab5)",
+        "shadow_primary": "0 4px 16px rgba(46, 163, 242, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "8",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 8 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
