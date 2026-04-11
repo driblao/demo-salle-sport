@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT LOUVRE",
+        "ville": "Paris",
+        "slogan": "",
+        "site": "http://www.crossfitlouvre.com/",
+        "email_contact": "accueil@crossfitlouvre.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imx1Y2lkZSBsdWNpZGUtaG91c2UgdHJhbnNpdGlvbi10cmFuc2Zvcm0gZHVyYXRpb24tMjAwIHNjYWxlLTExMCIgYXJpYS1oaWRkZW49InRydWUiIHN0eWxlPSJ3aWR0aDoxLjI1cmVtO2hlaWdodDoxLjI1cmVtIj48cGF0aCBkPSJNMTUgMjF2LThhMSAxIDAgMCAwLTEtMWgtNGExIDEgMCAwIDAtMSAxdjgiLz48cGF0aCBkPSJNMyAxMGEyIDIgMCAwIDEgLjcwOS0xLjUyOGw3LTZhMiAyIDAgMCAxIDIuNTgyIDBsNyA2QTIgMiAwIDAgMSAyMSAxMHY5YTIgMiAwIDAgMS0yIDJINWEyIDIgMCAwIDEtMi0yeiIvPjwvc3ZnPg==",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#c8102e",
+        "couleur_primary_dark": "#960c22",
+        "couleur_primary_light": "#fcf0f2",
+        "couleur_primary_glow": "rgba(200, 16, 46, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #c8102e, #960c22)",
+        "shadow_primary": "0 4px 16px rgba(200, 16, 46, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "610",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 610 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

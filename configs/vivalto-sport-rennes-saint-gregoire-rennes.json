@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "VIVALTO SPORT RENNES - SAINT-GRÉGOIRE",
+        "ville": "Rennes",
+        "slogan": "",
+        "site": "https://www.vivalto-sport.com/notre-centre-a-rennes/?utm_source=Yext&utm_medium=GBP",
+        "email_contact": "contact@vivalto-sport.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.vivalto-sport.com/wp-content/themes/vivalto-sport/static/images/white-logo-vivalto-sport.svg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#c5b080",
+        "couleur_primary_dark": "#938460",
+        "couleur_primary_light": "#fbfaf7",
+        "couleur_primary_glow": "rgba(197, 176, 128, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #c5b080, #938460)",
+        "shadow_primary": "0 4px 16px rgba(197, 176, 128, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "216",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 216 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

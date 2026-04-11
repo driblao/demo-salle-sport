@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SPARTIATE GYM",
+        "ville": "Nancy",
+        "slogan": "",
+        "site": "https://www.spartiate-gym.fr/",
+        "email_contact": "spartiategym.max@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/36561/Fb1.1.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#cc2624",
+        "couleur_primary_dark": "#991c1b",
+        "couleur_primary_light": "#fcf2f2",
+        "couleur_primary_glow": "rgba(204, 38, 36, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #cc2624, #991c1b)",
+        "shadow_primary": "0 4px 16px rgba(204, 38, 36, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "102",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 102 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

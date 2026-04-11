@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "HOC CROSSTRAINING / HYROX TRAINING CENTER",
+        "ville": "Bordeaux",
+        "slogan": "",
+        "site": "https://hoc-family.fr/",
+        "email_contact": "bonjour@hoc.family",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://hoc-family.fr/wp-content/uploads/2025/12/cropped-favicon-HOC-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#fbd21c",
+        "couleur_primary_dark": "#bc9d15",
+        "couleur_primary_light": "#fffcf1",
+        "couleur_primary_glow": "rgba(251, 210, 28, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #fbd21c, #bc9d15)",
+        "shadow_primary": "0 4px 16px rgba(251, 210, 28, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "99",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 99 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

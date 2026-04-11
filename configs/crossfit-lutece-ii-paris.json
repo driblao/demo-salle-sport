@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT LUTÈCE II",
+        "ville": "Paris",
+        "slogan": "",
+        "site": "http://www.crossfitlutece.com/",
+        "email_contact": "info@crossfitlutece.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://static.spacecrafted.com/bfcd4f94b02548c0945ff61648ce7510/f/6fe8a6f1bb465cb042e006569295e43f5ebeac16/1/favicon-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ff7d56",
+        "couleur_primary_dark": "#bf5d40",
+        "couleur_primary_light": "#fff7f5",
+        "couleur_primary_glow": "rgba(255, 125, 86, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ff7d56, #bf5d40)",
+        "shadow_primary": "0 4px 16px rgba(255, 125, 86, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "186",
+        "note_google": "4.8",
+        "argument_personnalise": "Avec 4.8 etoiles et 186 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

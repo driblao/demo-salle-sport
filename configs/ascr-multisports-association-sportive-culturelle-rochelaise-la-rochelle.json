@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "ASCR-MULTISPORTS (ASSOCIATION SPORTIVE CULTURELLE ROCHELAISE)",
+        "ville": "La Rochelle",
+        "slogan": "",
+        "site": "http://ascr-multisports.com/",
+        "email_contact": "asar17@hotmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.ascr-multisports.fr/s/misc/touchicon.png?1498824647",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e6f571",
+        "couleur_primary_dark": "#acb754",
+        "couleur_primary_light": "#fdfef6",
+        "couleur_primary_glow": "rgba(230, 245, 113, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e6f571, #acb754)",
+        "shadow_primary": "0 4px 16px rgba(230, 245, 113, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "38",
+        "note_google": "4.3",
+        "argument_personnalise": "Avec 4.3 etoiles et 38 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

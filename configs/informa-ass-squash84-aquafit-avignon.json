@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "INFORMA /ASS SQUASH84/AQUAFIT",
+        "ville": "Avignon",
+        "slogan": "",
+        "site": "https://fitnessinforma.com/",
+        "email_contact": "assinforma84@gmail.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://fitnessinforma.com/favicon.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#00bbff",
+        "couleur_primary_dark": "#008cbf",
+        "couleur_primary_light": "#f0fbff",
+        "couleur_primary_glow": "rgba(0, 187, 255, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #00bbff, #008cbf)",
+        "shadow_primary": "0 4px 16px rgba(0, 187, 255, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "192",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 192 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

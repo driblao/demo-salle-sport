@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "FITNESS CLUB PERFORME CENTER",
+        "ville": "Pau",
+        "slogan": "",
+        "site": "https://www.performecenterfitnessclub.com/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.performecenterfitnessclub.com/sites/1627d718/files/mini-logo.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e92929",
+        "couleur_primary_dark": "#ae1e1e",
+        "couleur_primary_light": "#fdf2f2",
+        "couleur_primary_glow": "rgba(233, 41, 41, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e92929, #ae1e1e)",
+        "shadow_primary": "0 4px 16px rgba(233, 41, 41, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "9",
+        "note_google": "4.6",
+        "argument_personnalise": "Avec 4.6 etoiles et 9 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

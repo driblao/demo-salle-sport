@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "RIVIERA FITNESS CLUB",
+        "ville": "Cannes",
+        "slogan": "",
+        "site": "https://rivierafitness-club.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "http://rivierafitness-club.fr/wp-content/uploads/2021/11/Riviera-logo-bis1.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#16172c",
+        "couleur_primary_dark": "#101121",
+        "couleur_primary_light": "#f1f1f2",
+        "couleur_primary_glow": "rgba(22, 23, 44, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #16172c, #101121)",
+        "shadow_primary": "0 4px 16px rgba(22, 23, 44, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "74",
+        "note_google": "4.5",
+        "argument_personnalise": "Avec 4.5 etoiles et 74 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

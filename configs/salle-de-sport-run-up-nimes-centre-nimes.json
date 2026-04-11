@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SALLE DE SPORT RUN'UP NIMES CENTRE",
+        "ville": "Nîmes",
+        "slogan": "",
+        "site": "https://www.runupforme.fr/club-nimes-centre/",
+        "email_contact": "contact@runupforme.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.runupforme.fr/composants/uploads/2019/07/runup-logo-groupe-header-regular.jpg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#cc071d",
+        "couleur_primary_dark": "#990515",
+        "couleur_primary_light": "#fcf0f1",
+        "couleur_primary_glow": "rgba(204, 7, 29, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #cc071d, #990515)",
+        "shadow_primary": "0 4px 16px rgba(204, 7, 29, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "147",
+        "note_google": "4.2",
+        "argument_personnalise": "Avec 4.2 etoiles et 147 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

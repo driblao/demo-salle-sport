@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CROSSFIT HÉRACLÈS",
+        "ville": "Brest",
+        "slogan": "",
+        "site": "https://www.crossfit-heracles.fr/",
+        "email_contact": "",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://www.crossfit-heracles.fr/wp-content/uploads/2024/05/cropped-tete-sans-barre2-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ff7425",
+        "couleur_primary_dark": "#bf571b",
+        "couleur_primary_light": "#fff6f2",
+        "couleur_primary_glow": "rgba(255, 116, 37, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ff7425, #bf571b)",
+        "shadow_primary": "0 4px 16px rgba(255, 116, 37, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "190",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 190 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

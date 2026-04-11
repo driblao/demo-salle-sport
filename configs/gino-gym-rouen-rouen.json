@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "GINO GYM ROUEN",
+        "ville": "Rouen",
+        "slogan": "",
+        "site": "https://www.facebook.com/profile.php?id=100051044899456",
+        "email_contact": "rouen@ginogym.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://static.xx.fbcdn.net/rsrc.php/y1/r/ay1hV6OlegS.ico",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#385898",
+        "couleur_primary_dark": "#2a4272",
+        "couleur_primary_light": "#f3f5f9",
+        "couleur_primary_glow": "rgba(56, 88, 152, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #385898, #2a4272)",
+        "shadow_primary": "0 4px 16px rgba(56, 88, 152, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "227",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 227 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

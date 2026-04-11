@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "STUDIO FITNESS - ROUEN",
+        "ville": "Rouen",
+        "slogan": "",
+        "site": "http://www.studio-fitness.fr/",
+        "email_contact": "contact@studio-fitness.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://studio-fitness.fr/wp-content/uploads/2022/04/studio-fitness-logo.jpg",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#e20079",
+        "couleur_primary_dark": "#a9005a",
+        "couleur_primary_light": "#fdf0f7",
+        "couleur_primary_glow": "rgba(226, 0, 121, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #e20079, #a9005a)",
+        "shadow_primary": "0 4px 16px rgba(226, 0, 121, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "195",
+        "note_google": "4.2",
+        "argument_personnalise": "Avec 4.2 etoiles et 195 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

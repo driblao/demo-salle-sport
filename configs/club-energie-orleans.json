@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "CLUB ENERGIE",
+        "ville": "Orléans",
+        "slogan": "",
+        "site": "https://www.club-energie.fr/?utm_source=gmb",
+        "email_contact": "9avril202615h06@nepasrepondre.com",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://club-energie.fr/wp-content/uploads/2024/06/logo-club-energie-orleans-mobile-350x184.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#c6af87",
+        "couleur_primary_dark": "#948365",
+        "couleur_primary_light": "#fbfaf8",
+        "couleur_primary_glow": "rgba(198, 175, 135, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #c6af87, #948365)",
+        "shadow_primary": "0 4px 16px rgba(198, 175, 135, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "412",
+        "note_google": "4.6",
+        "argument_personnalise": "Avec 4.6 etoiles et 412 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

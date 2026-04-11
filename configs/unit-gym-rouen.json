@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "UNIT GYM",
+        "ville": "Rouen",
+        "slogan": "",
+        "site": "https://unitgym.fr/",
+        "email_contact": "contact@unitgym.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://unitgym.fr/wp-content/uploads/2025/08/cropped-favicon-1-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ccd500",
+        "couleur_primary_dark": "#999f00",
+        "couleur_primary_light": "#fcfcf0",
+        "couleur_primary_glow": "rgba(204, 213, 0, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ccd500, #999f00)",
+        "shadow_primary": "0 4px 16px rgba(204, 213, 0, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "12",
+        "note_google": "5",
+        "argument_personnalise": "Avec 5 etoiles et 12 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}

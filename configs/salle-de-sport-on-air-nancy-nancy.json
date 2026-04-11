@@ -1,0 +1,32 @@
+{
+    "salle": {
+        "nom": "SALLE DE SPORT - ON AIR NANCY",
+        "ville": "Nancy",
+        "slogan": "",
+        "site": "https://onair-fitness.fr/club/nancy/",
+        "email_contact": "nancy@onair-fitness.fr",
+        "coach_exemple": "Alex",
+        "eleve_exemple": "Lucas",
+        "logo_url": "https://onair-fitness.fr/wp-content/uploads/2020/10/cropped-PICTO-OA-R-180x180.png",
+        "hero_url": ""
+    },
+    "design": {
+        "couleur_primary": "#ae2119",
+        "couleur_primary_dark": "#821812",
+        "couleur_primary_light": "#faf1f1",
+        "couleur_primary_glow": "rgba(174, 33, 25, 0.15)",
+        "couleur_secondary": "#1a1a2e",
+        "couleur_secondary_dark": "#0f0f1a",
+        "gradient_primary": "linear-gradient(135deg, #ae2119, #821812)",
+        "shadow_primary": "0 4px 16px rgba(174, 33, 25, 0.25)",
+        "font_logo": "900",
+        "ambiance": "fitness"
+    },
+    "prospection": {
+        "prenom_destinataire": "",
+        "role_destinataire": "gerant",
+        "nb_avis_google": "245",
+        "note_google": "4.7",
+        "argument_personnalise": "Avec 4.7 etoiles et 245 avis Google, vos membres sont clairement satisfaits de votre approche"
+    }
+}
