@@ -3,7 +3,7 @@
         "nom": "FITNESS PARK",
         "ville": "Rennes",
         "slogan": "",
-        "site": "https://www.fitnesspark.fr/club/rennes-longs-champs/?utm_medium=Local_Inventory&utm_source=GMB&utm_campaign=Rennes-Longs-Champs&utm_content=Yext",
+        "site": "https://www.fitnesspark.fr/club/rennes-liberte/?utm_medium=Local_Inventory&utm_source=GMB&utm_campaign=Rennes-Liberte&utm_content=Yext",
         "email_contact": "",
         "coach_exemple": "Alex",
         "eleve_exemple": "Lucas",
@@ -25,8 +25,8 @@
     "prospection": {
         "prenom_destinataire": "",
         "role_destinataire": "gerant",
-        "nb_avis_google": "423",
+        "nb_avis_google": "535",
         "note_google": "4.4",
-        "argument_personnalise": "Avec 4.4 etoiles et 423 avis Google, vos membres sont clairement satisfaits de votre approche"
+        "argument_personnalise": "Avec 4.4 etoiles et 535 avis Google, vos membres sont clairement satisfaits de votre approche"
     }
 }
