@@ -7,7 +7,7 @@
         "email_contact": "",
         "coach_exemple": "Alex",
         "eleve_exemple": "Lucas",
-        "logo_url": "data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iYXN0LWFycm93LXN2ZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI2cHgiIGhlaWdodD0iMTYuMDQzcHgiIHZpZXdCb3g9IjU3IDM1LjE3MSAyNiAxNi4wNDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgNTcgMzUuMTcxIDI2IDE2LjA0MyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNTcuNSwzOC4xOTNsMTIuNSwxMi41bDEyLjUtMTIuNWwtMi41LTIuNWwtMTAsMTBsLTEwLTEwTDU3LjUsMzguMTkzeiIvPgogICAgICAgICAgICAgICAgPC9zdmc+",
+        "logo_url": "",
         "hero_url": ""
     },
     "design": {
