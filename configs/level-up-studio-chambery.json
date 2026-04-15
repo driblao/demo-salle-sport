@@ -7,7 +7,7 @@
         "email_contact": "sidonie@levelup-studio.fr",
         "coach_exemple": "Alex",
         "eleve_exemple": "Lucas",
-        "logo_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBkPSJNMTIgMkM2LjUgMiAyIDYuNSAyIDEyYzAgNSAzLjcgOS4xIDguNCA5Ljl2LTdINy45VjEyaDIuNVY5LjhjMC0yLjUgMS41LTMuOSAzLjgtMy45IDEuMSAwIDIuMi4yIDIuMi4ydjIuNWgtMS4zYy0xLjIgMC0xLjYuOC0xLjYgMS42VjEyaDIuOGwtLjQgMi45aC0yLjN2N0MxOC4zIDIxLjEgMjIgMTcgMjIgMTJjMC01LjUtNC41LTEwLTEwLTEweiIvPjwvc3ZnPg==",
+        "logo_url": "",
         "hero_url": ""
     },
     "design": {
